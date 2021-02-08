@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">IEEEYesist12-2021</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="trending">Trending</string>
+    <string name="tracks">Tracks</string>
+    <string name="about_team">About Team</string>
+    <string name="more">More</string>
+</resources>

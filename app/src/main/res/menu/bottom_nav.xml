@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home" />
+    <item
+        android:id="@+id/trendingFragment"
+        android:title="@string/trending"
+        android:icon="@drawable/ic_trending" />
+    <item
+        android:id="@+id/tracksFragment"
+        android:title="@string/tracks"
+        android:icon="@drawable/ic_tracks" />
+    <item
+        android:id="@+id/aboutTeamFragment"
+        android:title="@string/about_team"
+        android:icon="@drawable/ic_about_team" />
+    <item
+        android:id="@+id/moreFragment"
+        android:title="@string/more"
+        android:icon="@drawable/ic_more" />
+
+</menu>
