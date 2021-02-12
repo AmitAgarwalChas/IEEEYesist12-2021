@@ -1,66 +1,78 @@
 package com.ieeeyesist12_2021.view;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.ieeeyesist12_2021.R;
+import com.ieeeyesist12_2021.TrackDetails.TrackDetailsFragment;
+import com.ieeeyesist12_2021.adapter.TrackListAdapter;
+import com.ieeeyesist12_2021.model.TrackList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link TracksFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class TracksFragment extends Fragment {
+import java.util.ArrayList;
+import java.util.List;
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public TracksFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment TracksFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static TracksFragment newInstance(String param1, String param2) {
-        TracksFragment fragment = new TracksFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+public class TracksFragment extends Fragment implements TrackListAdapter.OnTrackListener {
+    RecyclerView trackRecycler;
+    TrackListAdapter trackListAdapter;
+    List<TrackList> trackList;
+    ImageView imgProfile;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_tracks, container, false);
+        View view = inflater.inflate(R.layout.fragment_tracks, container, false);
+        trackRecycler=view.findViewById(R.id.tracks_recycler);
+        trackList = new ArrayList<>();
+        trackList.add(new TrackList("Volleyball",R.drawable.volleball));
+        trackList.add(new TrackList("Cricket",R.drawable.cricket));
+        trackList.add(new TrackList("Basketball",R.drawable.basketball));
+        trackList.add(new TrackList("Table Tennis",R.drawable.table_tennis));
+        trackList.add(new TrackList("Football",R.drawable.football));
+
+        setTrackRecycler(trackList);
+
+        imgProfile = view.findViewById(R.id.imageProfile);
+        imgProfile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment profileFragment = new ProfileFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragNavHost,profileFragment);
+                transaction.addToBackStack(null);
+                transaction.commit();
+            }
+        });
+
+        return view;
+    }
+    private void setTrackRecycler(List<TrackList> trackList) {
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL,false);
+        trackRecycler.setLayoutManager(layoutManager);
+        trackListAdapter = new TrackListAdapter(getContext(),trackList,this);
+        trackRecycler.setAdapter(trackListAdapter);
+
+    }
+
+    @Override
+    public void onTrackClick(int position) {
+        Log.d("name","onTrackClick: clicked.");
+        Bundle bundle = new Bundle();
+        bundle.putString("trackName",trackList.get(position).getTrackName());
+        bundle.putInt("trackImage",trackList.get(position).getImageUrl());
+        Fragment trackFragment = new TrackDetailsFragment();
+        trackFragment.setArguments(bundle);
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragNavHost,trackFragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }
