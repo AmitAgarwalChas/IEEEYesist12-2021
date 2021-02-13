@@ -7,5 +7,6 @@
     <color name="shadow">#40000000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="professionalName">#01579B</color>
 
 </resources>

@@ -43,4 +43,34 @@
             android:id="@+id/action_trackDetailsFragment_to_tracksFragment"
             app:destination="@id/tracksFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/professionalInfoFragment"
+        android:name="com.ieeeyesist12_2021.ProfessionalInfoFragment"
+        android:label="fragment_professional_info"
+        tools:layout="@layout/fragment_professional_info" >
+        <action
+            android:id="@+id/action_professionalInfoFragment_to_subCommitteeFragment"
+            app:destination="@id/subCommitteeFragment" />
+        <action
+            android:id="@+id/action_professionalInfoFragment_to_sterringCommitteeFragment"
+            app:destination="@id/sterringCommitteeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sterringCommitteeFragment"
+        android:name="com.ieeeyesist12_2021.SterringCommitteeFragment"
+        android:label="fragment_sterring_committee"
+        tools:layout="@layout/fragment_sterring_committee" >
+        <action
+            android:id="@+id/action_sterringCommitteeFragment_to_professionalInfoFragment"
+            app:destination="@id/professionalInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/subCommitteeFragment"
+        android:name="com.ieeeyesist12_2021.SubCommitteeFragment"
+        android:label="fragment_sub_committee"
+        tools:layout="@layout/fragment_sub_committee" >
+        <action
+            android:id="@+id/action_subCommitteeFragment_to_professionalInfoFragment"
+            app:destination="@id/professionalInfoFragment" />
+    </fragment>
 </navigation>
