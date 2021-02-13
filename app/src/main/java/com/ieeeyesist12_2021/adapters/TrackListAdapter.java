@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.adapter;
+package com.ieeeyesist12_2021.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -15,7 +15,7 @@ import com.ieeeyesist12_2021.model.TrackList;
 
 import java.util.List;
 
-public class TrackListAdapter extends RecyclerView.Adapter<com.ieeeyesist12_2021.adapter.TrackListAdapter.TrackListViewHolder> {
+public class TrackListAdapter extends RecyclerView.Adapter<TrackListAdapter.TrackListViewHolder> {
 
     Context context;
     List<TrackList> trackList;
@@ -57,7 +57,6 @@ public class TrackListAdapter extends RecyclerView.Adapter<com.ieeeyesist12_2021
             trackName = itemView.findViewById(R.id.trackName);
             this.onTrackListener = onTrackListener;
             itemView.setOnClickListener(this);
-
         }
 
         @Override
@@ -65,7 +64,9 @@ public class TrackListAdapter extends RecyclerView.Adapter<com.ieeeyesist12_2021
             onTrackListener.onTrackClick(getAdapterPosition());
         }
     }
+
     public interface OnTrackListener{
         void onTrackClick(int position);
     }
+
 }

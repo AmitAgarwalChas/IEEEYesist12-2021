@@ -14,7 +14,11 @@
         android:id="@+id/tracksFragment"
         android:name="com.ieeeyesist12_2021.view.TracksFragment"
         android:label="fragment_tracks"
-        tools:layout="@layout/fragment_tracks" />
+        tools:layout="@layout/fragment_tracks" >
+        <action
+            android:id="@+id/action_tracksFragment_to_trackDetailsFragment"
+            app:destination="@id/trackDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutTeamFragment"
         android:name="com.ieeeyesist12_2021.view.AboutTeamFragment"
@@ -30,4 +34,13 @@
         android:name="com.ieeeyesist12_2021.view.TrendingFragment"
         android:label="fragment_trending"
         tools:layout="@layout/fragment_trending" />
+    <fragment
+        android:id="@+id/trackDetailsFragment"
+        android:name="com.ieeeyesist12_2021.view.TrackDetailsFragment"
+        android:label="fragment_track_details"
+        tools:layout="@layout/fragment_track_details" >
+        <action
+            android:id="@+id/action_trackDetailsFragment_to_tracksFragment"
+            app:destination="@id/tracksFragment" />
+    </fragment>
 </navigation>

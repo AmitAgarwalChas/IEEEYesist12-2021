@@ -13,8 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.TrackDetails.TrackDetailsFragment;
-import com.ieeeyesist12_2021.adapter.TrackListAdapter;
+import com.ieeeyesist12_2021.adapters.TrackListAdapter;
 import com.ieeeyesist12_2021.model.TrackList;
 
 import java.util.ArrayList;
@@ -68,10 +67,10 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
         Bundle bundle = new Bundle();
         bundle.putString("trackName",trackList.get(position).getTrackName());
         bundle.putInt("trackImage",trackList.get(position).getImageUrl());
-        Fragment trackFragment = new TrackDetailsFragment();
-        trackFragment.setArguments(bundle);
+        Fragment trackDetailsFragment = new TrackDetailsFragment();
+        trackDetailsFragment.setArguments(bundle);
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.fragNavHost,trackFragment);
+        transaction.replace(R.id.fragNavHost,trackDetailsFragment);
         transaction.addToBackStack(null);
         transaction.commit();
     }

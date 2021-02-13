@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.TrackDetails;
+package com.ieeeyesist12_2021.view;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -35,41 +35,31 @@ public class TrackDetailsFragment extends Fragment {
         trackInfo.setMovementMethod(new ScrollingMovementMethod());
 
         Bundle bundle = this.getArguments();
+        assert bundle != null;
         String track = bundle.getString("trackName");
-        Integer imgUrl = bundle.getInt("trackImage");
-        //String track = getActivity().getIntent().getExtras().getString("trackName");
-        //Integer imgUrl = getActivity().getIntent().getExtras().getInt("trackImage");
+        int imgUrl = bundle.getInt("trackImage");
 
         trackName.setText(track);
         imgTrack.setImageResource(imgUrl);
 
-        imgBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment trackinfo = new TracksFragment();
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragNavHost,trackinfo);
-                transaction.addToBackStack(null);
-                transaction.commit();
-            }
+        imgBack.setOnClickListener(v -> {
+            Fragment trackinfo = new TracksFragment();
+            FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+            transaction.replace(R.id.fragNavHost,trackinfo);
+            transaction.addToBackStack(null);
+            transaction.commit();
         });
-        btnRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://www.ieeecsvit.com/";
-                Uri uri = Uri.parse(url);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
+        btnRegister.setOnClickListener(v -> {
+            String url = "https://www.ieeecsvit.com/";
+            Uri uri = Uri.parse(url);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         });
-        btnPilotRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String url = "https://www.ieeecsvit.com/";
-                Uri uri = Uri.parse(url);
-                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                startActivity(intent);
-            }
+        btnPilotRegister.setOnClickListener(v -> {
+            String url = "https://www.ieeecsvit.com/";
+            Uri uri = Uri.parse(url);
+            Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+            startActivity(intent);
         });
         return view;
     }
