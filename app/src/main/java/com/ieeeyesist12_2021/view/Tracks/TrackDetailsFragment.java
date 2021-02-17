@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view;
+package com.ieeeyesist12_2021.view.Tracks;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -14,7 +14,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.view.TracksFragment;
 
 public class TrackDetailsFragment extends Fragment {
 

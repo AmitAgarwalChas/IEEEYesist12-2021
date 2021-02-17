@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view;
+package com.ieeeyesist12_2021.view.Tracks;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -15,6 +15,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.ieeeyesist12_2021.R;
 import com.ieeeyesist12_2021.adapters.TrackListAdapter;
 import com.ieeeyesist12_2021.model.TrackList;
+import com.ieeeyesist12_2021.view.ProfileFragment;
+import com.ieeeyesist12_2021.view.Tracks.TrackDetailsFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -56,7 +58,7 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
     private void setTrackRecycler(List<TrackList> trackList) {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL,false);
         trackRecycler.setLayoutManager(layoutManager);
-        trackListAdapter = new TrackListAdapter(getContext(),trackList,this);
+        trackListAdapter = new TrackListAdapter(requireContext(),trackList,this);
         trackRecycler.setAdapter(trackListAdapter);
 
     }

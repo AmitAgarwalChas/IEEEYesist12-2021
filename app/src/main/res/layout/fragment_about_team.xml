@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.AboutTeamFragment">
+    tools:context=".view.AboutTeam.AboutTeamFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginEnd="21dp"
-        app:cardCornerRadius="45dp"
+        app:cardCornerRadius="30dp"
         app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toBottomOf="@id/header" >
 
@@ -56,10 +56,13 @@
             android:id="@+id/tabLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="?actionBarSize"
+            app:tabTextAppearance="@style/tabLayout"
             app:tabGravity="fill"
-            app:tabIndicatorColor="@color/professionalName"
-            app:tabBackground="@color/colorPrimary" />
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            app:tabIndicatorHeight="0dp"
+            app:tabTextColor="@color/content"
+            app:tabSelectedTextColor="@color/professionalName" />
 
     </com.google.android.material.card.MaterialCardView>
 

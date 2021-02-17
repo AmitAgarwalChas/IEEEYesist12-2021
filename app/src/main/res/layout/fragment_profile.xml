@@ -13,10 +13,8 @@
         android:layout_height="302dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginTop="-2dp"
         android:layout_marginEnd="0dp"
-        android:layout_marginRight="0dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/profile_img" />
 
@@ -25,10 +23,8 @@
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
         android:layout_marginTop="36dp"
         android:src="@drawable/ic_back" />
 
@@ -38,9 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageProfile"
         android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
         android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
+
         android:layout_marginBottom="10dp"
         android:fontFamily="@font/nunitoregular"
         android:paddingBottom="3dp"
@@ -58,7 +53,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Volunteer"
+            android:text="@string/volunteer"
             android:textColor="#676969"
             android:textSize="20sp"
             android:layout_marginStart="26dp"
