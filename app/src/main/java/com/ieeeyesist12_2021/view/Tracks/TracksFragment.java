@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -42,15 +44,8 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
         setTrackRecycler(trackList);
 
         imgProfile = view.findViewById(R.id.imageProfile);
-        imgProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Fragment profileFragment = new ProfileFragment();
-                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragNavHost,profileFragment);
-                transaction.addToBackStack(null);
-                transaction.commit();
-            }
+        imgProfile.setOnClickListener( v -> {
+            Navigation.findNavController(requireView()).navigate(R.id.action_tracksFragment_to_profileFragment);
         });
 
         return view;

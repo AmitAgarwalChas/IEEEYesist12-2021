@@ -5,6 +5,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 
 import android.view.LayoutInflater;
@@ -89,6 +90,9 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
 
     @Override
     public void onProfessionalClick(int position) {
-
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("selectedAndroidProfessional", androidList.get(position));
+        bundle.putParcelable("selectedWebProfessional", webList.get(position));
+        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
     }
 }

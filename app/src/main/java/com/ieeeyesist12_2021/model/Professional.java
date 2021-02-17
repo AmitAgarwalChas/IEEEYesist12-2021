@@ -1,6 +1,9 @@
 package com.ieeeyesist12_2021.model;
 
-public class Professional {
+import android.os.Parcel;
+import android.os.Parcelable;
+
+public class Professional implements Parcelable {
     private String name;
     private int imageUrl;
     private String role;
@@ -14,6 +17,26 @@ public class Professional {
         this.bio = bio;
         this.linkedinUrl = linkedinUrl;
     }
+
+    protected Professional(Parcel in) {
+        name = in.readString();
+        imageUrl = in.readInt();
+        role = in.readString();
+        bio = in.readString();
+        linkedinUrl = in.readString();
+    }
+
+    public static final Creator<Professional> CREATOR = new Creator<Professional>() {
+        @Override
+        public Professional createFromParcel(Parcel in) {
+            return new Professional(in);
+        }
+
+        @Override
+        public Professional[] newArray(int size) {
+            return new Professional[size];
+        }
+    };
 
     public String getName() {
         return name;
@@ -53,5 +76,19 @@ public class Professional {
 
     public void setLinkedinUrl(String linkedinUrl) {
         this.linkedinUrl = linkedinUrl;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeInt(imageUrl);
+        dest.writeString(role);
+        dest.writeString(bio);
+        dest.writeString(linkedinUrl);
     }
 }

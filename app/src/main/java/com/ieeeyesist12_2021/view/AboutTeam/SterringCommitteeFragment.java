@@ -4,6 +4,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -64,6 +67,8 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
 
     @Override
     public void onProfessionalClick(int position) {
-
+        Bundle bundle = new Bundle();
+        bundle.putParcelable("selectedProfessional", professionalList.get(position));
+        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
     }
 }
