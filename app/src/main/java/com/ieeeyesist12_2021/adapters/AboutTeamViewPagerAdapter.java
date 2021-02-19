@@ -3,17 +3,20 @@ package com.ieeeyesist12_2021.adapters;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AboutTeamViewPagerAdapter extends FragmentStateAdapter {
 
-    private ArrayList<Fragment> fragments;
+    private List<Fragment> fragments;
 
-    public AboutTeamViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
-        super(fragmentActivity);
-        this.fragments = new ArrayList<>();
+    public AboutTeamViewPagerAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle, List<Fragment> fragments) {
+        super(fragmentManager, lifecycle);
+        this.fragments = fragments;
     }
 
     @NonNull
@@ -25,10 +28,6 @@ public class AboutTeamViewPagerAdapter extends FragmentStateAdapter {
     @Override
     public int getItemCount() {
         return 2;
-    }
-
-    public void addFragment(Fragment fragment) {
-        fragments.add(fragment);
     }
 
 }

@@ -6,10 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.ieeeyesist12_2021.R;
 import com.ieeeyesist12_2021.model.Professional;
 import java.util.List;
@@ -63,12 +61,12 @@ public class AboutTeamRecyclerAdapter extends RecyclerView.Adapter<AboutTeamRecy
 
         @Override
         public void onClick(View v) {
-            onProfessionalListener.onProfessionalClick(getAdapterPosition());
+            onProfessionalListener.onProfessionalClick(professionalList.get(getAdapterPosition()));
         }
     }
 
     public interface OnProfessionalListener{
-        void onProfessionalClick(int position);
+        void onProfessionalClick(Professional pro);
     }
 
 }

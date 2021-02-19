@@ -28,12 +28,6 @@ public class ProfessionalInfoFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         professional = requireArguments().getParcelable("selectedProfessional");
-        if(professional == null) {
-            professional = requireArguments().getParcelable("selectedAndroidProfessional");
-        }
-        if(professional == null) {
-            professional = requireArguments().getParcelable("selectedWebProfessional");
-        }
     }
 
     @Override
@@ -43,7 +37,9 @@ public class ProfessionalInfoFragment extends Fragment {
         binding.professionalDesc.setText(professional.getBio());
         binding.professionalRole.setText(professional.getRole());
         binding.professionalPic.setImageResource(professional.getImageUrl());
-        binding.backButton.setOnClickListener( v -> Navigation.findNavController(view).navigate(R.id.action_professionalInfoFragment_to_aboutTeamFragment));
+        binding.backButton.setOnClickListener( v -> {
+            Navigation.findNavController(view).popBackStack();
+        });
     }
 
     @Override

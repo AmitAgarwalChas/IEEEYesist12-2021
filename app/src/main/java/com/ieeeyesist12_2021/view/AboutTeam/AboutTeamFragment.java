@@ -11,12 +11,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 import com.ieeeyesist12_2021.R;
 import com.ieeeyesist12_2021.adapters.AboutTeamViewPagerAdapter;
 import com.ieeeyesist12_2021.databinding.FragmentAboutTeamBinding;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class AboutTeamFragment extends Fragment {
 
@@ -31,15 +33,18 @@ public class AboutTeamFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         binding.profile.setOnClickListener( v ->
                 Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_profileFragment));
-        AboutTeamViewPagerAdapter vpAdapter = new AboutTeamViewPagerAdapter(requireActivity());
-        vpAdapter.addFragment(new SterringCommitteeFragment());
-        vpAdapter.addFragment(new SubCommitteeFragment());
+        List<Fragment> fragmentList=new ArrayList<>();
+        fragmentList.add(new SterringCommitteeFragment());
+        fragmentList.add(new SubCommitteeFragment());
+        AboutTeamViewPagerAdapter vpAdapter = new AboutTeamViewPagerAdapter(getChildFragmentManager(), getLifecycle(),fragmentList);
         binding.aboutTeamVp.setAdapter(vpAdapter);
         ArrayList<String> titles = new ArrayList<>();
         titles.add("Sterring Committee");
         titles.add("Sub Committee");
         new TabLayoutMediator(binding.tabLayout, binding.aboutTeamVp,
-                ((tab, position) -> tab.setText(titles.get(position)))).attach();
+                ((tab, position) -> {
+                    tab.setText(titles.get(position));
+                })).attach();
     }
 
     @Override

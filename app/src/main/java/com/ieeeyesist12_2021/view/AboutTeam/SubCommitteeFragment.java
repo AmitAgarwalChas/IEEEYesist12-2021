@@ -6,17 +6,13 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.GridLayoutManager;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.ieeeyesist12_2021.R;
 import com.ieeeyesist12_2021.adapters.AboutTeamRecyclerAdapter;
 import com.ieeeyesist12_2021.databinding.FragmentSubCommitteeBinding;
 import com.ieeeyesist12_2021.model.Professional;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,11 +36,9 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        webList=new ArrayList<>();
+        androidList=new ArrayList<>();
         populateList();
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(requireContext(),2);
-        binding.androidTeamRv.setLayoutManager(gridLayoutManager);
-        GridLayoutManager layoutManager = new GridLayoutManager(requireContext(),2);
-        binding.webTeamRv.setLayoutManager(layoutManager);
         binding.androidTeamRv.setNestedScrollingEnabled(false);
         binding.webTeamRv.setNestedScrollingEnabled(false);
         androidAdapter = new AboutTeamRecyclerAdapter(requireContext(), androidList, this);
@@ -54,7 +48,7 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
     }
 
     private void populateList() {
-        androidList = new ArrayList<>();
+        androidList.clear();
         androidList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
         androidList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
@@ -70,7 +64,7 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
         androidList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
 
-        webList = new ArrayList<>();
+        webList.clear();
         webList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
         webList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
@@ -87,12 +81,10 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
                 getString(R.string.random_text), "linkedin"));
     }
 
-
     @Override
-    public void onProfessionalClick(int position) {
+    public void onProfessionalClick(Professional pro) {
         Bundle bundle = new Bundle();
-        bundle.putParcelable("selectedAndroidProfessional", androidList.get(position));
-        bundle.putParcelable("selectedWebProfessional", webList.get(position));
+        bundle.putParcelable("selectedProfessional", pro);
         Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
     }
 }
