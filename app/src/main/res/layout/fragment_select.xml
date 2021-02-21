@@ -5,10 +5,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tracks here"
+        android:text="Other options"
         android:textSize="50sp"
         android:layout_centerInParent="true" />
 
 </RelativeLayout>
 
-    <!-- write xml code -->
+    <!-- write xml code-->
