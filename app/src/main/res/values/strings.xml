@@ -1,9 +1,12 @@
 <resources>
-    <string name="app_name">IEEEYesist12-2021</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="home">Home</string>
-    <string name="trending">Trending</string>
-    <string name="tracks">Tracks</string>
-    <string name="about_team">About Team</string>
-    <string name="more">More</string>
+    <string name="app_name">Yesist_splash_n_home</string>
+   <!-- <string name="age_of_inn_text">ARK Invest, an investment management company focused solely on disruptive innovation, has done a lot of research on the foundational innovations that will shape our world in the next few decades. They refer to these foundational and disruptive innovations as innovation platforms. While information technology and the ARK has identified five innovation platforms that they driving costs down, creating huge demand growth across virtually all sectors and geographies.</string>
+    <string name="age_of_innovation_title_text">Age of Innovation</string> -->
+    <string name="our_vission_text">Our Vission</string>
+    <string name="our_mission_text">Our Mission</string>
+    <string name="program_text">A program under ASIST - Augmented Social Innovations through Science and Technology</string>
+    <string name="ieee_yesist_12_text">IEEE YESIST-12</string>
+    <string name="year_text">2021</string>
+    <string name="second_card_text">Empower and encourage the engineering minds to work for the social cause through: \n- Organising Competitions for young engineering graduates, engineering students and school students in the themes aligned with the vision. \n- Recognising the engineering educators for their service to the society \n- Creating a strong network for mentors and mentees from industry and academia. \n- Encouraging Interdisciplinary work in creating solutions for social issues.</string>
+    <string name="first_card_text">To instill social responsibility and ethics as a continuing education in the young minds through activities and encourage service oriented engineering practice.</string>
 </resources>
