@@ -51,7 +51,7 @@
             android:lineHeight="57sp"
             android:paddingLeft="41dp"
             android:paddingBottom="10dp"
-            android:text="Volleyball"
+            android:text="@string/track_name"
             android:textColor="#B3000000"
             android:textSize="38sp" />
     </RelativeLayout>
@@ -66,21 +66,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp">
+
         <TextView
             android:id="@+id/txtPrize1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/roundedbutton"
-            android:backgroundTint="#0091EA"
             android:layout_marginLeft="36dp"
             android:layout_marginRight="7dp"
+            android:background="@drawable/roundedbutton"
+            android:backgroundTint="#0091EA"
             android:fontFamily="@font/poppinssemi"
             android:includeFontPadding="false"
             android:paddingLeft="10dp"
             android:paddingTop="6dp"
             android:paddingRight="10dp"
             android:paddingBottom="6dp"
-            android:text="1st Prize - $3000"
+            android:text="@string/first_prize"
             android:textColor="@color/white"
             android:textSize="11sp"
             android:textStyle="bold" />
@@ -97,7 +98,7 @@
             android:paddingTop="6dp"
             android:paddingRight="9dp"
             android:paddingBottom="6dp"
-            android:text="2nd Prize - $1000"
+            android:text="@string/second_prize"
             android:textColor="@color/white"
             android:textSize="11sp"
             android:textStyle="bold" />
@@ -117,7 +118,7 @@
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
                 android:scrollbars="vertical"
-                android:text="ARK Invest, an investment management company focused solely on disruptive innovation, has done a lot of research on the foundational innovations that will shape our world in the next few decades. They refer to these foundational and disruptive innovations as innovation platforms. While information technology and the ARK has identified five innovation platforms that they driving costs down, creating huge demand growth across virtually all sectors and geographies."
+                android:text="@string/random_text"
                 android:textColor="#676969"
                 android:textSize="17sp"
                 android:textStyle="bold" />

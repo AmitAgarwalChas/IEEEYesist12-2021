@@ -25,6 +25,7 @@
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/volleball" />
 
+       <!--
         <ImageView
             android:id="@+id/imageBg"
             android:layout_width="match_parent"
@@ -36,7 +37,7 @@
             android:layout_marginRight="27dp"
             android:alpha="0.75"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/background_track" />
+            app:srcCompat="@drawable/background_track" /> -->
 
         <TextView
             android:id="@+id/trackName"
@@ -49,7 +50,7 @@
             android:layout_marginLeft="24dp"
             android:fontFamily="@font/poppinssemi"
             android:paddingBottom="9dp"
-            android:text="Volleyball"
+            android:text="@string/track_name"
             android:textColor="@color/white"
             android:textSize="28sp" />
 
@@ -71,7 +72,7 @@
             android:paddingTop="3dp"
             android:paddingRight="8dp"
             android:paddingBottom="3dp"
-            android:text="1st Prize - $3000"
+            android:text="@string/first_prize"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textStyle="bold" />
@@ -95,7 +96,7 @@
             android:paddingTop="3dp"
             android:paddingRight="6dp"
             android:paddingBottom="3dp"
-            android:text="2nd Prize - $1000"
+            android:text="@string/second_prize"
             android:textColor="@color/white"
             android:textSize="9sp"
             android:textStyle="bold" />
