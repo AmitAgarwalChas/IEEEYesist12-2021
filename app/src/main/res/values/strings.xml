@@ -12,4 +12,9 @@
     <string name="gal_gadot">Gal Gadot</string>
     <string name="volunteer">Volunteer</string>
     <string name="nolan">Nolan</string>
+    <string name="first_prize">1st Prize - $3000</string>
+    <string name="second_prize">2nd Prize - $1000</string>
+    <string name="track_name">Volleyball</string>
+    <string name="profile_name">Christopher Nolan</string>
+    <string name="profile_location">Singapore</string>
 </resources>

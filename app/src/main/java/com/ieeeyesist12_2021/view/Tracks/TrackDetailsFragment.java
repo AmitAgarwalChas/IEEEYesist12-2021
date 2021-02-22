@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.ieeeyesist12_2021.R;
 
@@ -41,12 +44,15 @@ public class TrackDetailsFragment extends Fragment {
         trackName.setText(track);
         imgTrack.setImageResource(imgUrl);
 
-        imgBack.setOnClickListener(v -> {
+        /*imgBack.setOnClickListener(v -> {
             Fragment trackinfo = new TracksFragment();
             FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.fragNavHost,trackinfo);
             transaction.addToBackStack(null);
             transaction.commit();
+        });*/
+        imgBack.setOnClickListener( v ->  {
+            Navigation.findNavController(requireView()).navigateUp();
         });
         btnRegister.setOnClickListener(v -> {
             String url = "https://www.ieeecsvit.com/";

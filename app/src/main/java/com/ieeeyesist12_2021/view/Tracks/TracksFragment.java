@@ -64,11 +64,12 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
         Bundle bundle = new Bundle();
         bundle.putString("trackName",trackList.get(position).getTrackName());
         bundle.putInt("trackImage",trackList.get(position).getImageUrl());
-        Fragment trackDetailsFragment = new TrackDetailsFragment();
+        /*Fragment trackDetailsFragment = new TrackDetailsFragment();
         trackDetailsFragment.setArguments(bundle);
         FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragNavHost,trackDetailsFragment);
         transaction.addToBackStack(null);
-        transaction.commit();
+        transaction.commit();*/
+        Navigation.findNavController(requireView()).navigate(R.id.action_tracksFragment_to_trackDetailsFragment,bundle);
     }
 }
