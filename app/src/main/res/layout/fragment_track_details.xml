@@ -50,54 +50,58 @@
             android:textColor="#B3000000"
             android:textSize="38sp" />
     </RelativeLayout>
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="5dp">
 
-        <TextView
-            android:id="@+id/txtPrize1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginEnd="7dp"
-            android:background="@drawable/roundedbutton"
-            android:backgroundTint="#0091EA"
-            android:fontFamily="@font/poppinssemi"
-            android:includeFontPadding="false"
-            android:paddingLeft="10dp"
-            android:paddingTop="6dp"
-            android:paddingRight="10dp"
-            android:paddingBottom="6dp"
-            android:text="@string/first_prize"
-            android:textColor="@color/white"
-            android:textSize="11sp"
-            android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
 
-        <TextView
-            android:id="@+id/txtPrize2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/roundedbutton"
-            android:backgroundTint="#0091EA"
-            android:fontFamily="@font/poppinssemi"
-            android:includeFontPadding="false"
-            android:paddingLeft="9dp"
-            android:paddingTop="6dp"
-            android:paddingRight="9dp"
-            android:paddingBottom="6dp"
-            android:text="@string/second_prize"
-            android:textColor="@color/white"
-            android:textSize="11sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/txtPrize1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginEnd="7dp"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#0091EA"
+                    android:fontFamily="@font/poppinssemi"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="6dp"
+                    android:text="@string/first_prize"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtPrize2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundedbutton"
+                    android:backgroundTint="#0091EA"
+                    android:fontFamily="@font/poppinssemi"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="9dp"
+                    android:paddingTop="6dp"
+                    android:paddingRight="9dp"
+                    android:paddingBottom="6dp"
+                    android:text="@string/second_prize"
+                    android:textColor="@color/white"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
             <TextView
                 android:id="@+id/trackInfo"
