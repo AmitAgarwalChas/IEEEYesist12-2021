@@ -47,8 +47,9 @@
             android:paddingStart="41dp"
             android:paddingBottom="10dp"
             android:text="@string/track_name"
-            android:textColor="#B3000000"
-            android:textSize="38sp" />
+            android:textColor="#0A415C"
+            android:textSize="38sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <ScrollView
@@ -119,8 +120,8 @@
                 android:scrollbars="vertical"
                 android:text="@string/random_text"
                 android:textColor="#676969"
-                android:textSize="17sp"
-                android:textStyle="bold" />
+                android:textSize="16sp"
+                android:textStyle="normal" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
