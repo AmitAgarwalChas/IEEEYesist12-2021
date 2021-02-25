@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="12dp"
             android:layout_marginTop="21dp"
-            android:layout_marginBottom="45dp"
+            android:layout_marginBottom="15dp"
             android:text="@string/about_team"
             android:textColor="@color/white"
             android:textSize="38sp"
@@ -42,35 +42,26 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/tab_view"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="21dp"
-        android:layout_marginEnd="21dp"
-        app:cardCornerRadius="30dp"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintBottom_toBottomOf="@id/header" >
+        android:backgroundTint="@color/colorPrimary"
+        app:tabTextAppearance="@style/tabLayout"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabTextColor="@color/content"
+        app:tabSelectedTextColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:tabTextAppearance="@style/tabLayout"
-            app:tabGravity="fill"
-            android:paddingStart="2dp"
-            android:paddingEnd="2dp"
-            app:tabIndicatorHeight="0dp"
-            app:tabTextColor="@color/content"
-            app:tabSelectedTextColor="@color/professionalName" />
-
-    </com.google.android.material.card.MaterialCardView>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/about_team_vp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tab_view"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
