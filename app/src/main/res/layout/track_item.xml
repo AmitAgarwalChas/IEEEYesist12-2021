@@ -48,7 +48,7 @@
             android:layout_alignBottom="@id/imageTrack"
             android:layout_marginStart="24dp"
             android:layout_marginLeft="24dp"
-            android:fontFamily="@font/poppinssemi"
+            android:fontFamily="@font/app_font"
             android:paddingBottom="9dp"
             android:text="@string/track_name"
             android:textColor="@color/white"
