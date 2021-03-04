@@ -31,8 +31,6 @@ public class AboutTeamFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        binding.profile.setOnClickListener( v ->
-                Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_profileFragment));
         List<Fragment> fragmentList=new ArrayList<>();
         fragmentList.add(new SterringCommitteeFragment());
         fragmentList.add(new SubCommitteeFragment());

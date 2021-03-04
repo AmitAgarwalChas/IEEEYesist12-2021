@@ -39,21 +39,17 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
 
     private void populateList() {
         professionalList = new ArrayList<>();
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.maker_fair_co_chair_1), R.drawable.gal, getString(R.string.co_chair_maker_fair),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.maker_fair_co_chair_2), R.drawable.profile_img, getString(R.string.co_chair_maker_fair),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.junior_einstein_co_chair_1), R.drawable.profile_img, getString(R.string.co_chair_junior_einstein),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.junior_einstein_co_chair_2), R.drawable.gal, getString(R.string.co_chair_junior_einstein),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.we_power_co_chair_1), R.drawable.gal, getString(R.string.co_chair_we_power),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.we_power_co_chair_2), R.drawable.profile_img, getString(R.string.co_chair_we_power),
                 getString(R.string.random_text), "linkedin"));
     }
 
@@ -67,8 +63,8 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
 
     @Override
     public void onProfessionalClick(Professional pro) {
-        Bundle bundle = new Bundle();
+        /*Bundle bundle = new Bundle();
         bundle.putParcelable("selectedProfessional", pro);
-        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
+        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);*/
     }
 }

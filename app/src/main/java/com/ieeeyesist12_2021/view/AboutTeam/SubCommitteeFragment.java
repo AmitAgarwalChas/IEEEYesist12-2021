@@ -49,19 +49,17 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
 
     private void populateList() {
         androidList.clear();
-        androidList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.amit_agarwal), R.drawable.profile_img, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.mokshda_gangrade), R.drawable.gal, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.samriddhi), R.drawable.gal, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.profile_img, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.rupam_laha), R.drawable.profile_img, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.aayushi), R.drawable.gal, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
 
         webList.clear();
@@ -83,8 +81,8 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
 
     @Override
     public void onProfessionalClick(Professional pro) {
-        Bundle bundle = new Bundle();
+        /*Bundle bundle = new Bundle();
         bundle.putParcelable("selectedProfessional", pro);
-        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
+        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);*/
     }
 }
