@@ -30,9 +30,11 @@
             android:overScrollMode="never"
             android:paddingTop="7dp"
             android:layout_marginStart="5dp"
-            android:layout_marginEnd="15dp" />
+            android:layout_marginEnd="15dp"
+            android:paddingBottom="200dp" />
 
         <TextView
+            android:visibility="gone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
@@ -43,6 +45,7 @@
             android:fontFamily="@font/nunitoblack"/>
 
         <androidx.recyclerview.widget.RecyclerView
+            android:visibility="gone"
             android:id="@+id/web_team_rv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

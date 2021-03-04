@@ -24,4 +24,24 @@
     <string name="year_text">2021</string>
     <string name="second_card_text">Empower and encourage the engineering minds to work for the social cause through: \n- Organising Competitions for young engineering graduates, engineering students and school students in the themes aligned with the vision. \n- Recognising the engineering educators for their service to the society \n- Creating a strong network for mentors and mentees from industry and academia. \n- Encouraging Interdisciplinary work in creating solutions for social issues.</string>
     <string name="first_card_text">To instill social responsibility and ethics as a continuing education in the young minds through activities and encourage service oriented engineering practice.</string>
+
+    <!-- Sterring Committee -->
+    <string name="maker_fair_co_chair_1">Mr. W.M. Dev Sugandhika Jayalath</string>
+    <string name="maker_fair_co_chair_2">Mr. Mian Junaid Manzoor</string>
+    <string name="junior_einstein_co_chair_1">Mr. Navaneethakrishnan Ramanathan</string>
+    <string name="junior_einstein_co_chair_2">Ms. Pooja Sharma K</string>
+    <string name="we_power_co_chair_1">Ms. Preethy V. Warrier</string>
+    <string name="we_power_co_chair_2">Mr. Ramneek Kalra</string>
+    <string name="co_chair_maker_fair">Co-Chair | Maker Fair</string>
+    <string name="co_chair_junior_einstein">Co-Chair | Junior Einstein</string>
+    <string name="co_chair_we_power">Co-Chair | WePOWER</string>
+
+    <!-- Android Team -->
+    <string name="amit_agarwal">Amit Agarwal</string>
+    <string name="mokshda_gangrade">Mokshda Gangrade</string>
+    <string name="samriddhi">Samriddhi</string>
+    <string name="sunjol_paul">Sunjol Paul</string>
+    <string name="rupam_laha">Rupam Laha</string>
+    <string name="aayushi">Aayushi</string>
+
 </resources>
