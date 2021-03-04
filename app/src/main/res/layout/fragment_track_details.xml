@@ -58,7 +58,7 @@
         android:layout_marginBottom="56dp">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -106,7 +106,7 @@
 
             <TextView
                 android:id="@+id/trackInfo"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="36dp"
                 android:layout_marginTop="20dp"
@@ -122,6 +122,94 @@
                 android:textColor="#676969"
                 android:textSize="16sp"
                 android:textStyle="normal" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/rules_cardview">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules for the track"
+                    android:textColor="#676969"
+                    android:textSize="18sp"
+                    android:id="@+id/rules_track">
+                </TextView>
+
+                    <ImageButton
+                        android:id="@+id/arrow_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="0dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic__arrow_down"></ImageButton>
+                </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/rules_track_det"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/random_text"
+                        android:textColor="#676969"
+                        android:textSize="18sp"
+                        android:visibility="gone"></TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp"
+                android:layout_marginRight="36dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/abstract_cardview">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Abstract Selection Process"
+                            android:textColor="#676969"
+                            android:textSize="18sp"
+                            android:id="@+id/abstract_sel">
+                        </TextView>
+
+                        <ImageButton
+                            android:id="@+id/arrow_d"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/ic__arrow_down"></ImageButton>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/abstract_sel_det"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/random_text"
+                        android:textColor="#676969"
+                        android:textSize="18sp"
+                        android:visibility="gone">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
             <LinearLayout
                 android:layout_width="wrap_content"
