@@ -5,101 +5,102 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <RelativeLayout
-        android:id="@+id/rel_tracks"
+    <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp">
 
-        <ImageView
-            android:id="@+id/imageTrack"
+        <RelativeLayout
+            android:id="@+id/rel_tracks"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="17dp"
-            android:layout_marginLeft="17dp"
-            android:layout_marginEnd="17dp"
-            android:layout_marginRight="17dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/volleball" />
+            android:layout_gravity="center">
 
-       <!--
-        <ImageView
-            android:id="@+id/imageBg"
-            android:layout_width="match_parent"
-            android:layout_height="181dp"
-            android:layout_centerInParent="true"
-            android:layout_marginStart="27dp"
-            android:layout_marginLeft="27dp"
-            android:layout_marginEnd="27dp"
-            android:layout_marginRight="27dp"
-            android:alpha="0.75"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/background_track" /> -->
 
-        <TextView
-            android:id="@+id/trackName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@id/imageTrack"
-            android:layout_alignLeft="@id/imageTrack"
-            android:layout_alignBottom="@id/imageTrack"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:fontFamily="@font/app_font"
-            android:paddingBottom="9dp"
-            android:text="@string/track_name"
-            android:textColor="@color/white"
-            android:textSize="28sp" />
+            <ImageView
+                android:id="@+id/imageTrack"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/innovation" />
 
-        <TextView
-            android:id="@+id/txtPrize1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignStart="@id/imageTrack"
-            android:layout_alignLeft="@id/imageTrack"
-            android:layout_alignTop="@id/imageTrack"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/roundedbutton"
-            android:backgroundTint="#0091EA"
-            android:fontFamily="@font/poppinssemi"
-            android:includeFontPadding="false"
-            android:paddingLeft="8dp"
-            android:paddingTop="3dp"
-            android:paddingRight="8dp"
-            android:paddingBottom="3dp"
-            android:text="@string/first_prize"
-            android:textColor="@color/white"
-            android:textSize="9sp"
-            android:textStyle="bold" />
+            <ImageView
+                android:id="@+id/imageBg"
+                android:layout_width="match_parent"
+                android:layout_height="166dp"
+                android:layout_centerInParent="true"
+                android:alpha="0.75"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/background_track" />
 
-        <TextView
-            android:id="@+id/txtPrize2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/txtPrize1"
-            android:layout_alignStart="@id/imageTrack"
-            android:layout_alignLeft="@id/imageTrack"
-            android:layout_alignTop="@id/imageTrack"
-            android:layout_marginStart="24dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="44dp"
-            android:background="@drawable/roundedbutton"
-            android:backgroundTint="#0091EA"
-            android:fontFamily="@font/poppinssemi"
-            android:includeFontPadding="false"
-            android:paddingLeft="6dp"
-            android:paddingTop="3dp"
-            android:paddingRight="6dp"
-            android:paddingBottom="3dp"
-            android:text="@string/second_prize"
-            android:textColor="@color/white"
-            android:textSize="9sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/trackName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/imageTrack"
+                android:layout_alignLeft="@id/imageTrack"
+                android:layout_alignBottom="@id/imageTrack"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/app_font"
+                android:paddingBottom="8dp"
+                android:text="@string/track_name"
+                android:textColor="@color/white"
+                android:textSize="28sp" />
+
+            <TextView
+                android:id="@+id/txtPrize1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/imageTrack"
+                android:layout_alignLeft="@id/imageTrack"
+                android:layout_alignTop="@id/imageTrack"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#0091EA"
+                android:fontFamily="@font/poppinssemi"
+                android:includeFontPadding="false"
+                android:paddingLeft="8dp"
+                android:paddingTop="3dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="3dp"
+                android:text="@string/first_prize"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrize2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPrize1"
+                android:layout_alignStart="@id/imageTrack"
+                android:layout_alignLeft="@id/imageTrack"
+                android:layout_alignTop="@id/imageTrack"
+                android:layout_marginStart="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#0091EA"
+                android:fontFamily="@font/poppinssemi"
+                android:includeFontPadding="false"
+                android:paddingLeft="6dp"
+                android:paddingTop="3dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="3dp"
+                android:text="@string/second_prize"
+                android:textColor="@color/white"
+                android:textSize="9sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

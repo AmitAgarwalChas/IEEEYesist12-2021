@@ -28,11 +28,11 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
         View view = inflater.inflate(R.layout.fragment_tracks, container, false);
         trackRecycler=view.findViewById(R.id.tracks_recycler);
         trackList = new ArrayList<>();
-        trackList.add(new TrackList("Innovation Challenge",R.drawable.volleball));
-        trackList.add(new TrackList("Maker Fair",R.drawable.cricket));
-        trackList.add(new TrackList("Junior Einstein",R.drawable.basketball));
-        trackList.add(new TrackList("WePOWER",R.drawable.table_tennis));
-        trackList.add(new TrackList("Special Track",R.drawable.football));
+        trackList.add(new TrackList("Innovation Challenge",R.drawable.innovation));
+        trackList.add(new TrackList("Maker Fair",R.drawable.maker_fair));
+        trackList.add(new TrackList("Junior Einstein",R.drawable.jr_einstein));
+        trackList.add(new TrackList("WePOWER",R.drawable.wepower));
+        trackList.add(new TrackList("Special Track",R.drawable.special_tracks));
 
         setTrackRecycler(trackList);
 
