@@ -135,5 +135,41 @@ public class TrackDetailsFragment extends Fragment {
                 }
             }
         });
+        arrow_abs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(abstract_det.getVisibility()==View.VISIBLE){
+                    TransitionManager.beginDelayedTransition(abstract_cv,
+                            new AutoTransition());
+                    abstract_det.setVisibility(View.GONE);
+                    arrow_abs.setImageResource(R.drawable.ic__arrow_down);
+                }
+                else {
+                    TransitionManager.beginDelayedTransition(abstract_cv,
+                            new AutoTransition());
+                    abstract_det.setText(abs);
+                    abstract_det.setVisibility(View.VISIBLE);
+                    arrow_abs.setImageResource(R.drawable.ic_arrow_up);
+                }
+            }
+        });
+        arrow_rules.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(rules_det.getVisibility()==View.VISIBLE){
+                    TransitionManager.beginDelayedTransition(rules_cv,
+                            new AutoTransition());
+                    rules_det.setVisibility(View.GONE);
+                    arrow_rules.setImageResource(R.drawable.ic__arrow_down);
+                }
+                else {
+                    TransitionManager.beginDelayedTransition(rules_cv,
+                            new AutoTransition());
+                    rules_det.setText(rules);
+                    rules_det.setVisibility(View.VISIBLE);
+                    arrow_rules.setImageResource(R.drawable.ic_arrow_up);
+                }
+            }
+        });
     }
 }
