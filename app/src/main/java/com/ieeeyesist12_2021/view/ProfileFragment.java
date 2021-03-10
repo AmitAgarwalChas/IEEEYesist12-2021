@@ -19,10 +19,10 @@ public class ProfileFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_profile, container, false);
-        imgBack = view.findViewById(R.id.imageBack);
+        /*imgBack = view.findViewById(R.id.imageBack);
         imgBack.setOnClickListener( v ->  {
             Navigation.findNavController(requireView()).navigateUp();
-        });
+        });*/
         return view;
     }
 }

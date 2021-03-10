@@ -36,10 +36,10 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
 
         setTrackRecycler(trackList);
 
-        imgProfile = view.findViewById(R.id.imageProfile);
+        /*imgProfile = view.findViewById(R.id.imageProfile);
         imgProfile.setOnClickListener( v -> {
             Navigation.findNavController(requireView()).navigate(R.id.action_tracksFragment_to_profileFragment);
-        });
+        });*/
 
         return view;
     }
