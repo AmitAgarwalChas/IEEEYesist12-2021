@@ -39,21 +39,17 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
 
     private void populateList() {
         professionalList = new ArrayList<>();
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.maker_fair_co_chair_1), R.drawable.ic_male, getString(R.string.co_chair_maker_fair),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.maker_fair_co_chair_2), R.drawable.ic_male, getString(R.string.co_chair_maker_fair),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.junior_einstein_co_chair_1), R.drawable.ic_male, getString(R.string.co_chair_junior_einstein),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.junior_einstein_co_chair_2), R.drawable.ic_female, getString(R.string.co_chair_junior_einstein),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.we_power_co_chair_1), R.drawable.ic_female, getString(R.string.co_chair_we_power),
                 getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.gal_gadot), R.drawable.gal, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        professionalList.add(new Professional(getString(R.string.nolan), R.drawable.profile_img, getString(R.string.volunteer),
+        professionalList.add(new Professional(getString(R.string.we_power_co_chair_2), R.drawable.ic_male, getString(R.string.co_chair_we_power),
                 getString(R.string.random_text), "linkedin"));
     }
 
