@@ -63,8 +63,8 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
 
     @Override
     public void onProfessionalClick(Professional pro) {
-        /*Bundle bundle = new Bundle();
+        Bundle bundle = new Bundle();
         bundle.putParcelable("selectedProfessional", pro);
-        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);*/
+        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
     }
 }
