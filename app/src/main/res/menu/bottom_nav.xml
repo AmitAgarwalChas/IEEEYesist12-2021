@@ -17,9 +17,5 @@
         android:id="@+id/aboutTeamFragment"
         android:title="@string/about_team"
         android:icon="@drawable/ic_about_team" />
-    <item
-        android:id="@+id/moreFragment"
-        android:title="@string/more"
-        android:icon="@drawable/ic_more" />
 
 </menu>
