@@ -17,4 +17,10 @@
         <item name="android:textSize">17sp</item>
         <item name="android:fontFamily">@font/nunitoregular</item>
     </style>
+
+    <style name="weekDate">
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/black</item>
+        <item name="android:fontFamily">@font/nunito_extrabold</item>
+    </style>
 </resources>
