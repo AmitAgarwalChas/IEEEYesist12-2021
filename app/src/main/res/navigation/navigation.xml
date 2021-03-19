@@ -30,9 +30,9 @@
     </fragment>
     <fragment
         android:id="@+id/trendingFragment"
-        android:name="com.ieeeyesist12_2021.view.TrendingFragment"
+        android:name="com.ieeeyesist12_2021.view.TimelineFragment"
         android:label="fragment_trending"
-        tools:layout="@layout/fragment_trending" />
+        tools:layout="@layout/fragment_timeline" />
     <fragment
         android:id="@+id/trackDetailsFragment"
         android:name="com.ieeeyesist12_2021.view.Tracks.TrackDetailsFragment"
