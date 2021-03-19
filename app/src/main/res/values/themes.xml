@@ -23,4 +23,12 @@
         <item name="android:color">@color/black</item>
         <item name="android:fontFamily">@font/nunito_extrabold</item>
     </style>
+
+    <style name="bottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/bottomSheetStyle</item>
+    </style>
+    
+    <style name="bottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
 </resources>

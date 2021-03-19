@@ -96,11 +96,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
 
         @Override
         public void onClick(View v) {
-
+            eventClickListener.onEventClick(eventList.get(getAdapterPosition()));
         }
     }
 
     public interface EventClickListener {
-        void onEventClick(Professional pro);
+        void onEventClick(Event event);
     }
 }

@@ -1,6 +1,5 @@
 package com.ieeeyesist12_2021.model;
 
-import java.sql.Time;
 import java.util.Date;
 
 public class Event {
