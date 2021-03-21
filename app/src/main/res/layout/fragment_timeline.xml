@@ -52,7 +52,9 @@
         app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" >
+
         <TextView
+            android:id="@+id/tv_month"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
@@ -63,6 +65,7 @@
             android:textSize="18sp" />
 
         <ImageView
+            android:id="@+id/calendar_arrow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -72,16 +75,16 @@
 
     </LinearLayout>
 
-    <CalendarView
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
         android:id="@+id/calendar"
         android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:mcv_weekDayTextAppearance="@style/weekDay"
+        app:mcv_firstDayOfWeek="monday"
         android:elevation="10dp"
         android:background="@drawable/ic_bottom_rounded_background"
-        android:minDate="03/01/2020"
-        android:weekDayTextAppearance="@style/weekDate"
-        app:layout_constraintTop_toBottomOf="@id/date_layout"
+        app:layout_constraintTop_toBottomOf="@+id/date_layout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 

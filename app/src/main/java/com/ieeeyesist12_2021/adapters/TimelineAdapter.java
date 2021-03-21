@@ -27,8 +27,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
     private List<Event> eventList;
     private EventClickListener listener;
 
-    public TimelineAdapter(List<Event> eventList, EventClickListener listener) {
-        this.eventList = eventList;
+    public TimelineAdapter(EventClickListener listener) {
         this.listener = listener;
     }
 
@@ -37,6 +36,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.timeline_item, parent, false);
         return new TimelineAdapter.ViewHolder(view, listener);
+    }
+
+    public void submitList(List<Event> eventList) {
+        this.eventList = eventList;
+        notifyDataSetChanged();
     }
 
     @Override
