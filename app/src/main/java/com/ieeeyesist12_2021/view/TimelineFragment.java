@@ -142,24 +142,6 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
 
-        inputStringEnd = "22-03-2021 05:30 PM";
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, new Date(), endDate));
-
-        inputStringEnd = "22-03-2021 05:30 PM";
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, new Date(), endDate));
-
-        inputStringEnd = "22-03-2021 05:30 PM";
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, new Date(), endDate));
-
         inputStringStart = "22-03-2021 08:00 PM";
         inputStringEnd = "22-03-2021 09:30 PM";
         date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
