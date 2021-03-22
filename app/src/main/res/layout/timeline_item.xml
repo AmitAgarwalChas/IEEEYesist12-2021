@@ -74,7 +74,7 @@
                 android:text="8:00 AM"
                 android:textColor="#01579B"
                 android:textStyle="bold"
-                android:fontFamily="@font/nunitoregular"
+                android:fontFamily="@font/nunito_extrabold"
                 android:textSize="14sp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
@@ -90,13 +90,13 @@
                 android:paddingEnd="8dp"
                 android:paddingTop="1dp"
                 android:paddingBottom="1dp"
-                app:backgroundTint="#8001579B"
-                android:fontFamily="@font/nunito_semi_bold"
+                android:fontFamily="@font/nunitoregular"
+                android:textStyle="bold"
                 android:text="Completed"
                 android:textColor="#01579B"
                 android:textSize="11sp"
                 android:textAllCaps="false"
-                android:background="@drawable/roundedbutton"
+                android:background="@drawable/ic_completed_tv"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 

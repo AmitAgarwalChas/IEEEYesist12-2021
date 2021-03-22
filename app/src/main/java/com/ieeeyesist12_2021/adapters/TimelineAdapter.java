@@ -1,5 +1,6 @@
 package com.ieeeyesist12_2021.adapters;
 
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,20 +53,44 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
         sdf = new SimpleDateFormat("EE");
         String day = sdf.format(eventList.get(position).getDate());
         holder.day.setText(day);
-        sdf = new SimpleDateFormat("HH.mm aa");
+        sdf = new SimpleDateFormat("hh:mm a");
         String startTime = sdf.format(eventList.get(position).getDate());
         holder.startTime.setText(startTime);
+
         Date d = Calendar.getInstance().getTime();
+        Date eventDate = eventList.get(position).getDate();
+        long diff = eventDate.getTime() - d.getTime();
+        long diffDays = (diff / (1000 * 60 * 60 * 24)) % 365;
+        String timeLeft = "";
+        if(diffDays == 0) {
+            holder.date.setTextColor(Color.parseColor("#2BB884"));
+            holder.day.setTextColor(Color.parseColor("#2BB884"));
+            long diffMinutes = (diff / (1000 * 60)) % 60;
+            long diffHours = (diff / (1000 * 60 * 60)) % 24;
+            timeLeft = diffHours + "h " + diffMinutes + "min";
+            holder.status.setText(timeLeft);
+        }else {
+            holder.date.setTextColor(Color.parseColor("#676969"));
+            holder.day.setTextColor(Color.parseColor("#676969"));
+        }
 
         if(eventList.get(position).getEndDate().before(d)) {
+            holder.startTime.setTextColor(Color.parseColor("#01579B"));
+            holder.status.setBackgroundResource(R.drawable.ic_completed_tv);
+            holder.status.setText("Completed");
             holder.join.setText("Watch");
             holder.join.setBackgroundColor(Color.parseColor("#01579B"));
         }else if(d.before(eventList.get(position).getDate())) {
             holder.startTime.setTextColor(Color.parseColor("#0091EA"));
             holder.join.setVisibility(View.GONE);
+            holder.status.setBackgroundResource(R.drawable.ic_upcoming_tv);
             holder.status.setText("Upcoming");
+            if(diffDays == 0) {
+                holder.status.setText(timeLeft);
+            }
         }else {
             holder.startTime.setTextColor(Color.parseColor("#EA0000"));
+            holder.status.setBackgroundResource(R.drawable.ic_live_tv);
             holder.status.setText("Live");
             holder.status.setBackgroundResource(R.color.red);
             holder.status.setTextColor(Color.parseColor("#EA0000"));
@@ -78,7 +103,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
         return eventList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView day, date, startTime, eventName, status;
         MaterialButton join;
@@ -95,13 +120,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             join = itemView.findViewById(R.id.join);
             about = itemView.findViewById(R.id.about_event);
             this.eventClickListener = eventClickListener;
-            itemView.setOnClickListener(this);
+            about.setOnClickListener( v-> {
+                eventClickListener.onEventClick(eventList.get(getAdapterPosition()));
+            });
         }
 
-        @Override
-        public void onClick(View v) {
-            eventClickListener.onEventClick(eventList.get(getAdapterPosition()));
-        }
     }
 
     public interface EventClickListener {

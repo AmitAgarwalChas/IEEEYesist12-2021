@@ -4,7 +4,10 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -51,6 +54,12 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 binding.calendar.setVisibility(View.GONE);
                 binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
             }else {
+                binding.timelineRv.addOnItemTouchListener(new RecyclerView.SimpleOnItemTouchListener() {
+                    @Override
+                    public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+                        return true;
+                    }
+                });
                 binding.calendar.setVisibility(View.VISIBLE);
                 binding.calendarArrow.setImageResource(R.drawable.ic_arrow_up);
             }
@@ -124,25 +133,45 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
 
     private void populateList() throws ParseException {
-        String inputStringStart = "11-01-2021 10:00 AM";
-        String inputStringEnd = "11-01-2021 11:00 AM";
-        Date date = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringStart);
-        Date endDate = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringEnd);
+        String inputStringStart = "11-02-2021 10:00 AM";
+        String inputStringEnd = "11-02-2021 11:00 AM";
+        Date date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        Date endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
         
         eventList.add(new Event("Introductory Meeting", getString(R.string.random_text),
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
 
-        inputStringEnd = "22-03-2021 06:00 PM";
-        endDate = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringEnd);
+        inputStringEnd = "22-03-2021 05:30 PM";
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
         eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, new Date(), endDate));
 
+        inputStringEnd = "22-03-2021 05:30 PM";
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
+                "Speaker1", "Volunteer", "eventurl",
+                R.drawable.ic_male, new Date(), endDate));
+
+        inputStringEnd = "22-03-2021 05:30 PM";
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
+                "Speaker1", "Volunteer", "eventurl",
+                R.drawable.ic_male, new Date(), endDate));
+
+        inputStringStart = "22-03-2021 08:00 PM";
+        inputStringEnd = "22-03-2021 09:30 PM";
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
+                "Speaker1", "Volunteer", "eventurl",
+                R.drawable.ic_male, date, endDate));
+
         inputStringStart = "27-03-2021 05:00 PM";
         inputStringEnd = "27-03-2021 07:00 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringEnd);
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
         eventList.add(new Event("MakerFair Meeting", getString(R.string.random_text),
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
@@ -150,8 +179,8 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
         inputStringStart = "25-04-2021 02:00 AM";
         inputStringEnd = "25-04-2021 03:00 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy HH:mm aa").parse(inputStringEnd);
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
         eventList.add(new Event("MakerFair Meeting", getString(R.string.random_text),
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
