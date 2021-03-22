@@ -5,8 +5,11 @@
     <color name="content">#696969</color>
     <color name="dimwhite">#B2FFFFFF</color>
     <color name="shadow">#40000000</color>
+    <color name="lightShadow">#20000000</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="professionalName">#01579B</color>
+    <color name="darkBlue">#01579B</color>
+    <color name="blue">#0091EA</color>
+    <color name="red">#EA0000</color>
 
 </resources>
