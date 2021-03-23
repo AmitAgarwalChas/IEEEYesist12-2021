@@ -254,7 +254,8 @@
                     android:text="Registration"
                     android:textColor="@color/white"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/btnPilotRegister"
@@ -272,7 +273,8 @@
                     android:text="Pilot Registration"
                     android:textColor="@color/white"
                     android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:visibility="gone" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
