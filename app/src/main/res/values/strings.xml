@@ -129,6 +129,9 @@
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
 
+    <!-- Yesist home page -->
+    <string name="knowledge">Gear up to Listen to the ocean of knowledge. The speakers will nourish with their experiences.</string>
+
     <!-- Android Team -->
     <string name="amit_agarwal">Amit Agarwal</string>
     <string name="mokshda_gangrade">Mokshda Gangrade</string>
