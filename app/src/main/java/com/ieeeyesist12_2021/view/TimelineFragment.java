@@ -1,5 +1,6 @@
 package com.ieeeyesist12_2021.view;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,12 +19,14 @@ import com.ieeeyesist12_2021.adapters.TimelineAdapter;
 import com.ieeeyesist12_2021.databinding.FragmentTimelineBinding;
 import com.ieeeyesist12_2021.model.Event;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
+import com.prolificinteractive.materialcalendarview.DayViewDecorator;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Month;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -126,9 +129,44 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         binding.calendar.setOnDateChangedListener(new OnDateSelectedListener() {
             @Override
             public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
+                binding.calendar.setVisibility(View.GONE);
+                binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
                 populateDisplayList(date, true);
             }
         });
+
+        Date date = new Date();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        int cDay = cal.get(Calendar.DATE);
+        ArrayList<CalendarDay> currentList = new ArrayList<>();
+        ArrayList<CalendarDay> upcomingList = new ArrayList<>();
+        ArrayList<CalendarDay> completedList = new ArrayList<>();
+        for (int i = 0; i < eventList.size(); i++) {
+            Event event = eventList.get(i);
+            Date d = event.getDate();
+            cal.setTime(d);
+            int eDay = cal.get(Calendar.DATE);
+            int eMonth = cal.get(Calendar.MONTH);
+            int eYear = cal.get(Calendar.YEAR);
+            if(d.before(date) && eDay < cDay) {
+                completedList.add(CalendarDay.from(eYear, eMonth+1, eDay));
+            }else if(d.after(date) && eDay > cDay) {
+                upcomingList.add(CalendarDay.from(eYear, eMonth+1, eDay));
+            }else {
+                currentList.add(CalendarDay.from(eYear, eMonth+1, eDay));
+            }
+        }
+        if(currentList.size() > 0) {
+            binding.calendar.addDecorator(new EventDecorator(Color.parseColor("#2bb884"), currentList));
+        }
+        if(completedList.size() > 0) {
+            binding.calendar.addDecorator(new EventDecorator(Color.parseColor("#01579B"), completedList));
+        }
+        if(upcomingList.size() > 0) {
+            binding.calendar.addDecorator(new EventDecorator(Color.parseColor("#0091EA"), upcomingList));
+        }
+
     }
 
 
