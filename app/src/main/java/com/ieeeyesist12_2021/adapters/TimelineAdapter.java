@@ -86,7 +86,9 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
 
         if(eventList.get(position).getEndDate().before(d)) {
             holder.startTime.setTextColor(Color.parseColor("#01579B"));
+            holder.join.setVisibility(View.VISIBLE);
             holder.status.setBackgroundResource(R.drawable.ic_completed_tv);
+            holder.join.setVisibility(View.VISIBLE);
             holder.status.setText("Completed");
             holder.join.setText("Watch");
             holder.join.setBackgroundColor(Color.parseColor("#01579B"));
@@ -100,6 +102,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             }
         }else {
             holder.startTime.setTextColor(Color.parseColor("#EA0000"));
+            holder.join.setVisibility(View.VISIBLE);
             holder.status.setBackgroundResource(R.drawable.ic_live_tv);
             holder.status.setText("Live");
             holder.status.setBackgroundResource(R.color.red);

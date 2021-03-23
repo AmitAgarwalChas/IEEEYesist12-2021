@@ -30,7 +30,7 @@
     </fragment>
     <fragment
         android:id="@+id/trendingFragment"
-        android:name="com.ieeeyesist12_2021.view.TimelineFragment"
+        android:name="com.ieeeyesist12_2021.view.Timeline.TimelineFragment"
         android:label="fragment_trending"
         tools:layout="@layout/fragment_timeline" />
     <fragment

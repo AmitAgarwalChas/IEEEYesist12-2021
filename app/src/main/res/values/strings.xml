@@ -27,15 +27,41 @@
     <string name="first_card_text">To instill social responsibility and ethics as a continuing education in the young minds through activities and encourage service oriented engineering practice.</string>
 
     <!-- Sterring Committee -->
-    <string name="maker_fair_co_chair_1">Mr. W.M. Dev Sugandhika Jayalath</string>
-    <string name="maker_fair_co_chair_2">Mr. Mian Junaid Manzoor</string>
-    <string name="junior_einstein_co_chair_1">Mr. Navaneethakrishnan Ramanathan</string>
-    <string name="junior_einstein_co_chair_2">Ms. Pooja Sharma K</string>
-    <string name="we_power_co_chair_1">Ms. Preethy V. Warrier</string>
-    <string name="we_power_co_chair_2">Mr. Ramneek Kalra</string>
     <string name="co_chair_maker_fair">Co-Chair | Maker Fair</string>
     <string name="co_chair_junior_einstein">Co-Chair | Junior Einstein</string>
     <string name="co_chair_we_power">Co-Chair | WePOWER</string>
+    <string name="co_chair_special_track">Co-Chair | Special Track</string>
+    <string name="co_chair_innovation_challenge">Co-Chair | Innovation Challenge</string>
+    <string name="co_chair_pro_pub">Co-Chair | Promotion and Publicity</string>
+    <string name="co_chair_content_dev">Co-Chair | Content Development</string>
+    <string name="co_chair_section_collab">Co-Chair | Section Collaboration</string>
+    <string name="co_chair_website">Co-Chair | Website</string>
+    <string name="co_chair_partnership">Co-Chair | Partnership</string>
+    <string name="chair_career_fair">Chair | Career Fair</string>
+
+    <string name="general_chair">Mrs. Ramalatha Marimuthu</string>
+    <string name="secretary">Mrs. Ketha Nikitha</string>
+    <string name="maker_fair_co_chair_1">Mr. W.M. Dev Sugandhika Jayalath</string>
+    <string name="maker_fair_co_chair_2">Mr. Mian Junaid Manzoor</string>
+    <string name="junior_einstein_co_chair_1">Mr. R. Navaneetha Krishnan</string>
+    <string name="junior_einstein_co_chair_2">Ms. Pooja Sharma K</string>
+    <string name="we_power_co_chair_1">Ms. Preethy V. Warrier</string>
+    <string name="we_power_co_chair_2">Mr. Ramneek Kalra</string>
+    <string name="special_track_co_chair_1">Mrs. Vydeki Vijayakumar </string>
+    <string name="special_track_co_chair_2">Mrs. Indhumathi Gunasekaran </string>
+    <string name="innovation_challenge_co_chair_1">Mr. Tasnim Bite Shawkat</string>
+    <string name="innovation_challenge_co_chair_2">Mrs. Bindu A. Thomas</string>
+    <string name="promotion_and_publicity_co_chair_1">Mrs. Aishwarya Bandla</string>
+    <string name="promotion_and_publicity_co_chair_2">Mrs. Nithyavathy N</string>
+    <string name="partnerships_co_chair">Mrs. M. Alagu Meenakshi</string>
+    <string name="website_chair_1">Mr. Ashvanth Narayanan</string>
+    <string name="website_co_chair_2">Mr. Arangan Rishikesh T</string>
+    <string name="content_development_chair_1">Mrs. Janani Ramachandran</string>
+    <string name="content_development_chair_2">Mrs. Bharathi Ramesh</string>
+    <string name="section_collaboration_chair_1">Mr. A. Darwin Jose Raju</string>
+    <string name="section_collaboration_chair_2">Mr. R. Ankayarkanni</string>
+    <string name="career_fair_chair">Mr. Nageswara Gupta</string>
+
 
     <!-- Track Info Details -->
     <string name="innovation">
