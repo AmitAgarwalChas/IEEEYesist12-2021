@@ -59,12 +59,22 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
 
         Date d = Calendar.getInstance().getTime();
         Date eventDate = eventList.get(position).getDate();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(d);
+        int curDay = cal.get(Calendar.DATE);
+        cal.setTime(eventDate);
+        int eventDay = cal.get(Calendar.DATE);
         long diff = eventDate.getTime() - d.getTime();
         long diffDays = (diff / (1000 * 60 * 60 * 24)) % 365;
         String timeLeft = "";
         if(diffDays == 0) {
-            holder.date.setTextColor(Color.parseColor("#2BB884"));
-            holder.day.setTextColor(Color.parseColor("#2BB884"));
+            if(curDay == eventDay) {
+                holder.date.setTextColor(Color.parseColor("#2BB884"));
+                holder.day.setTextColor(Color.parseColor("#2BB884"));
+            }else {
+                holder.date.setTextColor(Color.parseColor("#676969"));
+                holder.day.setTextColor(Color.parseColor("#676969"));
+            }
             long diffMinutes = (diff / (1000 * 60)) % 60;
             long diffHours = (diff / (1000 * 60 * 60)) % 24;
             timeLeft = diffHours + "h " + diffMinutes + "min";

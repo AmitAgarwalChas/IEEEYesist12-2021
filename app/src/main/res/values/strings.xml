@@ -2,7 +2,7 @@
     <string name="app_name">IEEEYesist12-2021</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
-    <string name="trending">Trending</string>
+    <string name="timeline">Timeline</string>
     <string name="tracks">Tracks</string>
     <string name="about_team">About Team</string>
     <string name="more">More</string>
@@ -136,5 +136,16 @@
     <string name="sunjol_paul">Sunjol Paul</string>
     <string name="rupam_laha">Rupam Laha</string>
     <string name="aayushi">Aayushi</string>
+
+
+    <!-- Timeline -->
+    <string name="month_year">March 2021</string>
+    <string name="completed">Completed</string>
+    <string name="introductory_meeting">Introductory Meeting</string>
+    <string name="join">Join</string>
+    <string name="about">About</string>
+    <string name="mon">Mon</string>
+    <string name="_07">07</string>
+    <string name="_8_00_am">8:00 AM</string>
 
 </resources>

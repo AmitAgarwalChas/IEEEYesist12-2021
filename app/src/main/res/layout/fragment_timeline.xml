@@ -22,7 +22,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="21dp"
             android:layout_marginBottom="15dp"
-            android:text="Timeline"
+            android:text="@string/timeline"
             android:textColor="@color/white"
             android:textSize="38sp"
             android:fontFamily="@font/nunitoblack"
@@ -60,7 +60,7 @@
             android:layout_marginStart="25dp"
             android:layout_marginBottom="16dp"
             android:fontFamily="@font/nunito_font"
-            android:text="March 2021"
+            android:text="@string/month_year"
             android:textColor="@color/white"
             android:textSize="18sp" />
 
