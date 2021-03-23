@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.AboutTeam.AboutTeamFragment">
+    tools:context=".view.TimelineFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
@@ -19,10 +19,10 @@
             android:id="@+id/pf_header"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="26dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="21dp"
             android:layout_marginBottom="15dp"
-            android:text="@string/about_team"
+            android:text="Timeline"
             android:textColor="@color/white"
             android:textSize="38sp"
             android:fontFamily="@font/nunitoblack"
@@ -43,27 +43,59 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tabLayout"
+    <LinearLayout
+        android:id="@+id/date_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorPrimary"
-        app:tabTextAppearance="@style/tabLayout"
-        app:tabGravity="fill"
-        app:tabIndicatorHeight="0dp"
-        app:tabTextColor="@color/content"
-        app:tabSelectedTextColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header" />
+        app:layout_constraintEnd_toEndOf="parent" >
 
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/nunito_font"
+            android:text="March 2021"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/about_team_vp"
+        <ImageView
+            android:id="@+id/calendar_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/ic__arrow_down"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendar"
+        android:visibility="gone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/tabLayout"
+        app:mcv_weekDayTextAppearance="@style/weekDay"
+        app:mcv_firstDayOfWeek="monday"
+        android:elevation="10dp"
+        android:background="@drawable/ic_bottom_rounded_background"
+        app:layout_constraintTop_toBottomOf="@+id/date_layout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/timeline_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="200dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/date_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

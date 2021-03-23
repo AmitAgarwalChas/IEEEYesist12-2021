@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/yesist_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginRight="31dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorPrimary"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/yesist_ques"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_bookmark_yesist"
+                    android:drawablePadding="7dp"
+                    android:fontFamily="@font/nunitoregular"
+                    android:includeFontPadding="false"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="19dp"
+                    android:text="Knowledgeable Resources"
+                    android:textColor="@color/white"
+                    android:textSize="22sp" />
+
+                <ImageButton
+                    android:id="@+id/arrow_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="19dp"
+                    android:paddingBottom="19dp"
+                    android:src="@drawable/ic__arrow_down"
+                    android:tint="@color/white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/yesist_ques_det"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#CCEEEEEE"
+                android:fontFamily="@font/nunitoregular"
+                android:lineSpacingExtra="3dp"
+                android:paddingStart="10dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="4dp"
+                android:text="@string/knowledge"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
