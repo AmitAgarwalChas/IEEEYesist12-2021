@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view;
+package com.ieeeyesist12_2021.view.Timeline;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,7 +19,6 @@ import com.ieeeyesist12_2021.adapters.TimelineAdapter;
 import com.ieeeyesist12_2021.databinding.FragmentTimelineBinding;
 import com.ieeeyesist12_2021.model.Event;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
-import com.prolificinteractive.materialcalendarview.DayViewDecorator;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 import java.text.ParseException;
@@ -57,12 +56,6 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 binding.calendar.setVisibility(View.GONE);
                 binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
             }else {
-                binding.timelineRv.addOnItemTouchListener(new RecyclerView.SimpleOnItemTouchListener() {
-                    @Override
-                    public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
-                        return true;
-                    }
-                });
                 binding.calendar.setVisibility(View.VISIBLE);
                 binding.calendarArrow.setImageResource(R.drawable.ic_arrow_up);
             }
@@ -119,6 +112,16 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
     }
 
     private void setUpCalendar() {
+
+        binding.timelineRv.addOnItemTouchListener(new RecyclerView.SimpleOnItemTouchListener() {
+            @Override
+            public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
+                if(binding.calendar.getVisibility() == View.VISIBLE)
+                    return true;
+                return false;
+            }
+        });
+
         binding.calendar.setOnMonthChangedListener((widget, date) -> {
             Month m = Month.values()[date.getMonth()-1];
             String month = m.toString();
@@ -171,6 +174,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
 
     private void populateList() throws ParseException {
+
         String inputStringStart = "11-02-2021 10:00 AM";
         String inputStringEnd = "11-02-2021 11:00 AM";
         Date date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
@@ -180,6 +184,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
 
+
         inputStringStart = "22-03-2021 08:00 PM";
         inputStringEnd = "22-03-2021 09:30 PM";
         date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
@@ -187,6 +192,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
+
 
         inputStringStart = "27-03-2021 05:00 PM";
         inputStringEnd = "27-03-2021 07:00 PM";

@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view;
+package com.ieeeyesist12_2021.view.Timeline;
 
 import androidx.core.content.ContextCompat;
 
