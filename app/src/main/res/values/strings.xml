@@ -156,7 +156,12 @@
     </string>
 
     <!-- Yesist home page -->
-    <string name="knowledge">Gear up to Listen to the ocean of knowledge. The speakers will nourish with their experiences.</string>
+    <string name="knowledge">Gear up to listen to the ocean of knowledge. The speakers will nourish with their experiences.</string>
+    <string name="prof_connect">Get in touch with professionals from all walks of life and build good relationships.</string>
+    <string name="arena">This is the best place to showcase your innovations and get the right results out of it to move ahead.</string>
+    <string name="time">You get to participate in the phenomenal event with experienced people nailing it the best.</string>
+    <string name="recognised">You get a good reach for your innovations and everyone will get valuable certificates.</string>
+    <string name="presence">Being part of a YESIST12 you get to connect with like minded people, geographically to collaborate and grow.</string>
 
     <!-- Android Team -->
     <string name="amit_agarwal">Amit Agarwal</string>
