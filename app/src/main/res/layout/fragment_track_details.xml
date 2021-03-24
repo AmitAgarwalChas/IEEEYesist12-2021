@@ -177,13 +177,15 @@
                         android:visibility="gone"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
+                android:id="@+id/abstract_cardview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="36dp"
                 android:layout_marginRight="36dp"
-                android:layout_marginBottom="10dp"
-                android:id="@+id/abstract_cardview">
+                android:layout_marginBottom="2dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -204,7 +206,7 @@
                             android:fontFamily="@font/nunitoregular"
                             android:text="Abstract Selection Process"
                             android:textColor="#676969"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp" />
 
                         <ImageButton
                             android:id="@+id/arrow_d"
@@ -213,7 +215,7 @@
                             android:layout_alignParentRight="true"
                             android:background="@android:color/transparent"
                             android:src="@drawable/ic__arrow_down"
-                            android:tint="#696969"/>
+                            android:tint="#696969" />
                     </RelativeLayout>
 
                     <TextView
@@ -229,7 +231,7 @@
                         android:text="@string/random_text"
                         android:textColor="#676969"
                         android:textSize="14sp"
-                        android:visibility="gone"/>
+                        android:visibility="gone" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
