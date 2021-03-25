@@ -105,7 +105,6 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             holder.join.setVisibility(View.VISIBLE);
             holder.status.setBackgroundResource(R.drawable.ic_live_tv);
             holder.status.setText("Live");
-            holder.status.setBackgroundResource(R.color.red);
             holder.status.setTextColor(Color.parseColor("#EA0000"));
         }
 

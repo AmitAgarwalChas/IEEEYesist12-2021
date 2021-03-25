@@ -21,6 +21,8 @@ import com.ieeeyesist12_2021.model.Event;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
+
+import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Month;
@@ -28,6 +30,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 public class TimelineFragment extends Fragment implements TimelineAdapter.EventClickListener {
 
@@ -51,7 +54,12 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
             e.printStackTrace();
         }
 
-        binding.dateLayout.setOnClickListener(v -> {
+        Calendar cal = Calendar.getInstance();
+        Date today = cal.getTime();
+        String timezone = cal.getTimeZone().getDisplayName();
+        binding.timezone.setText("Timezone : " + timezone);
+
+        binding.calendarLayout.setOnClickListener(v -> {
             if(binding.calendar.getVisibility() == View.VISIBLE) {
                 binding.calendar.setVisibility(View.GONE);
                 binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
@@ -84,13 +92,13 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
             }
         }else {
             if (date != null) {
-                Month m = Month.values()[date.getMonth() - 1];
+                String m = new DateFormatSymbols().getMonths()[date.getMonth() - 1];
                 for (int i = 0; i < eventList.size(); i++) {
                     Event event = eventList.get(i);
                     Date d = event.getDate();
                     SimpleDateFormat sdf = new SimpleDateFormat("MMMM");
                     String month = sdf.format(d);
-                    if (m.toString().equalsIgnoreCase(month)) {
+                    if (m.equalsIgnoreCase(month)) {
                         displayList.add(event);
                     }
                 }
@@ -123,8 +131,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         });
 
         binding.calendar.setOnMonthChangedListener((widget, date) -> {
-            Month m = Month.values()[date.getMonth()-1];
-            String month = m.toString();
+            String month = new DateFormatSymbols().getMonths()[date.getMonth()-1];
             binding.tvMonth.setText(month);
             populateDisplayList(date, false);
         });
@@ -193,6 +200,13 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
 
+        inputStringStart = "26-03-2021 04:00 AM";
+        inputStringEnd = "26-03-2021 05:00 AM";
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
+                "Speaker1", "Volunteer", "eventurl",
+                R.drawable.ic_male, date, endDate));
 
         inputStringStart = "27-03-2021 05:00 PM";
         inputStringEnd = "27-03-2021 07:00 PM";

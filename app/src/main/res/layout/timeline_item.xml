@@ -81,13 +81,12 @@
 
             <TextView
                 android:id="@+id/status"
-                android:layout_width="wrap_content"
+                android:layout_width="75dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="12dp"
                 android:layout_marginStart="87dp"
-                android:paddingStart="8dp"
-                android:paddingEnd="8dp"
+                android:gravity="center"
                 android:paddingTop="1dp"
                 android:paddingBottom="1dp"
                 android:fontFamily="@font/nunitoregular"
