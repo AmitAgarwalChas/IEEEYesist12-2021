@@ -21,7 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="21dp"
-            android:layout_marginBottom="15dp"
+            android:layout_marginBottom="8dp"
             android:text="@string/timeline"
             android:textColor="@color/white"
             android:textSize="38sp"
@@ -52,29 +52,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" >
 
-        <TextView
-            android:id="@+id/tv_month"
+        <LinearLayout
+            android:id="@+id/calendar_layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
             android:layout_marginStart="25dp"
-            android:paddingBottom="16dp"
-            android:fontFamily="@font/nunito_font"
-            android:text="@string/month_year"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/calendar_arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
             android:layout_marginBottom="16dp"
-            android:src="@drawable/ic__arrow_down"
-            app:tint="@color/white"
-            app:layout_constraintStart_toEndOf="@id/tv_month"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <TextView
+                android:id="@+id/tv_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:text="@string/month_year"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/calendar_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic__arrow_down"
+                app:tint="@color/white" />
+
+        </LinearLayout>
 
         <TextClock
             android:id="@+id/current_time"
@@ -93,6 +99,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="18dp"
+            android:paddingBottom="16dp"
             android:text="@string/timezone_kolkata_india"
             android:fontFamily="@font/nunito_semi_bold"
             android:textSize="12sp"

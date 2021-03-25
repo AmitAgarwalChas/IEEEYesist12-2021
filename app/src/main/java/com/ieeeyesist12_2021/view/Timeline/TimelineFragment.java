@@ -21,6 +21,8 @@ import com.ieeeyesist12_2021.model.Event;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
+
+import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Month;
@@ -57,7 +59,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         String timezone = cal.getTimeZone().getDisplayName();
         binding.timezone.setText("Timezone : " + timezone);
 
-        binding.dateLayout.setOnClickListener(v -> {
+        binding.calendarLayout.setOnClickListener(v -> {
             if(binding.calendar.getVisibility() == View.VISIBLE) {
                 binding.calendar.setVisibility(View.GONE);
                 binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
@@ -90,13 +92,13 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
             }
         }else {
             if (date != null) {
-                Month m = Month.values()[date.getMonth() - 1];
+                String m = new DateFormatSymbols().getMonths()[date.getMonth() - 1];
                 for (int i = 0; i < eventList.size(); i++) {
                     Event event = eventList.get(i);
                     Date d = event.getDate();
                     SimpleDateFormat sdf = new SimpleDateFormat("MMMM");
                     String month = sdf.format(d);
-                    if (m.toString().equalsIgnoreCase(month)) {
+                    if (m.equalsIgnoreCase(month)) {
                         displayList.add(event);
                     }
                 }
@@ -129,8 +131,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         });
 
         binding.calendar.setOnMonthChangedListener((widget, date) -> {
-            Month m = Month.values()[date.getMonth()-1];
-            String month = m.toString();
+            String month = new DateFormatSymbols().getMonths()[date.getMonth()-1];
             binding.tvMonth.setText(month);
             populateDisplayList(date, false);
         });
