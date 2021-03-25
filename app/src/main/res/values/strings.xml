@@ -181,5 +181,7 @@
     <string name="mon">Mon</string>
     <string name="_07">07</string>
     <string name="_8_00_am">8:00 AM</string>
+    <string name="timezone_kolkata_india">Timezone : Kolkata, India</string>
+    <string name="_10_30_am">10:30 AM</string>
 
 </resources>

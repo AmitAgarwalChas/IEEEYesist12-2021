@@ -28,6 +28,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
 public class TimelineFragment extends Fragment implements TimelineAdapter.EventClickListener {
 
@@ -50,6 +51,11 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         } catch (ParseException e) {
             e.printStackTrace();
         }
+
+        Calendar cal = Calendar.getInstance();
+        Date today = cal.getTime();
+        String timezone = cal.getTimeZone().getDisplayName();
+        binding.timezone.setText("Timezone : " + timezone);
 
         binding.dateLayout.setOnClickListener(v -> {
             if(binding.calendar.getVisibility() == View.VISIBLE) {
@@ -193,6 +199,13 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
 
+        inputStringStart = "26-03-2021 04:00 AM";
+        inputStringEnd = "26-03-2021 05:00 AM";
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
+                "Speaker1", "Volunteer", "eventurl",
+                R.drawable.ic_male, date, endDate));
 
         inputStringStart = "27-03-2021 05:00 PM";
         inputStringEnd = "27-03-2021 07:00 PM";
