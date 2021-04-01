@@ -56,6 +56,7 @@ public class TrackDetailsFragment extends Fragment {
         trackName.setText(track);
         imgTrack.setImageResource(imgUrl);
 
+
         if(track.equals("Innovation Challenge")){
             trackInfo.setText(R.string.innovation);
             cardviewExpand(R.string.innov_abstract,R.string.innov_rules);}
@@ -69,6 +70,8 @@ public class TrackDetailsFragment extends Fragment {
             trackInfo.setText(R.string.wepower);
             cardviewExpand(R.string.wepower_abstract,R.string.wepower_rules);}
         else if(track.equals("Special Track")){
+            btnRegister.setVisibility(View.VISIBLE);
+            //expandable card view
             trackInfo.setText(R.string.special);
             cardviewExpand(R.string.special_abstract,R.string.special_rules);}
 
@@ -83,13 +86,13 @@ public class TrackDetailsFragment extends Fragment {
             Navigation.findNavController(requireView()).navigateUp();
         });
         btnRegister.setOnClickListener(v -> {
-            String url = "https://www.ieeecsvit.com/";
+            String url = "https://portal.ieeeyesist12.org/";
             Uri uri = Uri.parse(url);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         });
         btnPilotRegister.setOnClickListener(v -> {
-            String url = "https://www.ieeecsvit.com/";
+            String url = "https://portal.ieeeyesist12.org/";
             Uri uri = Uri.parse(url);
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
