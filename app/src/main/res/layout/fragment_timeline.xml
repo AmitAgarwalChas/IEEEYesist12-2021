@@ -34,12 +34,13 @@
             android:id="@+id/notification"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="27dp"
             android:layout_marginTop="44dp"
+            android:layout_marginEnd="27dp"
             android:clickable="false"
             android:src="@drawable/ic_bell"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
