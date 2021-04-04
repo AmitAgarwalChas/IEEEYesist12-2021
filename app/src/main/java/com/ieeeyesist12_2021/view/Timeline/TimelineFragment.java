@@ -80,9 +80,13 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
     private void populateDisplayList(CalendarDay date, boolean dateSelected) {
         displayList.clear();
-        CalendarDay selectedDay = binding.calendar.getSelectedDate();
         if(dateSelected) {
+            CalendarDay selectedDay = binding.calendar.getSelectedDate();
+            assert selectedDay != null;
             String sday = String.valueOf(selectedDay.getDay());
+            if(sday.length() == 1) {
+                sday = "0" + sday;
+            }
             for (int i = 0; i < eventList.size(); i++) {
                 Event event = eventList.get(i);
                 Date d = event.getDate();
@@ -134,7 +138,9 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
         binding.calendar.setOnMonthChangedListener((widget, date) -> {
             String month = new DateFormatSymbols().getMonths()[date.getMonth()-1];
-            binding.tvMonth.setText(month);
+            int year = date.getYear();
+            String displayMonth = month + " " + year;
+            binding.tvMonth.setText(displayMonth);
             populateDisplayList(date, false);
         });
 
@@ -192,8 +198,8 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
                 "Isha Dash", "Training Coordinator Water, Sanitation and Hygiene Institute, Delhi, India", "eventurl",
                 R.drawable.ic_female, date, endDate));
 
-        inputStringStart = "02-04-03-2021 05:30 PM";
-        inputStringEnd = "02-03-2021 06:30 PM";
+        inputStringStart = "02-04-2021 05:30 PM";
+        inputStringEnd = "02-04-2021 06:30 PM";
         date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
         endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
         eventList.add(new Event("Sustainable Cities and Communities", getString(R.string.random_text),
