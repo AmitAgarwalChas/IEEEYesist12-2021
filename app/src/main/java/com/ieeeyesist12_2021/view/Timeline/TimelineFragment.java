@@ -55,7 +55,6 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         }
 
         Calendar cal = Calendar.getInstance();
-        Date today = cal.getTime();
         String timezone = cal.getTimeZone().getDisplayName();
         binding.timezone.setText("Timezone : " + timezone);
 
@@ -72,7 +71,6 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         timelineAdapter = new TimelineAdapter(this);
         binding.timelineRv.setAdapter(timelineAdapter);
         setUpCalendar();
-        Date currentDate = new Date();
         populateDisplayList(null, false);
     }
 
@@ -190,7 +188,6 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         eventList.add(new Event("Introductory Meeting", getString(R.string.random_text),
                 "Speaker1", "Volunteer", "eventurl",
                 R.drawable.ic_male, date, endDate));
-
 
         inputStringStart = "22-03-2021 08:00 PM";
         inputStringEnd = "22-03-2021 09:30 PM";
