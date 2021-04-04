@@ -157,6 +157,8 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         Calendar cal = Calendar.getInstance();
         cal.setTime(date);
         int cDay = cal.get(Calendar.DATE);
+        int cMonth = cal.get(Calendar.MONTH);
+        int cYear = cal.get(Calendar.YEAR);
         ArrayList<CalendarDay> currentList = new ArrayList<>();
         ArrayList<CalendarDay> upcomingList = new ArrayList<>();
         ArrayList<CalendarDay> completedList = new ArrayList<>();
@@ -167,12 +169,12 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
             int eDay = cal.get(Calendar.DATE);
             int eMonth = cal.get(Calendar.MONTH);
             int eYear = cal.get(Calendar.YEAR);
-            if(d.before(date) && eDay < cDay) {
-                completedList.add(CalendarDay.from(eYear, eMonth+1, eDay));
+            if(eDay == cDay && cMonth == eMonth && eYear == cYear) {
+                currentList.add(CalendarDay.from(eYear, eMonth+1, eDay));
             }else if(d.after(date) && eDay > cDay) {
                 upcomingList.add(CalendarDay.from(eYear, eMonth+1, eDay));
-            }else {
-                currentList.add(CalendarDay.from(eYear, eMonth+1, eDay));
+            }else if(d.before(date)){
+                completedList.add(CalendarDay.from(eYear, eMonth+1, eDay));
             }
         }
         if(currentList.size() > 0) {
