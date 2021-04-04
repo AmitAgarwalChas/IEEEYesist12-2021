@@ -81,8 +81,8 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
 
     @Override
     public void onProfessionalClick(Professional pro) {
-        /*Bundle bundle = new Bundle();
+        Bundle bundle = new Bundle();
         bundle.putParcelable("selectedProfessional", pro);
-        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);*/
+        Navigation.findNavController(requireView()).navigate(R.id.action_aboutTeamFragment_to_professionalInfoFragment, bundle);
     }
 }

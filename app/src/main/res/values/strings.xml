@@ -2,10 +2,11 @@
     <string name="app_name">IEEEYesist12-2021</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
-    <string name="trending">Trending</string>
+    <string name="timeline">Timeline</string>
     <string name="tracks">Tracks</string>
     <string name="about_team">About Team</string>
     <string name="more">More</string>
+    <string name="short_random_text">ARK Invest, an investment management company focused solely on disruptive innovation, has done a lot of research on the foundational innovations that will shape our world in the next few decades.</string>
     <string name="random_text">ARK Invest, an investment management company focused solely on disruptive innovation, has done a lot of research on the foundational innovations that will shape our world in the next few decades. They refer to these foundational and disruptive innovations as innovation platforms. While information technology and the ARK has identified five innovation platforms that they driving costs down, creating huge demand growth across virtually all sectors and geographies.</string>
     <string name="android_team">Android Team</string>
     <string name="web_development_team">Web Development Team</string>
@@ -26,15 +27,40 @@
     <string name="first_card_text">To instill social responsibility and ethics as a continuing education in the young minds through activities and encourage service oriented engineering practice.</string>
 
     <!-- Sterring Committee -->
-    <string name="maker_fair_co_chair_1">Mr. W.M. Dev Sugandhika Jayalath</string>
-    <string name="maker_fair_co_chair_2">Mr. Mian Junaid Manzoor</string>
-    <string name="junior_einstein_co_chair_1">Mr. Navaneethakrishnan Ramanathan</string>
-    <string name="junior_einstein_co_chair_2">Ms. Pooja Sharma K</string>
-    <string name="we_power_co_chair_1">Ms. Preethy V. Warrier</string>
-    <string name="we_power_co_chair_2">Mr. Ramneek Kalra</string>
     <string name="co_chair_maker_fair">Co-Chair | Maker Fair</string>
     <string name="co_chair_junior_einstein">Co-Chair | Junior Einstein</string>
     <string name="co_chair_we_power">Co-Chair | WePOWER</string>
+    <string name="co_chair_special_track">Co-Chair | Special Track</string>
+    <string name="co_chair_innovation_challenge">Co-Chair | Innovation Challenge</string>
+    <string name="co_chair_pro_pub">Co-Chair | Promotion and Publicity</string>
+    <string name="co_chair_content_dev">Co-Chair | Content Development</string>
+    <string name="co_chair_section_collab">Co-Chair | Section Collaboration</string>
+    <string name="co_chair_website">Co-Chair | Website</string>
+    <string name="co_chair_partnership">Co-Chair | Partnership</string>
+    <string name="chair_career_fair">Chair | Career Fair</string>
+
+    <string name="general_chair">Ramalatha Marimuthu</string>
+    <string name="secretary">Ketha Nikitha</string>
+    <string name="maker_fair_co_chair_1">W.M. Dev Sugandhika Jayalath</string>
+    <string name="maker_fair_co_chair_2">Mian Junaid Manzoor</string>
+    <string name="junior_einstein_co_chair_1">R. Navaneetha Krishnan</string>
+    <string name="junior_einstein_co_chair_2">Pooja Sharma K</string>
+    <string name="we_power_co_chair_1">Preethy V. Warrier</string>
+    <string name="we_power_co_chair_2">Ramneek Kalra</string>
+    <string name="special_track_co_chair_1">Vydeki Vijayakumar </string>
+    <string name="special_track_co_chair_2">Indhumathi Gunasekaran </string>
+    <string name="innovation_challenge_co_chair_1">Tasnim Bite Shawkat</string>
+    <string name="innovation_challenge_co_chair_2">Bindu A. Thomas</string>
+    <string name="promotion_and_publicity_co_chair_1">Aishwarya Bandla</string>
+    <string name="promotion_and_publicity_co_chair_2">Nithyavathy N</string>
+    <string name="partnerships_co_chair">M. Alagu Meenakshi</string>
+    <string name="website_chair_1">Ashvanth Narayanan</string>
+    <string name="website_co_chair_2">Arangan Rishikesh T</string>
+    <string name="content_development_chair_1">Janani Ramachandran</string>
+    <string name="content_development_chair_2">Bharathi Ramesh</string>
+    <string name="section_collaboration_chair_1">A. Darwin Jose Raju</string>
+    <string name="section_collaboration_chair_2">R. Ankayarkanni</string>
+    <string name="career_fair_chair">Nageswara Gupta</string>
 
     <!-- Track Info Details -->
     <string name="innovation">
@@ -128,6 +154,14 @@
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
 
+    <!-- Yesist home page -->
+    <string name="knowledge">Gear up to listen to the ocean of knowledge. The speakers will nourish with their experiences.</string>
+    <string name="prof_connect">Get in touch with professionals from all walks of life and build good relationships.</string>
+    <string name="arena">This is the best place to showcase your innovations and get the right results out of it to move ahead.</string>
+    <string name="time">You get to participate in the phenomenal event with experienced people nailing it the best.</string>
+    <string name="recognised">You get a good reach for your innovations and everyone will get valuable certificates.</string>
+    <string name="presence">Being part of a YESIST12 you get to connect with like minded people, geographically to collaborate and grow.</string>
+
     <!-- Android Team -->
     <string name="amit_agarwal">Amit Agarwal</string>
     <string name="mokshda_gangrade">Mokshda Gangrade</string>
@@ -135,5 +169,18 @@
     <string name="sunjol_paul">Sunjol Paul</string>
     <string name="rupam_laha">Rupam Laha</string>
     <string name="aayushi">Aayushi</string>
+
+
+    <!-- Timeline -->
+    <string name="month_year">March 2021</string>
+    <string name="completed">Completed</string>
+    <string name="introductory_meeting">Introductory Meeting</string>
+    <string name="join">Join</string>
+    <string name="about">About</string>
+    <string name="mon">Mon</string>
+    <string name="_07">07</string>
+    <string name="_8_00_am">8:00 AM</string>
+    <string name="timezone_kolkata_india">Timezone : Kolkata, India</string>
+    <string name="_10_30_am">10:30 AM</string>
 
 </resources>
