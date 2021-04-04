@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class TimelineFragment extends Fragment implements TimelineAdapter.EventClickListener {
@@ -57,6 +58,9 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         Calendar cal = Calendar.getInstance();
         String timezone = cal.getTimeZone().getDisplayName();
         binding.timezone.setText("Timezone : " + timezone);
+
+        String displayMonth = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault()) + " " + cal.get(Calendar.YEAR);
+        binding.tvMonth.setText(displayMonth);
 
         binding.calendarLayout.setOnClickListener(v -> {
             if(binding.calendar.getVisibility() == View.VISIBLE) {
@@ -180,47 +184,22 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
     private void populateList() throws ParseException {
 
-        String inputStringStart = "11-02-2021 10:00 AM";
-        String inputStringEnd = "11-02-2021 11:00 AM";
+        String inputStringStart = "20-03-2021 06:30 PM";
+        String inputStringEnd = "20-03-2021 07:30 PM";
         Date date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
         Date endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        
-        eventList.add(new Event("Introductory Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, date, endDate));
+        eventList.add(new Event("Clean Water and Sanitation", getString(R.string.random_text),
+                "Isha Dash", "Training Coordinator Water, Sanitation and Hygiene Institute, Delhi, India", "eventurl",
+                R.drawable.ic_female, date, endDate));
 
-        inputStringStart = "22-03-2021 08:00 PM";
-        inputStringEnd = "22-03-2021 09:30 PM";
+        inputStringStart = "02-04-03-2021 05:30 PM";
+        inputStringEnd = "02-03-2021 06:30 PM";
         date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
         endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
+        eventList.add(new Event("Sustainable Cities and Communities", getString(R.string.random_text),
+                "Jairo H. Garcia", "CEO Urban Climate Nexus", "eventurl",
                 R.drawable.ic_male, date, endDate));
 
-        inputStringStart = "26-03-2021 04:00 AM";
-        inputStringEnd = "26-03-2021 05:00 AM";
-        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("WePower Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, date, endDate));
-
-        inputStringStart = "27-03-2021 05:00 PM";
-        inputStringEnd = "27-03-2021 07:00 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("MakerFair Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, date, endDate));
-
-
-        inputStringStart = "25-04-2021 02:00 AM";
-        inputStringEnd = "25-04-2021 03:00 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("MakerFair Meeting", getString(R.string.random_text),
-                "Speaker1", "Volunteer", "eventurl",
-                R.drawable.ic_male, date, endDate));
     }
 
     @Override
