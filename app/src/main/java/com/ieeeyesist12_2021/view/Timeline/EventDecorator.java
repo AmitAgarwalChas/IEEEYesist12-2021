@@ -1,7 +1,5 @@
 package com.ieeeyesist12_2021.view.Timeline;
 
-import androidx.core.content.ContextCompat;
-
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.DayViewDecorator;
 import com.prolificinteractive.materialcalendarview.DayViewFacade;

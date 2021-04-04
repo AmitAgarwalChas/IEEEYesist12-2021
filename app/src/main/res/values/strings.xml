@@ -39,29 +39,28 @@
     <string name="co_chair_partnership">Co-Chair | Partnership</string>
     <string name="chair_career_fair">Chair | Career Fair</string>
 
-    <string name="general_chair">Mrs. Ramalatha Marimuthu</string>
-    <string name="secretary">Mrs. Ketha Nikitha</string>
-    <string name="maker_fair_co_chair_1">Mr. W.M. Dev Sugandhika Jayalath</string>
-    <string name="maker_fair_co_chair_2">Mr. Mian Junaid Manzoor</string>
-    <string name="junior_einstein_co_chair_1">Mr. R. Navaneetha Krishnan</string>
-    <string name="junior_einstein_co_chair_2">Ms. Pooja Sharma K</string>
-    <string name="we_power_co_chair_1">Ms. Preethy V. Warrier</string>
-    <string name="we_power_co_chair_2">Mr. Ramneek Kalra</string>
-    <string name="special_track_co_chair_1">Mrs. Vydeki Vijayakumar </string>
-    <string name="special_track_co_chair_2">Mrs. Indhumathi Gunasekaran </string>
-    <string name="innovation_challenge_co_chair_1">Mr. Tasnim Bite Shawkat</string>
-    <string name="innovation_challenge_co_chair_2">Mrs. Bindu A. Thomas</string>
-    <string name="promotion_and_publicity_co_chair_1">Mrs. Aishwarya Bandla</string>
-    <string name="promotion_and_publicity_co_chair_2">Mrs. Nithyavathy N</string>
-    <string name="partnerships_co_chair">Mrs. M. Alagu Meenakshi</string>
-    <string name="website_chair_1">Mr. Ashvanth Narayanan</string>
-    <string name="website_co_chair_2">Mr. Arangan Rishikesh T</string>
-    <string name="content_development_chair_1">Mrs. Janani Ramachandran</string>
-    <string name="content_development_chair_2">Mrs. Bharathi Ramesh</string>
-    <string name="section_collaboration_chair_1">Mr. A. Darwin Jose Raju</string>
-    <string name="section_collaboration_chair_2">Mr. R. Ankayarkanni</string>
-    <string name="career_fair_chair">Mr. Nageswara Gupta</string>
-
+    <string name="general_chair">Ramalatha Marimuthu</string>
+    <string name="secretary">Ketha Nikitha</string>
+    <string name="maker_fair_co_chair_1">W.M. Dev Sugandhika Jayalath</string>
+    <string name="maker_fair_co_chair_2">Mian Junaid Manzoor</string>
+    <string name="junior_einstein_co_chair_1">R. Navaneetha Krishnan</string>
+    <string name="junior_einstein_co_chair_2">Pooja Sharma K</string>
+    <string name="we_power_co_chair_1">Preethy V. Warrier</string>
+    <string name="we_power_co_chair_2">Ramneek Kalra</string>
+    <string name="special_track_co_chair_1">Vydeki Vijayakumar </string>
+    <string name="special_track_co_chair_2">Indhumathi Gunasekaran </string>
+    <string name="innovation_challenge_co_chair_1">Tasnim Bite Shawkat</string>
+    <string name="innovation_challenge_co_chair_2">Bindu A. Thomas</string>
+    <string name="promotion_and_publicity_co_chair_1">Aishwarya Bandla</string>
+    <string name="promotion_and_publicity_co_chair_2">Nithyavathy N</string>
+    <string name="partnerships_co_chair">M. Alagu Meenakshi</string>
+    <string name="website_chair_1">Ashvanth Narayanan</string>
+    <string name="website_co_chair_2">Arangan Rishikesh T</string>
+    <string name="content_development_chair_1">Janani Ramachandran</string>
+    <string name="content_development_chair_2">Bharathi Ramesh</string>
+    <string name="section_collaboration_chair_1">A. Darwin Jose Raju</string>
+    <string name="section_collaboration_chair_2">R. Ankayarkanni</string>
+    <string name="career_fair_chair">Nageswara Gupta</string>
 
     <!-- Track Info Details -->
     <string name="innovation">
