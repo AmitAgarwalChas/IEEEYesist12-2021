@@ -271,4 +271,17 @@
         Ankayarkanni is an IEEE Member working as Software Engineer in Formcept Technologies and Solutions Pvt. Ltd, Banglore, India. Her volunteering in IEEE SIGHT, IEEE MAS EduSoc Chapter and IEEE StB 62851- St. Xavier’s Catholic College of Engineering is commendable. She has visited schools to disseminate her knowledge to the students and taught the art of craft-making to uneducated women in villages. For her active involvement, outstanding performance and being a real inspiration to other students, she has been recognized with the Honourable Mention of “2018 WIE Inspiring  Student Member of the Year” and “2020 IEEE SIGHT Volunteer Award”. She is currently volunteering in different positions for different IEEE Societies and Affinity groups.
     </string>
 
+
+    <!-- Sub-committee -->
+    <string name="adithya_name">
+        Adithya Marayil
+    </string>
+    <string name="adithya_bio">
+        I am currently pursuing my bachelors in computer science engineering and have been actively volunteering with IEEE for the past 3 years. I have also been an active volunteer in IEEE Computer Society.
+    </string>
+    <string name="adithya_role">
+        Maker Fair | Content writer
+    </string>
+
+
 </resources>
