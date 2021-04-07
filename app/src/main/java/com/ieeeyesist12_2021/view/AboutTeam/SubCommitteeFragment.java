@@ -49,6 +49,10 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
 
     private void populateList() {
         androidList.clear();
+        androidList.add(new Professional(getString(R.string.adithya_name), R.drawable.ic_male, getString(R.string.adithya_role),
+                getString(R.string.adithya_bio), "https://www.linkedin.com/in/adithya-marayil-666613171"));
+
+        //Android team
         androidList.add(new Professional(getString(R.string.amit_agarwal), R.drawable.amit_app, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
         androidList.add(new Professional(getString(R.string.mokshda_gangrade), R.drawable.mokshda_app, getString(R.string.volunteer),
@@ -77,6 +81,7 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
                 getString(R.string.random_text), "linkedin"));
         webList.add(new Professional(getString(R.string.nolan), R.drawable.ic_male, getString(R.string.volunteer),
                 getString(R.string.random_text), "linkedin"));
+
     }
 
     @Override
