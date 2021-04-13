@@ -4,18 +4,22 @@
     <item
         android:id="@+id/homeFragment"
         android:title="@string/home"
+        android:enabled="true"
         android:icon="@drawable/ic_home" />
     <item
         android:id="@+id/trendingFragment"
         android:title="@string/timeline"
+        android:enabled="true"
         android:icon="@drawable/ic_trending" />
     <item
         android:id="@+id/tracksFragment"
         android:title="@string/tracks"
+        android:enabled="true"
         android:icon="@drawable/ic_tracks" />
     <item
         android:id="@+id/aboutTeamFragment"
         android:title="@string/about_team"
+        android:enabled="true"
         android:icon="@drawable/ic_about_team" />
 
 </menu>
