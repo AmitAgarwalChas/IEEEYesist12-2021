@@ -43,7 +43,7 @@ public class AboutTeamRecyclerAdapter extends RecyclerView.Adapter<AboutTeamRecy
         return professionalList.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public class ViewHolder extends RecyclerView.ViewHolder {
 
         ImageView proImage;
         TextView proName;
@@ -56,12 +56,9 @@ public class AboutTeamRecyclerAdapter extends RecyclerView.Adapter<AboutTeamRecy
             proName = itemView.findViewById(R.id.professional_name);
             proRole = itemView.findViewById(R.id.professional_role);
             this.onProfessionalListener = onProfessionalListener;
-            itemView.setOnClickListener(this);
-        }
-
-        @Override
-        public void onClick(View v) {
-            onProfessionalListener.onProfessionalClick(professionalList.get(getAdapterPosition()));
+            proImage.setOnClickListener( v -> {
+                    onProfessionalListener.onProfessionalClick(professionalList.get(getAdapterPosition()));
+            });
         }
     }
 
