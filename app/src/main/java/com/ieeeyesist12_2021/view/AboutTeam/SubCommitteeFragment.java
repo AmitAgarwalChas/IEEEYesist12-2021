@@ -23,8 +23,8 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
     }
 
     private FragmentSubCommitteeBinding binding;
-    private List<Professional> androidList, webList;
-    private AboutTeamRecyclerAdapter androidAdapter, webAdapter;
+    private List<Professional> androidList;
+    private AboutTeamRecyclerAdapter androidAdapter;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,15 +36,11 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        webList=new ArrayList<>();
         androidList=new ArrayList<>();
         populateList();
         binding.androidTeamRv.setNestedScrollingEnabled(false);
-        binding.webTeamRv.setNestedScrollingEnabled(false);
         androidAdapter = new AboutTeamRecyclerAdapter(requireContext(), androidList, this);
         binding.androidTeamRv.setAdapter(androidAdapter);
-        webAdapter = new AboutTeamRecyclerAdapter(requireContext(), webList, this);
-        binding.webTeamRv.setAdapter(webAdapter);
     }
 
     private void populateList() {
@@ -85,35 +81,17 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
                 getString(R.string.mithresh_bio), "https://www.linkedin.com/in/mithresh-gunaseelan-484291194/"));
 
 
-
-        //Android team
-        androidList.add(new Professional(getString(R.string.amit_agarwal), R.drawable.amit_app, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.amit_agarwal), R.drawable.amit_app, "App Team",
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.mokshda_gangrade), R.drawable.mokshda_app, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.mokshda_gangrade), R.drawable.mokshda_app, "App Team",
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.samriddhi), R.drawable.samriddhi_app, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.samriddhi), R.drawable.samriddhi_app, "App Team",
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.ic_male, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.ic_male, "App Team",
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.rupam_laha), R.drawable.ic_male, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.rupam_laha), R.drawable.ic_male, "App Team",
                 getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.aayushi), R.drawable.ic_female, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-
-        webList.clear();
-        webList.add(new Professional(getString(R.string.gal_gadot), R.drawable.ic_female, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        webList.add(new Professional(getString(R.string.nolan), R.drawable.ic_male, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        webList.add(new Professional(getString(R.string.gal_gadot), R.drawable.ic_female, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        webList.add(new Professional(getString(R.string.nolan), R.drawable.ic_male, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        webList.add(new Professional(getString(R.string.gal_gadot), R.drawable.ic_female, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        webList.add(new Professional(getString(R.string.nolan), R.drawable.ic_male, getString(R.string.volunteer),
-                getString(R.string.random_text), "linkedin"));
-        webList.add(new Professional(getString(R.string.nolan), R.drawable.ic_male, getString(R.string.volunteer),
+        androidList.add(new Professional(getString(R.string.aayushi), R.drawable.ic_female, "App Team",
                 getString(R.string.random_text), "linkedin"));
 
     }
