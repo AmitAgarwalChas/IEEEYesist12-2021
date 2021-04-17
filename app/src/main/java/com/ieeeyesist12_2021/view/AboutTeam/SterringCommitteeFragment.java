@@ -50,7 +50,7 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
                 getString(R.string.junaid), "https://www.linkedin.com/in/mian-junaid-manzoor-b552aa71/"));
 
         professionalList.add(new Professional(getString(R.string.junior_einstein_co_chair_1), R.drawable.ic_male, getString(R.string.co_chair_junior_einstein),
-                getString(R.string.random_text), "linkedin"));
+                getString(R.string.naveneetha), "https://www.linkedin.com/in/navaneethakrishnan-ramanathan-2845b595/"));
         professionalList.add(new Professional(getString(R.string.junior_einstein_co_chair_2), R.drawable.ic_female, getString(R.string.co_chair_junior_einstein),
                 getString(R.string.pooja_sharma), "https://www.linkedin.com/in/pooja-sharmak"));
 
@@ -67,7 +67,7 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
         professionalList.add(new Professional(getString(R.string.innovation_challenge_co_chair_1), R.drawable.ic_male, getString(R.string.co_chair_innovation_challenge),
                 getString(R.string.tasnim_shawkat), "https://www.linkedin.com/in/tasnim-binte-shawkat-05000b8a/"));
         professionalList.add(new Professional(getString(R.string.innovation_challenge_co_chair_2), R.drawable.ic_female, getString(R.string.co_chair_innovation_challenge),
-                getString(R.string.random_text), "linkedin"));
+                getString(R.string.random_text), "https://www.linkedin.com/in/bindu-a-thomas-phd-93b6608a/"));
 
         professionalList.add(new Professional(getString(R.string.promotion_and_publicity_co_chair_1), R.drawable.aishwarya_bandla, getString(R.string.co_chair_pro_pub),
                 getString(R.string.aishwarya), "https://www.linkedin.com/in/aishbandla/"));
@@ -75,7 +75,7 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
                 getString(R.string.nithyavathi), "https://www.linkedin.com/in/nithyavathy-n"));
 
         professionalList.add(new Professional(getString(R.string.website_chair_1), R.drawable.ic_male, getString(R.string.co_chair_website),
-                getString(R.string.random_text), "linkedin"));
+                getString(R.string.ashvanth_b), "https://www.linkedin.com/in/ashvanth-b/"));
         professionalList.add(new Professional(getString(R.string.website_co_chair_2), R.drawable.ic_male, getString(R.string.co_chair_website),
                 getString(R.string.arangan), "https://www.linkedin.com/in/cyberking-io/"));
 
@@ -94,7 +94,7 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
                 getString(R.string.alagu_meena), "https://www.linkedin.com/in/alagumeenaakshimuthiah19/"));
 
         professionalList.add(new Professional(getString(R.string.career_fair_chair), R.drawable.ic_male, getString(R.string.chair_career_fair),
-                getString(R.string.random_text), "linkedin"));
+                getString(R.string.nageswara), "https://www.linkedin.com/in/m-nageswara-guptha-24aba716a/"));
     }
 
     @Override
