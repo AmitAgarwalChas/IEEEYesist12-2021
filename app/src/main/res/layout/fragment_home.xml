@@ -260,19 +260,21 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="31dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
                 android:fontFamily="@font/poppins_extra_bold"
-                android:gravity="left"
+                android:gravity="start"
                 android:text="Why you should join \nYESIST12?"
                 android:textColor="@color/black"
                 android:textSize="24sp"
-                android:textStyle="normal"></TextView>
+                android:textStyle="normal" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/yesist_recycler"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="18dp"
                 android:layout_marginBottom="70dp"

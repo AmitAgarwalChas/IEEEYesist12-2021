@@ -1,22 +1,16 @@
 package com.ieeeyesist12_2021.adapters;
 
-import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.CalendarView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.button.MaterialButton;
 import com.ieeeyesist12_2021.R;
 import com.ieeeyesist12_2021.model.Event;
-import com.ieeeyesist12_2021.model.Professional;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;

@@ -13,8 +13,6 @@
         android:clipToPadding="false"
         android:paddingTop="20dp"
         android:paddingBottom="200dp"
-        android:layout_marginStart="5dp"
-        android:layout_marginEnd="15dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:spanCount="2"
         tools:listitem="@layout/item_sterring" />

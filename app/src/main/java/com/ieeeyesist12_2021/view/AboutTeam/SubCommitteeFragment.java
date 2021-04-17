@@ -45,6 +45,19 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
 
     private void populateList() {
         androidList.clear();
+        androidList.add(new Professional(getString(R.string.amit_agarwal), R.drawable.amit_app, "App Team",
+                getString(R.string.random_text), "https://www.linkedin.com/in/amit-agarwal-b7a88a1a1/"));
+        androidList.add(new Professional(getString(R.string.mokshda_gangrade), R.drawable.mokshda_app, "App Team",
+                getString(R.string.random_text), "linkedin"));
+        androidList.add(new Professional(getString(R.string.samriddhi), R.drawable.samriddhi_app, "App Team",
+                getString(R.string.random_text), "linkedin"));
+        androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.ic_male, "App Team",
+                getString(R.string.random_text), "linkedin"));
+        androidList.add(new Professional(getString(R.string.rupam_laha), R.drawable.ic_male, "App Team",
+                getString(R.string.random_text), "linkedin"));
+        androidList.add(new Professional(getString(R.string.aayushi), R.drawable.ic_female, "App Team",
+                getString(R.string.random_text), "linkedin"));
+
         androidList.add(new Professional(getString(R.string.adithya_name), R.drawable.adithya_myra, getString(R.string.adithya_role),
                 getString(R.string.adithya_bio), "https://www.linkedin.com/in/adithya-marayil-666613171"));
         androidList.add(new Professional(getString(R.string.Venkatraman_name), R.drawable.venkat_ravi, getString(R.string.Venkatraman_role),
@@ -80,19 +93,6 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
         androidList.add(new Professional(getString(R.string.mithresh_name), R.drawable.ic_male, getString(R.string.mithresh_role),
                 getString(R.string.mithresh_bio), "https://www.linkedin.com/in/mithresh-gunaseelan-484291194/"));
 
-
-        androidList.add(new Professional(getString(R.string.amit_agarwal), R.drawable.amit_app, "App Team",
-                getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.mokshda_gangrade), R.drawable.mokshda_app, "App Team",
-                getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.samriddhi), R.drawable.samriddhi_app, "App Team",
-                getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.ic_male, "App Team",
-                getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.rupam_laha), R.drawable.ic_male, "App Team",
-                getString(R.string.random_text), "linkedin"));
-        androidList.add(new Professional(getString(R.string.aayushi), R.drawable.ic_female, "App Team",
-                getString(R.string.random_text), "linkedin"));
 
     }
 
