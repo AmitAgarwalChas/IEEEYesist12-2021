@@ -67,7 +67,7 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
         professionalList.add(new Professional(getString(R.string.innovation_challenge_co_chair_1), R.drawable.ic_male, getString(R.string.co_chair_innovation_challenge),
                 getString(R.string.tasnim_shawkat), "https://www.linkedin.com/in/tasnim-binte-shawkat-05000b8a/"));
         professionalList.add(new Professional(getString(R.string.innovation_challenge_co_chair_2), R.drawable.ic_female, getString(R.string.co_chair_innovation_challenge),
-                getString(R.string.random_text), "https://www.linkedin.com/in/bindu-a-thomas-phd-93b6608a/"));
+                getString(R.string.bindu), "https://www.linkedin.com/in/bindu-a-thomas-phd-93b6608a/"));
 
         professionalList.add(new Professional(getString(R.string.promotion_and_publicity_co_chair_1), R.drawable.aishwarya_bandla, getString(R.string.co_chair_pro_pub),
                 getString(R.string.aishwarya), "https://www.linkedin.com/in/aishbandla/"));
