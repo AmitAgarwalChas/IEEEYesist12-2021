@@ -166,7 +166,10 @@
     <!-- Android Team -->
     <string name="amit_agarwal">Amit Agarwal</string>
     <string name="mokshda_gangrade">Mokshda Gangrade</string>
-    <string name="samriddhi">Samriddhi</string>
+    <string name="samriddhi">Samriddhi Agarwal</string>
+    <string name="samriddhi_bio">
+        Samriddhi is a sophomore pursuing her B.Tech from VIT, Vellore. She is a self-motivated tech-enthusiast who loves to learn about various technologies and implement them to create solutions to real-world problems. She is a core-committee member of IEEE Computer Society VIT and aims to bring the best out of her by connecting with like-minded people, working on innovative projects, and learning new technologies.\nApart from IEEE, she has been an active tech member for other non-profit organizations like Skillship. Besides work, she loves to write comic sets and stand-ups, singing and have great managerial skills.
+    </string>
     <string name="sunjol_paul">Sunjol Paul</string>
     <string name="rupam_laha">Rupam Laha</string>
     <string name="aayushi">Aayushi</string>
