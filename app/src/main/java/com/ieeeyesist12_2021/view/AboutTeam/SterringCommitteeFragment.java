@@ -40,7 +40,7 @@ public class SterringCommitteeFragment extends Fragment implements AboutTeamRecy
     private void populateList() {
         professionalList = new ArrayList<>();
         professionalList.add(new Professional(getString(R.string.general_chair), R.drawable.ramlatha, "General Chair",
-                getString(R.string.random_text), "https://www.linkedin.com/in/ramalatha-marimuthu-995b4a15/?originalSubdomain=in"));
+                getString(R.string.ramlatha), "https://www.linkedin.com/in/ramalatha-marimuthu-995b4a15/?originalSubdomain=in"));
         professionalList.add(new Professional(getString(R.string.secretary), R.drawable.nikhitha_k, "Secretary",
                 getString(R.string.nikitha), "https://www.linkedin.com/in/nikitha-k7891/"));
 
