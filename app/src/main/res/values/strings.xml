@@ -165,8 +165,15 @@
 
     <!-- Android Team -->
     <string name="amit_agarwal">Amit Agarwal</string>
+    <string name="amit_bio">Ambitious sophomore pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology, Vellore. Skilled in Java, Kotlin, C++, Python. In the past two years, I have learned new technologies and have built multiple projects. Been into Android App Development for more than 1.5 years. Have a strong eye for detail and skilled with working as a team. Competitive Programmer with high problem solving skills.</string>
     <string name="mokshda_gangrade">Mokshda Gangrade</string>
-    <string name="samriddhi">Samriddhi</string>
+    <string name="mokshda_bio">
+        Experienced Board Member with a demonstrated history of working in the civic and social organization industry. Skilled in Python (Programming Language), C++, Data Science, English, and Java. Team spirited and has worked on several projects under android app development as well as participated in various hackathons thus having an insight of various fields like AI, ML, NLP, Google services, AWS and more. Strong business development professional with a Bachelor of Technology - BTech focused in Computer Science specialization Data Science from Vellore Institute of Technology.
+    </string>
+    <string name="samriddhi">Samriddhi Agarwal</string>
+    <string name="samriddhi_bio">
+        Samriddhi is a sophomore pursuing her B.Tech from VIT, Vellore. She is a self-motivated tech-enthusiast who loves to learn about various technologies and implement them to create solutions to real-world problems. She is a core-committee member of IEEE Computer Society VIT and aims to bring the best out of her by connecting with like-minded people, working on innovative projects, and learning new technologies.\nApart from IEEE, she has been an active tech member for other non-profit organizations like Skillship. Besides work, she loves to write comic sets and stand-ups, singing and have great managerial skills.
+    </string>
     <string name="sunjol_paul">Sunjol Paul</string>
     <string name="rupam_laha">Rupam Laha</string>
     <string name="aayushi">Aayushi</string>
@@ -185,6 +192,12 @@
     <string name="_10_30_am">10:30 AM</string>
 
     <!-- Steering Committee Bio -->
+    <string name="ramlatha">
+        Dr Ramalatha Marimuthu has been in teaching for over 30 years and has a vast experience in motivating and training the students on skill development and peer networking. She organises leadership training workshops. conferences and congresses for training student leaders and for encouraging entrepreneurship which has resulted in many student startups.
+                \n"She also guides the students in developing unique solutions for social problems like inclusiveness and accessibility in day to day life for people with special needs. She has received many awards from IEEE, Lions Club, Government of Tamilnadu India and Anita Borg Institute for Women and Technology, California for effecting positive changes in community through technology.
+                \n"She has delivered lectures on assistive technology in universities and conferences all over the world and in Google.
+                \n"Mountainview and Pacific Northwest National Laboratory, Richland. Her areas of interest are assistive technology women empowerment and effective education With her years of teaching experience she has introduced many novelties in teaching and assessment methods and learnt from the results. Strategic Planning Developing infrastructure, administration and people management are some of her interests. Being a positive person which is one of her greatest strength. She has developed herself in studying the human nature and identifying best people for the activities. This has given her a vast network of people with varying skills who trust in her ability to mentor and guide them. She is particularly interested in encouraging students and youngsters and helping them solve problems of academic and personal nature."
+    </string>
     <string name="nikitha">
         Nikitha is an electronics engineer who is currently working as a Business Technology Analyst at Deloitte US-India. A Philomath with a strong inclination to all things \'Tech\', she believes that the ocean of knowledge is never ceasing to be explored, promising those who take up the journey immense treasures and opportunities to grow and upgrade themselves. She is immensely passionate about volunteering and strongly advocates for gender equity among STEM domains.
         \nShe finds great inspiration in people and credits IEEE for blessing her with opportunities that honed her team management and organizing skills. Under IEEE, she is a Young Professional and an Exe-Com member for TEMS Society Hyderabad section chapter.

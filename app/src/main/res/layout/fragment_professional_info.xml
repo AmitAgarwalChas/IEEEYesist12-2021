@@ -93,19 +93,20 @@
     <TextView
         android:id="@+id/professional_desc"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="13dp"
-        android:paddingBottom="8dp"
+        android:layout_height="0dp"
         android:ellipsize="end"
-        android:scrollbars="vertical"
-        android:text="@string/random_text"
-        android:textSize="16sp"
-        android:textColor="@color/black"
         android:fontFamily="@font/nunitoregular"
         android:paddingStart="24dp"
+        android:paddingTop="13dp"
         android:paddingEnd="24dp"
-        app:layout_constraintTop_toBottomOf="@id/professional_role"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        android:text="@string/random_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/professional_role" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
