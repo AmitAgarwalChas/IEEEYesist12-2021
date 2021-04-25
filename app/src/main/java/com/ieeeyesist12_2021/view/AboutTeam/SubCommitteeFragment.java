@@ -51,12 +51,12 @@ public class SubCommitteeFragment extends Fragment implements AboutTeamRecyclerA
                 getString(R.string.mokshda_bio), "https://www.linkedin.com/in/mokshda-gangrade-753b281b3/"));
         androidList.add(new Professional(getString(R.string.samriddhi), R.drawable.samriddhi_app, "App Team",
                 getString(R.string.samriddhi_bio), "https://www.linkedin.com/in/samriddhi-agarwal-3520851b8/"));
-        androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.ic_male, "App Team",
-                getString(R.string.random_text), "linkedin"));
+        //androidList.add(new Professional(getString(R.string.sunjol_paul), R.drawable.ic_male, "App Team",
+        //        getString(R.string.random_text), "linkedin"));
         androidList.add(new Professional(getString(R.string.rupam_laha), R.drawable.rupam_app, "App Team",
-                getString(R.string.random_text), "linkedin"));
+                getString(R.string.rupam_bio), "https://www.linkedin.com/in/rupam-laha-517795168"));
         androidList.add(new Professional(getString(R.string.aayushi), R.drawable.aayushi_app, "App Team",
-                getString(R.string.random_text), "linkedin"));
+                getString(R.string.aayushi_bio), "https://www.linkedin.com/in/aayushi-tated-898805193/"));
 
         androidList.add(new Professional(getString(R.string.adithya_name), R.drawable.adithya_myra, getString(R.string.adithya_role),
                 getString(R.string.adithya_bio), "https://www.linkedin.com/in/adithya-marayil-666613171"));
