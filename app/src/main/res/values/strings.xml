@@ -176,7 +176,13 @@
     </string>
     <string name="sunjol_paul">Sunjol Paul</string>
     <string name="rupam_laha">Rupam Laha</string>
+    <string name="rupam_bio">
+        Rupam is a third year student, doing his graduation from VIT, Vellore. A total tech enthusiast, Rupam has designed the entire UI/UX of this app single handedly. He is an established IOS developer and is fond of coding. He is also into graphic designing field. This is his initial stage of volunteering experience which he would love to turn into a long journey.
+    </string>
     <string name="aayushi">Aayushi</string>
+    <string name="aayushi_bio">
+        Aayushi is a 3rd year undergrad pursuing her B. Tech in Computer Science and Engineering from Vellore Institute of Technology, Vellore. She has been an active IEEE-CS member since the past 2 and a half years and is currently serving as the Vice - Chairperson of her student branch. She got connected to with IEEE after she represented her student branch in the Chapter Representation competition at AICSSYC \'19 and bagged the title for the most outstanding Student Chapter’ 19. Since then, there has been no looking back. She has actively contributed in developing the Android Application for IEEE YESIST12 2020 too and served as a student mentor during IEEE WIE Project Based Learning School Camp. She enjoys taking up challenges and believes that only challenges help a person grow.
+    </string>
 
 
     <!-- Timeline -->
