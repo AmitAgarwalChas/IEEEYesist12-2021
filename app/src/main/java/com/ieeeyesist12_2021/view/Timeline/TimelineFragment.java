@@ -43,21 +43,23 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
     private List<Event> eventList;
     private List<Event> displayList;
     private TimelineAdapter timelineAdapter;
+    private Calendar cal;
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         eventList = new ArrayList<>();
         displayList = new ArrayList<>();
+
+        cal = Calendar.getInstance();
+        String timezone = cal.getTimeZone().getDisplayName();
+        binding.timezone.setText(timezone);
+
         try {
             populateList();
         } catch (ParseException e) {
             e.printStackTrace();
         }
-
-        Calendar cal = Calendar.getInstance();
-        String timezone = cal.getTimeZone().getDisplayName();
-        binding.timezone.setText("Timezone : " + timezone);
 
         String displayMonth = cal.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault()) + " " + cal.get(Calendar.YEAR);
         binding.tvMonth.setText(displayMonth);
@@ -194,32 +196,55 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
 
         String inputStringStart = "20-03-2021 06:30 PM";
         String inputStringEnd = "20-03-2021 07:30 PM";
-        Date date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        Date endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm a");
+        simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT+5:30"));
+        Date sparsed = simpleDateFormat.parse(inputStringStart);
+        Date eparsed = simpleDateFormat.parse(inputStringEnd);
+        SimpleDateFormat sdf = new SimpleDateFormat("dd-MM-yyyy hh:mm a");
+        sdf.setTimeZone(cal.getTimeZone());
+        String startDate = sdf.format(sparsed);
+        String finishDate = sdf.format(eparsed);
+        Date date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(startDate);
+        Date endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(finishDate);
         eventList.add(new Event(getString(R.string.eventtit1), getString(R.string.eventdes_1),
                 getString(R.string.speaker1), getString(R.string.sq1), getString(R.string.eventurl_1),
                 R.drawable.isha_dash, date, endDate));
 
         inputStringStart = "02-04-2021 05:30 PM";
         inputStringEnd = "02-04-2021 06:30 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        sparsed = simpleDateFormat.parse(inputStringStart);
+        eparsed = simpleDateFormat.parse(inputStringEnd);
+        startDate = sdf.format(sparsed);
+        finishDate = sdf.format(eparsed);
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(startDate);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(finishDate);
+
         eventList.add(new Event(getString(R.string.eventtit2), getString(R.string.eventdes_2),
                 getString(R.string.speaker2), getString(R.string.sq2), getString(R.string.eventurl_2),
                 R.drawable.jairo_h_garcia, date, endDate));
 
         inputStringStart = "14-04-2021 06:30 PM";
         inputStringEnd = "14-04-2021 07:30 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        sparsed = simpleDateFormat.parse(inputStringStart);
+        eparsed = simpleDateFormat.parse(inputStringEnd);
+        startDate = sdf.format(sparsed);
+        finishDate = sdf.format(eparsed);
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(startDate);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(finishDate);
+
         eventList.add(new Event(getString(R.string.eventtit3), getString(R.string.eventdes_3),
                 getString(R.string.speaker3), getString(R.string.sq3), getString(R.string.eventurl_3),
                 R.drawable.uti_anselm, date, endDate));
 
         inputStringStart = "23-04-2021 06:30 PM";
         inputStringEnd = "23-04-2021 07:30 PM";
-        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
-        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        sparsed = simpleDateFormat.parse(inputStringStart);
+        eparsed = simpleDateFormat.parse(inputStringEnd);
+        startDate = sdf.format(sparsed);
+        finishDate = sdf.format(eparsed);
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(startDate);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(finishDate);
+
         eventList.add(new Event(getString(R.string.eventtit4), getString(R.string.eventdes_4),
                 getString(R.string.speaker4), getString(R.string.sq4), getString(R.string.eventurl_4),
                 R.drawable.md_koushik_ahamed, date, endDate));
