@@ -5,19 +5,15 @@ import android.graphics.Rect;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
-
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-
-import com.ieeeyesist12_2021.R;
 import com.ieeeyesist12_2021.databinding.FragmentProfessionalInfoBinding;
 import com.ieeeyesist12_2021.model.Professional;
 

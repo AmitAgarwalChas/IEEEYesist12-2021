@@ -196,17 +196,33 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         String inputStringEnd = "20-03-2021 07:30 PM";
         Date date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
         Date endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("Clean Water and Sanitation", getString(R.string.random_text),
-                "Isha Dash", "Training Coordinator Water, Sanitation and Hygiene Institute, Delhi, India", "eventurl",
-                R.drawable.ic_female, date, endDate));
+        eventList.add(new Event(getString(R.string.eventtit1), getString(R.string.eventdes_1),
+                getString(R.string.speaker1), getString(R.string.sq1), getString(R.string.eventurl_1),
+                R.drawable.isha_dash, date, endDate));
 
         inputStringStart = "02-04-2021 05:30 PM";
         inputStringEnd = "02-04-2021 06:30 PM";
         date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
         endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
-        eventList.add(new Event("Sustainable Cities and Communities", getString(R.string.random_text),
-                "Jairo H. Garcia", "CEO Urban Climate Nexus", "eventurl",
-                R.drawable.ic_male, date, endDate));
+        eventList.add(new Event(getString(R.string.eventtit2), getString(R.string.eventdes_2),
+                getString(R.string.speaker2), getString(R.string.sq2), getString(R.string.eventurl_2),
+                R.drawable.jairo_h_garcia, date, endDate));
+
+        inputStringStart = "14-04-2021 06:30 PM";
+        inputStringEnd = "14-04-2021 07:30 PM";
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event(getString(R.string.eventtit3), getString(R.string.eventdes_3),
+                getString(R.string.speaker3), getString(R.string.sq3), getString(R.string.eventurl_3),
+                R.drawable.uti_anselm, date, endDate));
+
+        inputStringStart = "23-04-2021 06:30 PM";
+        inputStringEnd = "23-04-2021 07:30 PM";
+        date = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringStart);
+        endDate = new SimpleDateFormat("dd-MM-yyyy hh:mm a").parse(inputStringEnd);
+        eventList.add(new Event(getString(R.string.eventtit4), getString(R.string.eventdes_4),
+                getString(R.string.speaker4), getString(R.string.sq4), getString(R.string.eventurl_4),
+                R.drawable.md_koushik_ahamed, date, endDate));
 
     }
 

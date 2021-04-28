@@ -1,6 +1,9 @@
 package com.ieeeyesist12_2021.adapters;
 
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +24,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
 
     private List<Event> eventList;
     private EventClickListener listener;
+    private Context context;
 
     public TimelineAdapter(EventClickListener listener) {
         this.listener = listener;
@@ -29,6 +33,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        context = parent.getContext();
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.timeline_item, parent, false);
         return new TimelineAdapter.ViewHolder(view, listener);
     }
@@ -86,6 +91,9 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             holder.status.setText("Completed");
             holder.join.setText("Watch");
             holder.join.setBackgroundColor(Color.parseColor("#01579B"));
+            holder.join.setOnClickListener( v ->
+                    context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(eventList.get(position).getEventUrl())))
+            );
         }else if(d.before(eventList.get(position).getDate())) {
             holder.startTime.setTextColor(Color.parseColor("#0091EA"));
             holder.join.setVisibility(View.GONE);
@@ -126,9 +134,9 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             join = itemView.findViewById(R.id.join);
             about = itemView.findViewById(R.id.about_event);
             this.eventClickListener = eventClickListener;
-            about.setOnClickListener( v-> {
-                eventClickListener.onEventClick(eventList.get(getAdapterPosition()));
-            });
+            about.setOnClickListener( v ->
+                eventClickListener.onEventClick(eventList.get(getAdapterPosition()))
+            );
         }
 
     }
