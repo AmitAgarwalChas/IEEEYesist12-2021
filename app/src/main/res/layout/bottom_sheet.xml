@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="30dp"
-        android:paddingEnd="18dp"
+        android:paddingEnd="24dp"
         android:layout_marginTop="20dp"
         android:text="Introductory Meeting"
         android:textSize="28sp"
@@ -111,18 +111,27 @@
         app:layout_constraintTop_toBottomOf="@+id/about_content"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/image_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="19dp"
+        app:cardCornerRadius="50dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintTop_toBottomOf="@+id/speakers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
     <ImageView
         android:id="@+id/speaker_image"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_male"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="19dp"
-        app:layout_constraintTop_toBottomOf="@+id/speakers"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:src="@drawable/ic_male"/>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:id="@+id/speaker_name"
@@ -136,14 +145,14 @@
         android:textColor="@color/black"
         android:textSize="18sp"
         app:layout_constraintTop_toBottomOf="@+id/speakers"
-        app:layout_constraintStart_toEndOf="@id/speaker_image"/>
+        app:layout_constraintStart_toEndOf="@id/image_card"/>
 
     <TextView
         android:id="@+id/speaker_qualification"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingStart="12dp"
-        android:paddingEnd="98dp"
+        android:paddingEnd="104dp"
         android:paddingBottom="12dp"
         android:layout_marginTop="1dp"
         android:justificationMode="inter_word"
@@ -152,6 +161,6 @@
         android:textColor="@color/black"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@+id/speaker_name"
-        app:layout_constraintStart_toEndOf="@id/speaker_image"/>
+        app:layout_constraintStart_toEndOf="@id/image_card"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
