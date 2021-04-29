@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view.Timeline;
+package com.ieee.ieee_yesist.view.Timeline;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.adapters.TimelineAdapter;
-import com.ieeeyesist12_2021.databinding.FragmentTimelineBinding;
-import com.ieeeyesist12_2021.model.Event;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.adapters.TimelineAdapter;
+import com.ieee.ieee_yesist.databinding.FragmentTimelineBinding;
+import com.ieee.ieee_yesist.model.Event;
 import com.prolificinteractive.materialcalendarview.CalendarDay;
 import com.prolificinteractive.materialcalendarview.MaterialCalendarView;
 import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
@@ -25,7 +25,6 @@ import com.prolificinteractive.materialcalendarview.OnDateSelectedListener;
 import java.text.DateFormatSymbols;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.Month;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;

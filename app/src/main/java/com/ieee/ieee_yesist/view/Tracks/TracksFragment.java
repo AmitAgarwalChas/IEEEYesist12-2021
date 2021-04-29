@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view.Tracks;
+package com.ieee.ieee_yesist.view.Tracks;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -10,9 +10,9 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.adapters.TrackListAdapter;
-import com.ieeeyesist12_2021.model.TrackList;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.adapters.TrackListAdapter;
+import com.ieee.ieee_yesist.model.TrackList;
 import java.util.ArrayList;
 import java.util.List;
 

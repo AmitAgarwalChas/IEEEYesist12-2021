@@ -1,13 +1,11 @@
-package com.ieeeyesist12_2021.adapters;
+package com.ieee.ieee_yesist.adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class AboutTeamViewPagerAdapter extends FragmentStateAdapter {

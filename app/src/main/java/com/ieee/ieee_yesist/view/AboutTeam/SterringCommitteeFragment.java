@@ -1,20 +1,19 @@
-package com.ieeeyesist12_2021.view.AboutTeam;
+package com.ieee.ieee_yesist.view.AboutTeam;
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.adapters.AboutTeamRecyclerAdapter;
-import com.ieeeyesist12_2021.databinding.FragmentSterringCommitteeBinding;
-import com.ieeeyesist12_2021.model.Professional;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.adapters.AboutTeamRecyclerAdapter;
+import com.ieee.ieee_yesist.databinding.FragmentSterringCommitteeBinding;
+import com.ieee.ieee_yesist.model.Professional;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view.AboutTeam;
+package com.ieee.ieee_yesist.view.AboutTeam;
 
 import android.content.Intent;
 import android.graphics.Rect;
@@ -14,8 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import com.ieeeyesist12_2021.databinding.FragmentProfessionalInfoBinding;
-import com.ieeeyesist12_2021.model.Professional;
+import com.ieee.ieee_yesist.databinding.FragmentProfessionalInfoBinding;
+import com.ieee.ieee_yesist.model.Professional;
 
 public class ProfessionalInfoFragment extends Fragment {
 

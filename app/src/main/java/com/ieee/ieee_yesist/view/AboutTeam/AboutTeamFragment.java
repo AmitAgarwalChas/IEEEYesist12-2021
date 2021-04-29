@@ -1,21 +1,19 @@
-package com.ieeeyesist12_2021.view.AboutTeam;
+package com.ieee.ieee_yesist.view.AboutTeam;
 
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.adapters.AboutTeamViewPagerAdapter;
-import com.ieeeyesist12_2021.databinding.FragmentAboutTeamBinding;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.adapters.AboutTeamViewPagerAdapter;
+import com.ieee.ieee_yesist.databinding.FragmentAboutTeamBinding;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +35,7 @@ public class AboutTeamFragment extends Fragment {
         AboutTeamViewPagerAdapter vpAdapter = new AboutTeamViewPagerAdapter(getChildFragmentManager(), getLifecycle(),fragmentList);
         binding.aboutTeamVp.setAdapter(vpAdapter);
         ArrayList<String> titles = new ArrayList<>();
-        titles.add("Sterring Committee");
+        titles.add("Steering Committee");
         titles.add("Sub Committee");
         new TabLayoutMediator(binding.tabLayout, binding.aboutTeamVp,
                 ((tab, position) -> {

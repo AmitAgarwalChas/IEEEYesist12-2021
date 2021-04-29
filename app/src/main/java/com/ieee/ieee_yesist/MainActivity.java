@@ -1,11 +1,11 @@
-package com.ieeeyesist12_2021;
+package com.ieee.ieee_yesist;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.fragment.NavHostFragment;
 import android.os.Bundle;
 import android.view.View;
 import androidx.navigation.ui.NavigationUI;
-import com.ieeeyesist12_2021.databinding.ActivityMainBinding;
+import com.ieee.ieee_yesist.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

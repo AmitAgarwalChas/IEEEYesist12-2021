@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view;
+package com.ieee.ieee_yesist.view;
 
 import android.os.Bundle;
 
@@ -6,18 +6,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.adapters.TrackListAdapter;
-import com.ieeeyesist12_2021.adapters.YesistHomeAdapter;
-import com.ieeeyesist12_2021.model.TrackList;
-import com.ieeeyesist12_2021.model.YesistHome;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.adapters.YesistHomeAdapter;
+import com.ieee.ieee_yesist.model.YesistHome;
 
 import java.util.ArrayList;
 import java.util.List;

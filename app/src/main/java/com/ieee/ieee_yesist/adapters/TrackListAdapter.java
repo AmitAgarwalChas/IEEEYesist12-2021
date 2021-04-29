@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.adapters;
+package com.ieee.ieee_yesist.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,8 +10,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.model.TrackList;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.model.TrackList;
 
 import java.util.List;
 

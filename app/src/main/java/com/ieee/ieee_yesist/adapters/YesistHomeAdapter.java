@@ -1,12 +1,10 @@
-package com.ieeeyesist12_2021.adapters;
+package com.ieee.ieee_yesist.adapters;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -15,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
 
-import com.ieeeyesist12_2021.R;
-import com.ieeeyesist12_2021.model.YesistHome;
+import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.model.YesistHome;
 
 import java.util.List;
 

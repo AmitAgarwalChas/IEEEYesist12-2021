@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ieeeyesist12_2021.view.HomeFragment"
+        android:name="com.ieee.ieee_yesist.view.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/tracksFragment"
-        android:name="com.ieeeyesist12_2021.view.Tracks.TracksFragment"
+        android:name="com.ieee.ieee_yesist.view.Tracks.TracksFragment"
         android:label="fragment_tracks"
         tools:layout="@layout/fragment_tracks" >
         <action
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/aboutTeamFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.AboutTeamFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.AboutTeamFragment"
         android:label="fragment_about_team"
         tools:layout="@layout/fragment_about_team" >
         <action
@@ -30,12 +30,12 @@
     </fragment>
     <fragment
         android:id="@+id/trendingFragment"
-        android:name="com.ieeeyesist12_2021.view.Timeline.TimelineFragment"
+        android:name="com.ieee.ieee_yesist.view.Timeline.TimelineFragment"
         android:label="fragment_trending"
         tools:layout="@layout/fragment_timeline" />
     <fragment
         android:id="@+id/trackDetailsFragment"
-        android:name="com.ieeeyesist12_2021.view.Tracks.TrackDetailsFragment"
+        android:name="com.ieee.ieee_yesist.view.Tracks.TrackDetailsFragment"
         android:label="fragment_track_details"
         tools:layout="@layout/fragment_track_details" >
         <action
@@ -44,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/professionalInfoFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.ProfessionalInfoFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.ProfessionalInfoFragment"
         android:label="fragment_professional_info"
         tools:layout="@layout/fragment_professional_info" >
         <action
@@ -54,16 +54,16 @@
             app:popUpToInclusive="true" />
         <argument
             android:name="proArgs"
-            app:argType="com.ieeeyesist12_2021.model.Professional" />
+            app:argType="com.ieee.ieee_yesist.model.Professional" />
     </fragment>
     <fragment
         android:id="@+id/sterringCommitteeFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.SterringCommitteeFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.SterringCommitteeFragment"
         android:label="fragment_sterring_committee"
         tools:layout="@layout/fragment_sterring_committee" />
     <fragment
         android:id="@+id/subCommitteeFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.SubCommitteeFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.SubCommitteeFragment"
         android:label="fragment_sub_committee"
         tools:layout="@layout/fragment_sub_committee" />
 </navigation>

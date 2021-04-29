@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.model;
+package com.ieee.ieee_yesist.model;
 
 import java.util.Date;
 

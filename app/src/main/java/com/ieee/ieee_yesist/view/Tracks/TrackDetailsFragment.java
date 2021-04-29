@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.view.Tracks;
+package com.ieee.ieee_yesist.view.Tracks;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -13,14 +13,11 @@ import android.widget.TextView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
 
-import com.ieeeyesist12_2021.R;
+import com.ieee.ieee_yesist.R;
 
 public class TrackDetailsFragment extends Fragment {
 
@@ -61,12 +58,14 @@ public class TrackDetailsFragment extends Fragment {
             trackInfo.setText(R.string.innovation);
             cardviewExpand(R.string.innov_abstract,R.string.innov_rules);}
         else if(track.equals("Maker Fair")){
+            btnRegister.setVisibility(View.VISIBLE);
             trackInfo.setText(R.string.maker_fair);
             cardviewExpand(R.string.maker_abstract,R.string.maker_rules);}
         else if(track.equals("Junior Einstein")){
             trackInfo.setText(R.string.einstein);
             cardviewExpand(R.string.einstein_abstract,R.string.einstein_rules);}
         else if(track.equals("WePOWER")){
+            btnRegister.setVisibility(View.VISIBLE);
             trackInfo.setText(R.string.wepower);
             cardviewExpand(R.string.wepower_abstract,R.string.wepower_rules);}
         else if(track.equals("Special Track")){

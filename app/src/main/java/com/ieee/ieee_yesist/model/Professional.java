@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021.model;
+package com.ieee.ieee_yesist.model;
 
 import android.os.Parcel;
 import android.os.Parcelable;
