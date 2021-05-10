@@ -65,91 +65,98 @@
 
     <!-- Track Info Details -->
     <string name="innovation">
-        Innovation Challenge is an international project competition established by IEEE Madras Section and IEEE Education Society to encourage the participants to come up with innovative ideas for the social and humanitarian issues. Here YESIST12 acts as a platform to bridge the gap between the engineers and visonaries to contribute to the society with innovations.\nThis exceptional platform conducts competition in two stages. The preliminary stage is conducted across Asian and African countries and the team that tops the round wins a chance to compete globally to address humanitarian and social issues like poverty, famine, special needs, women safety, healthcare, disaster management, and many more.
+        Innovation Challenge is an international project competition established by IEEE Madras Section and IEEE Education Society to encourage the participants to come up with innovative ideas for the social and humanitarian issues. Here YESIST12 acts as a platform to bridge the gap between the engineers and visonaries to contribute to the society with innovations.\n\nThis exceptional platform conducts competition in two stages. The preliminary stage is conducted across Asian and African countries and the team that tops the round wins a chance to compete globally to address humanitarian and social issues like poverty, famine, special needs, women safety, healthcare, disaster management, and many more.
     </string>
     <string name="innov_abstract">
         1. Novelty\n2. Clarity\n3. Feasibility and Practicability\n4. User Experience\n5. Scale of impact\n6. Sustainability\n7. Potential for future work progression.
     </string>
     <string name="innov_rules">
-        To be updated soon.
+        1. Under the Innovation Challenge theme, the projects can be Mobile Apps or Computer Based or IoT based.
+        \n\n2. In addition to developing the projects, the developers should ensure that their creation follows the international industry level technical standards set by the various agencies and approved universally. The evaluation criteria will be as follows:
+        \na. Creativity
+        \nb. Application
+        \nc. Relevance to the theme
+        \nd. Application of Standards
+        \ne. Deliverability
+        \n\n3. Students with drive and passion towards helping humanity are invited to register for the competition. The first round of the competition is to be held all over Asia in the pilots selected on the basis of registration. The winning teams will be called for the final round to be organised in September 2021.
     </string>
     <string name="maker_fair">
-        MakerFair is a unique platform with opportunities for the innovators, makers, and creators to showcase their marvelous products to the international community. Teams with enthusiasm and determination of inventing and showcasing their innovative ideas which are capable from ideation to commercialization are invited to register for this event.\n
-        In 2021, MakerFair Track have goals to achieve maximum goals which can be helpful to the world regarding the problems World has been facing in recent times under the UN Sustainable Development Goals.
+        MakerFair is a unique platform with opportunities for the innovators, makers, and creators to showcase their marvelous products to the international community. Teams with enthusiasm and determination of inventing and showcasing their innovative ideas which are capable from ideation to commercialization are invited to register for this event.
+        \n\nIn 2021, MakerFair Track have goals to achieve maximum goals which can be helpful to the world regarding the problems World has been facing in recent times under the UN Sustainable Development Goals.
     </string>
     <string name="maker_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
     <string name="maker_rules">
-        -Team size: Maximum of 4 members.
-        \n-Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
-        \n-Teams shall display their working projects in the venue, explain and demonstrate to the audience and evaluators.
-        \n-The evaluation will be based on the following criteria: Challenge, Innovation, Usability, and Extendibility.
-        \n-Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
-        \n-Each team is solely responsible for its own cooperation and teamwork.
+        1. Team size: Maximum of 4 members.
+        \n2. Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
+        \n3. Teams shall display their working projects in the venue, explain and demonstrate to the audience and evaluators.
+        \n4. The evaluation will be based on the following criteria: Challenge, Innovation, Usability, and Extendibility.
+        \n5. Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
+        \n6. Each team is solely responsible for its own cooperation and teamwork.
     </string>
     <string name="einstein">
         Junior Einstein Track acts as a catalyst for innovation and provides a transformative opportunity to broaden the horizon of knowledge among the young curious minds. This event makes effort to harness the creative submissions and innovative spirit towards Scientific and technological ideas/innovations from the school students of age 12 to 17 and to get rooted as one of the foremost project competition in the global arena developing a robust scientific temper among the youth.\n
     </string>
     <string name="einstein_rules">
-        -Team size: Maximum of 4 members.
-        \n-Participant’s Age: 12 to 17 years. Proof for the same shall be submitted. (Bonafide letter from school or birth certificate)
-        \n-Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
-        \n-Teams are locked along with abstract submission and no further changes to team members and mentors can be made thereafter.
-        \n-Teams shall present their working projects in the virtually, explain and demonstrate to the audience and evaluators.
-        \n-The evaluation will be based on the following criteria: Novelty / Innovation, Participant’s knowledge on concept / market demand, Technical implementation, Expandability of the project idea/prototype to an actual product or solution, Clarity of pitch.
-        \n-Plagiarism at any forms or at any stage is strictly prohibited.
-        \n-Each team is solely responsible for its own cooperation and teamwork.
+        1. Team size: Maximum of 4 members.
+        \n2. Participant’s Age: 12 to 17 years. Proof for the same shall be submitted. (Bonafide letter from school or birth certificate)
+        \n3. Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
+        \n4. Teams are locked along with abstract submission and no further changes to team members and mentors can be made thereafter.
+        \n5. Teams shall present their working projects in the virtually, explain and demonstrate to the audience and evaluators.
+        \n6. The evaluation will be based on the following criteria: Novelty / Innovation, Participant’s knowledge on concept / market demand, Technical implementation, Expandability of the project idea/prototype to an actual product or solution, Clarity of pitch.
+        \n7. Plagiarism at any forms or at any stage is strictly prohibited.
+        \n8. Each team is solely responsible for its own cooperation and teamwork.
         \n\nThe projects can be a software solution or hardware integrated.
     </string>
     <string name="einstein_abstract">
         1. Novelty\n2. Clarity\n3. Feasibility and Practicability\n4. User Experience\n5. Scale of impact\n6. Sustainability\n7. Potential for future work progression.
     </string>
     <string name="wepower">
-        The World Bank recently started “South Asia Gender and Energy” (SAGE) initiative with a plan to establish a “Women in Power Sector Network in South Asia (WePOWER)” to promote women engineers and practitioners in the energy and power sector, and bring normative change regarding women in Science, Technology, Engineering, and Math (STEM) education. \n
-        The example of the value propositions are:\n
-        -Capacity building\n
-        -Networking and mentorship for women engineers for career advancement\n
-        -Exposure to technology and utility/energy sector in developed countries\n
-        -Access to information and conferences\n
-        -Recruitment opportunities\n
-        -Exposure and encouragement to women students to pursue energy sector engineering jobs as a viable career option
-        \nWePOWER topics:\n
-        -Renewable Energy\n
-        -Energy Conservation and Management\n
-        -Energy Auditing\n
-        -Power Generation, Transmission and Distribution\n
-        -Flexible AC Transmissions System (FACTS)\n
-        -IoT in Energy and Smart Grid\n
-        -Digitalization(AI, ML, Computing) in Renewable Energy\n
-        -Smart Technologies in Electrical Power Sector Network
+        The World Bank recently started “South Asia Gender and Energy” (SAGE) initiative with a plan to establish a “Women in Power Sector Network in South Asia (WePOWER)” to promote women engineers and practitioners in the energy and power sector, and bring normative change regarding women in Science, Technology, Engineering, and Math (STEM) education.
+        \n\nThe example of the value propositions are:
+        \n-Capacity building
+        \n-Networking and mentorship for women engineers for career advancement
+        \n-Exposure to technology and utility/energy sector in developed countries
+        \n-Access to information and conferences
+        \n-Recruitment opportunities
+        \n-Exposure and encouragement to women students to pursue energy sector engineering jobs as a viable career option
+        \n\nWePOWER topics:
+        \n-Renewable Energy
+        \n-Energy Conservation and Management
+        \n-Energy Auditing
+        \n-Power Generation, Transmission and Distribution
+        \n-Flexible AC Transmissions System (FACTS)
+        \n-IoT in Energy and Smart Grid
+        \n-Digitalization(AI, ML, Computing) in Renewable Energy
+        \n-Smart Technologies in Electrical Power Sector Network
     </string>
     <string name="wepower_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
     <string name="wepower_rules">
-        -Team size: Maximum of 4 members (at least one girl).
-        \n-Team members may come from different academic institutions/industries and from different countries.
-        \n-Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
-        \n-Working model (hardware), simulation works, research studies and idea proposition are all accepted during the finals. However the technical content should be strong and sufficient literature review has to be done (and everything should be mentioned in the abstract also). Proposed area should be innovative and should have positive potential impact.
-        \n-Each Team is solely responsible for its own cooperation and teamwork.
+        1. Team size: Maximum of 4 members (at least one girl).
+        \n2. Team members may come from different academic institutions/industries and from different countries.
+        \n3. Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
+        \n4. Working model (hardware), simulation works, research studies and idea proposition are all accepted during the finals. However the technical content should be strong and sufficient literature review has to be done (and everything should be mentioned in the abstract also). Proposed area should be innovative and should have positive potential impact.
+        \n5. Each Team is solely responsible for its own cooperation and teamwork.
     </string>
     <string name="special">
-        Special Track aims at bringing out the innovative solutions to solve issues of mankind, on a global scale. It is the recently added track in YESIST12 during its 2020 edition and focussed on health and disaster management. In 2021, Special Track targets on providing solutions to more challenges faced by every individual on the planet. Novel ideas, creative proposals with interesting presentations are rewarded and appreciated\n
-        The submissions could be related to the following topics:\n
-        -Clean water and Sanitation.\n
-        -Improvised medical and health care\n
-        -Sustainable cities and communities.\n
-        -Preventive measures from hazards and disasters.\n
-        -Environmental Engineering\n
+        Special Track aims at bringing out the innovative solutions to solve issues of mankind, on a global scale. It is the recently added track in YESIST12 during its 2020 edition and focussed on health and disaster management. In 2021, Special Track targets on providing solutions to more challenges faced by every individual on the planet. Novel ideas, creative proposals with interesting presentations are rewarded and appreciated.
+        \n\nThe submissions could be related to the following topics:
+        \n-Clean water and Sanitation.
+        \n-Improvised medical and health care.
+        \n-Sustainable cities and communities.
+        \n-Preventive measures from hazards and disasters.
+        \n-Environmental Engineering.
     </string>
     <string name="special_rules">
-        -The team size is from 2 to 4 members.
-        \n-A team may comprise members from varied academic institutions/ Industries and maybe from different countries.
-        \n-People who enroll themselves along with team member\'s registration along with the mentor details will be provided with certificates.
-        \n-The selected teams will be given a chance to present their projects through an online platform to the judging panel.
-        \n-Once the team finalization is done along with their abstract, there will be no more changes with their membership and the mentor details.
-        \n-Coordination and teamwork must be taken care of by the team leader. Further details regarding the platform and logistics will be updated to you all soon.
+        1. The team size is from 2 to 4 members.
+        \n2. A team may comprise members from varied academic institutions/ Industries and maybe from different countries.
+        \n3. People who enroll themselves along with team member\'s registration along with the mentor details will be provided with certificates.
+        \n4. The selected teams will be given a chance to present their projects through an online platform to the judging panel.
+        \n5. Once the team finalization is done along with their abstract, there will be no more changes with their membership and the mentor details.
+        \n6. Coordination and teamwork must be taken care of by the team leader. Further details regarding the platform and logistics will be updated to you all soon.
     </string>
     <string name="special_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level

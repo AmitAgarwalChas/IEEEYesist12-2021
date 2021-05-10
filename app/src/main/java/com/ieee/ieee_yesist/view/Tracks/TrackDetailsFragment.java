@@ -1,7 +1,9 @@
 package com.ieee.ieee_yesist.view.Tracks;
 
 import android.content.Intent;
+import android.graphics.text.LineBreaker;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
@@ -37,7 +39,9 @@ public class TrackDetailsFragment extends Fragment {
         imgTrack=view.findViewById(R.id.imageTrack);
         trackName=view.findViewById(R.id.trackName);
         trackInfo=view.findViewById(R.id.trackInfo);
-        trackInfo.setMovementMethod(new ScrollingMovementMethod());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            trackInfo.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+        }
         rules_cv=view.findViewById(R.id.rules_cardview);
         abstract_cv=view.findViewById(R.id.abstract_cardview);
         rules_det=view.findViewById(R.id.rules_track_det);
