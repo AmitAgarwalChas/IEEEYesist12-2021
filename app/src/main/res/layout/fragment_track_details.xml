@@ -39,6 +39,7 @@
             android:layout_height="wrap_content"
             android:layout_alignStart="@id/imageTrack"
             android:layout_alignBottom="@id/imageTrack"
+            android:layout_marginBottom="-5dp"
             android:background="@drawable/track_bg"
             android:fontFamily="@font/app_font"
             android:includeFontPadding="false"
@@ -48,7 +49,7 @@
             android:paddingBottom="10dp"
             android:text="@string/track_name"
             android:textColor="#0A415C"
-            android:textSize="38sp"
+            android:textSize="34sp"
             android:textStyle="bold" />
     </RelativeLayout>
 
@@ -113,9 +114,11 @@
                 android:layout_marginRight="36dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/nunitoregular"
-                android:includeFontPadding="false"
+                android:gravity="fill_horizontal"
+                android:includeFontPadding="true"
                 android:lineSpacingExtra="5dp"
                 android:paddingTop="6dp"
+                android:paddingRight="1dp"
                 android:paddingBottom="6dp"
                 android:scrollbars="vertical"
                 android:text="@string/random_text"
