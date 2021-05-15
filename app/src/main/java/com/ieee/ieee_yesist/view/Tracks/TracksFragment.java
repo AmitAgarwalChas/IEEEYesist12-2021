@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -57,6 +58,11 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
         Bundle bundle = new Bundle();
         bundle.putString("trackName",trackList.get(position).getTrackName());
         bundle.putInt("trackImage",trackList.get(position).getImageUrl());
-        Navigation.findNavController(requireView()).navigate(R.id.action_tracksFragment_to_trackDetailsFragment,bundle);
+        //Navigation.findNavController(requireView()).navigate(R.id.action_tracksFragment_to_trackDetailsFragment,bundle);
+        Fragment fragment = new TrackDetailsFragment();
+        fragment.setArguments(bundle);
+        FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragNavHost,fragment,null);
+        transaction.commit();
     }
 }

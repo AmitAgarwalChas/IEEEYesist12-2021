@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
+    <group android:checkableBehavior="single">
     <item
         android:id="@+id/homeFragment"
         android:title="@string/home"
@@ -21,10 +24,5 @@
         android:title="@string/about_team"
         android:enabled="true"
         android:icon="@drawable/ic_about_team" />
-    <item
-        android:id="@+id/more_options"
-        android:title="More"
-        android:enabled="true"
-        android:icon="@drawable/ic_more" />
-
+    </group>
 </menu>
