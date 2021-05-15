@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img5" />
+        app:srcCompat="@drawable/ic_yesist_full_logo" />
 
     <ImageView
         android:id="@+id/imageView3"

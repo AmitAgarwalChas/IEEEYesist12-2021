@@ -31,4 +31,9 @@
     <style name="bottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
     </style>
+
+    <style name="sideNavItemStyle" parent="android:Widget.TextView">
+        <item name="fontFamily">@font/nunito_light</item>
+        <item name="android:textSize">20sp</item>
+    </style>
 </resources>
