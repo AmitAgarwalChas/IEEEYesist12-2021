@@ -21,5 +21,10 @@
         android:title="@string/about_team"
         android:enabled="true"
         android:icon="@drawable/ic_about_team" />
+    <item
+        android:id="@+id/more_options"
+        android:title="More"
+        android:enabled="true"
+        android:icon="@drawable/ic_more" />
 
 </menu>
