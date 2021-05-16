@@ -5,7 +5,6 @@ import android.graphics.text.LineBreaker;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,48 +12,75 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 import androidx.transition.AutoTransition;
 import androidx.transition.TransitionManager;
 
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.databinding.ContentScrollingBinding;
+import com.ieee.ieee_yesist.databinding.FragmentTrackDetailsBinding;
 
 public class TrackDetailsFragment extends Fragment {
 
-    ImageView imgBack,imgTrack;
-    TextView btnRegister,btnPilotRegister,trackName,trackInfo,rules_det,abstract_det;
+    ImageView imgTrack;
+    TextView btnRegister,btnPilotRegister,trackInfo,rules_det,abstract_det;
     CardView rules_cv, abstract_cv;
     ImageButton arrow_rules,arrow_abs;
+    private FragmentTrackDetailsBinding binding;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_track_details, container, false);
-        imgBack=view.findViewById(R.id.imageBack);
-        btnRegister=view.findViewById(R.id.btnRegister);
-        btnPilotRegister=view.findViewById(R.id.btnPilotRegister);
-        imgTrack=view.findViewById(R.id.imageTrack);
-        trackName=view.findViewById(R.id.trackName);
-        trackInfo=view.findViewById(R.id.trackInfo);
+        binding = FragmentTrackDetailsBinding.inflate(getLayoutInflater());
+        ContentScrollingBinding view = binding.includedLayoutTracks;
+        btnRegister = view.btnRegister;
+        btnPilotRegister=view.btnPilotRegister;
+        imgTrack=binding.imageTrack;
+        trackInfo=view.trackInfo;
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             trackInfo.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
         }
-        rules_cv=view.findViewById(R.id.rules_cardview);
-        abstract_cv=view.findViewById(R.id.abstract_cardview);
-        rules_det=view.findViewById(R.id.rules_track_det);
-        abstract_det=view.findViewById(R.id.abstract_sel_det);
-        arrow_rules=view.findViewById(R.id.arrow_down);
-        arrow_abs=view.findViewById(R.id.arrow_d);
+        rules_cv=view.rulesCardview;
+        abstract_cv=view.abstractCardview;
+        rules_det=view.rulesTrackDet;
+        abstract_det=view.abstractSelDet;
+        arrow_rules=view.arrowDown;
+        arrow_abs=view.arrowD;
+
+        Toolbar toolbar = binding.toolbar;
+        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        ActionBar actionBar = ((AppCompatActivity)getActivity()).getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //Toast.makeText(ScrollingActivity.this,"Back pressed",Toast.LENGTH_SHORT).show();
+                Navigation.findNavController(requireView()).navigateUp();
+            }
+        });
 
         Bundle bundle = this.getArguments();
         assert bundle != null;
         String track = bundle.getString("trackName");
         int imgUrl = bundle.getInt("trackImage");
 
-        trackName.setText(track);
+        CollapsingToolbarLayout toolBarLayout = binding.toolbarLayout;
+        toolBarLayout.setTitle(track);
+        toolBarLayout.setExpandedTitleMarginBottom(40);
+        toolBarLayout.setExpandedTitleMarginStart(60);
+        toolBarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppBar);
+        toolBarLayout.setCollapsedTitleTextAppearance(R.style.CollapsedAppBar);
+
+
+
+        //trackName.setText(track);
         imgTrack.setImageResource(imgUrl);
 
 
@@ -85,9 +111,9 @@ public class TrackDetailsFragment extends Fragment {
             transaction.addToBackStack(null);
             transaction.commit();
         });*/
-        imgBack.setOnClickListener( v ->  {
+        /*imgBack.setOnClickListener( v ->  {
             Navigation.findNavController(requireView()).navigateUp();
-        });
+        });*/
         btnRegister.setOnClickListener(v -> {
             String url = "https://portal.ieeeyesist12.org/";
             Uri uri = Uri.parse(url);
@@ -100,7 +126,7 @@ public class TrackDetailsFragment extends Fragment {
             Intent intent = new Intent(Intent.ACTION_VIEW, uri);
             startActivity(intent);
         });
-        return view;
+        return binding.getRoot();
     }
 
 
