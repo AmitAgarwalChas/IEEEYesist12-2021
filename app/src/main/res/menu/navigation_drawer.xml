@@ -5,7 +5,7 @@
 
     <group
         android:id="@+id/features_group"
-        android:checkableBehavior="single">
+        android:checkableBehavior="none">
         <item
             android:id="@+id/homeFragment"
             android:title="@string/home"
@@ -40,7 +40,7 @@
 
     <group
         android:id="@+id/extras_group"
-        android:checkableBehavior="single">
+        android:checkableBehavior="none">
         <item
             android:id="@+id/faqFragment"
             android:title="FAQs"
