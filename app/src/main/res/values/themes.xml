@@ -27,7 +27,7 @@
     <style name="bottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/bottomSheetStyle</item>
     </style>
-    
+
     <style name="bottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
     </style>
@@ -36,4 +36,27 @@
         <item name="fontFamily">@font/nunito_light</item>
         <item name="android:textSize">20sp</item>
     </style>
+
+    <style name="Theme.IEEEYesist122021.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.IEEEYesist122021.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.IEEEYesist122021.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ExpandedAppBar" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/app_font</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/app_font</item>
+    </style>
+
 </resources>

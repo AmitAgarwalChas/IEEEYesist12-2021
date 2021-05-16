@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="view.Tracks.TrackDetailsFragment"
+    tools:showIn="@layout/fragment_track_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="64dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/registerbutton"
+                android:fontFamily="@font/nunitoregular"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                android:paddingStart="50dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="50dp"
+                android:paddingBottom="15dp"
+                android:text="Abstract Submission"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btnPilotRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pilotregisterbutton"
+                android:fontFamily="@font/nunitoregular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="46dp"
+                android:paddingTop="8dp"
+                android:paddingRight="46dp"
+                android:paddingBottom="15dp"
+                android:text="Pilot Registration"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtPrize1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#0091EA"
+                android:fontFamily="@font/poppinssemi"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:text="@string/first_prize"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrize2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#0091EA"
+                android:fontFamily="@font/poppinssemi"
+                android:includeFontPadding="false"
+                android:paddingLeft="9dp"
+                android:paddingTop="6dp"
+                android:paddingRight="9dp"
+                android:paddingBottom="6dp"
+                android:text="@string/second_prize"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinssemi"
+            android:text="About Event"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/trackInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunitoregular"
+            android:includeFontPadding="true"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="6dp"
+            android:text="@string/wepower"
+            android:textColor="#676969"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/rules_cardview">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/rules_track"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Rules for the track"
+                        android:textColor="#676969"
+                        android:textSize="18sp"/>
+
+                    <ImageButton
+                        android:id="@+id/arrow_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic__arrow_down"
+                        android:tint="#696969"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/rules_track_det"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitoregular"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/random_text"
+                    android:textColor="#676969"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/abstract_cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/abstract_sel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitoregular"
+                        android:text="Abstract Selection Process"
+                        android:textColor="#676969"
+                        android:textSize="18sp" />
+
+                    <ImageButton
+                        android:id="@+id/arrow_d"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic__arrow_down"
+                        android:tint="#696969" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/abstract_sel_det"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunitoregular"
+                    android:lineSpacingExtra="3dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="4dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/random_text"
+                    android:textColor="#676969"
+                    android:textSize="14sp"
+                    android:justificationMode="inter_word"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
