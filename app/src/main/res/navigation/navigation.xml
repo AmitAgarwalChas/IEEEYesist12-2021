@@ -66,4 +66,9 @@
         android:name="com.ieee.ieee_yesist.view.AboutTeam.SubCommitteeFragment"
         android:label="fragment_sub_committee"
         tools:layout="@layout/fragment_sub_committee" />
+    <fragment
+        android:id="@+id/sponsorsFragment"
+        android:name="com.ieee.ieee_yesist.view.SponsorsFragment"
+        android:label="fragment_sponsors"
+        tools:layout="@layout/fragment_sponsors" />
 </navigation>

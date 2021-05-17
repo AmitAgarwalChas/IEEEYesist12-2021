@@ -17,6 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.ieee.ieee_yesist.databinding.ActivityMainBinding;
+import com.ieee.ieee_yesist.view.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.homeFragment, R.id.tracksFragment, R.id.aboutTeamFragment, R.id.trendingFragment,
-                R.id.trackDetailsFragment, R.id.professionalInfoFragment, R.id.sterringCommitteeFragment, R.id.subCommitteeFragment)
+                R.id.trackDetailsFragment, R.id.professionalInfoFragment, R.id.sterringCommitteeFragment, R.id.subCommitteeFragment,
+                R.id.sponsorsFragment)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -51,12 +53,23 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
         NavigationUI.setupWithNavController(navigationView, navController);
 
+        navigationView.setNavigationItemSelectedListener(item -> {
+            if(item.getItemId() == R.id.sponsorsFragment) {
+                bottomNavigationView.setVisibility(View.GONE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragNavHost, new SponsorsFragment()).commit();
+            }
+            if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                binding.drawerLayout.closeDrawer(GravityCompat.START);
+            }
+            return NavigationUI.onNavDestinationSelected(item, navController);
+        });
+
         bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
             if(item.getItemId() == R.id.more_options) {
                 binding.drawerLayout.openDrawer(GravityCompat.START);
             }
-            if(binding.drawerLayout.isDrawerOpen(GravityCompat.END)) {
-                binding.drawerLayout.closeDrawer(GravityCompat.END);
+            if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                binding.drawerLayout.closeDrawer(GravityCompat.START);
             }
             return NavigationUI.onNavDestinationSelected(item, navController);
         });
@@ -82,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
         if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
             binding.drawerLayout.closeDrawer(GravityCompat.START);
         }else {
+            if(bottomNavigationView.getVisibility() == View.GONE)
+                bottomNavigationView.setVisibility(View.VISIBLE);
             super.onBackPressed();
         }
     }

@@ -27,7 +27,7 @@
             android:enabled="true"
             android:icon="@drawable/ic_about_team" />
         <item
-            android:id="@+id/sponsorFragment"
+            android:id="@+id/sponsorsFragment"
             android:title="Sponsors"
             android:enabled="true"
             android:icon="@drawable/ic_about_team" />
