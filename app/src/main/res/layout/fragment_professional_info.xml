@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.AboutTeam.ProfessionalInfoFragment">
+    tools:context=".view.AboutTeam.ProfessionalInfoFragment"
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
             android:id="@+id/back_button"
@@ -22,8 +23,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="36dp"
             android:src="@drawable/ic_back"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/pf_header"
@@ -32,13 +33,13 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="21dp"
             android:layout_marginBottom="90dp"
+            android:fontFamily="@font/nunitoblack"
             android:text="Professional Info"
             android:textColor="@color/white"
             android:textSize="30sp"
-            android:fontFamily="@font/nunitoblack"
-            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/back_button"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <de.hdodenhof.circleimageview.CircleImageView
@@ -46,58 +47,72 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/gal_gadot"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/header"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintBottom_toBottomOf="@id/header"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
     <ImageView
         android:id="@+id/linked_in_button"
         android:layout_width="30dp"
         android:layout_height="30dp"
-        app:srcCompat="@drawable/linkedin"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="@id/professional_pic"
         app:layout_constraintEnd_toEndOf="@id/professional_pic"
         app:layout_constraintStart_toEndOf="@id/professional_pic"
-        app:layout_constraintBottom_toBottomOf="@id/professional_pic"/>
+        app:srcCompat="@drawable/linkedin" />
 
     <TextView
         android:id="@+id/professional_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="Gal Gadot"
-        android:textSize="30sp"
         android:fontFamily="@font/nunitoblack"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/gal_gadot"
         android:textColor="@color/black"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/professional_pic"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/professional_pic" />
 
     <TextView
         android:id="@+id/professional_role"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Volunteer"
-        android:textSize="20sp"
         android:fontFamily="@font/nunito_semi_bold"
+        android:gravity="center"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/volunteer"
         android:textColor="@color/content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/professional_name"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/professional_name" />
 
     <TextView
         android:id="@+id/professional_desc"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="@string/random_text"
-        android:textSize="16sp"
-        android:textColor="@color/black"
+        android:layout_height="0dp"
+        android:ellipsize="end"
         android:fontFamily="@font/nunitoregular"
+        android:justificationMode="inter_word"
+        android:lineSpacingExtra="4dp"
         android:paddingStart="24dp"
+        android:paddingTop="13dp"
         android:paddingEnd="24dp"
-        app:layout_constraintTop_toBottomOf="@id/professional_role"
+        android:paddingBottom="8dp"
+        android:scrollbars="vertical"
+        android:text="@string/random_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/professional_role" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

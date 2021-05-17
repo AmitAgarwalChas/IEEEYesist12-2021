@@ -1,139 +1,603 @@
 <resources>
-    <string name="app_name">IEEEYesist12-2021</string>
+    <string name="app_name">YESIST12</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="home">Home</string>
-    <string name="trending">Trending</string>
+    <string name="timeline">Timeline</string>
     <string name="tracks">Tracks</string>
     <string name="about_team">About Team</string>
     <string name="more">More</string>
+    <string name="short_random_text">ARK Invest, an investment management company focused solely on disruptive innovation, has done a lot of research on the foundational innovations that will shape our world in the next few decades.</string>
     <string name="random_text">ARK Invest, an investment management company focused solely on disruptive innovation, has done a lot of research on the foundational innovations that will shape our world in the next few decades. They refer to these foundational and disruptive innovations as innovation platforms. While information technology and the ARK has identified five innovation platforms that they driving costs down, creating huge demand growth across virtually all sectors and geographies.</string>
     <string name="android_team">Android Team</string>
     <string name="web_development_team">Web Development Team</string>
     <string name="gal_gadot">Gal Gadot</string>
     <string name="volunteer">Volunteer</string>
     <string name="nolan">Nolan</string>
-    <string name="first_prize">1st Prize - $500</string>
-    <string name="second_prize">2nd Prize - $250</string>
+    <string name="first_prize">1st Prize - TBD</string>
+    <string name="second_prize">2nd Prize - TBD</string>
     <string name="track_name">Volleyball</string>
     <string name="profile_name">Christopher Nolan</string>
     <string name="profile_location">Singapore</string>
     <string name="our_vission_text">Our Vission</string>
     <string name="our_mission_text">Our Mission</string>
-    <string name="program_text">A program under ASIST - Augmented Social Innovations through Science and Technology</string>
-    <string name="ieee_yesist_12_text">IEEE YESIST-12</string>
+    <string name="yesist_desc">A program under ASIST - Augmented Social Innovations through Science and Technology</string>
+    <string name="ieee_yesist_12_text">IEEE YESIST12</string>
     <string name="year_text">2021</string>
     <string name="second_card_text">Empower and encourage the engineering minds to work for the social cause through: \n- Organising Competitions for young engineering graduates, engineering students and school students in the themes aligned with the vision. \n- Recognising the engineering educators for their service to the society \n- Creating a strong network for mentors and mentees from industry and academia. \n- Encouraging Interdisciplinary work in creating solutions for social issues.</string>
     <string name="first_card_text">To instill social responsibility and ethics as a continuing education in the young minds through activities and encourage service oriented engineering practice.</string>
 
     <!-- Sterring Committee -->
-    <string name="maker_fair_co_chair_1">Mr. W.M. Dev Sugandhika Jayalath</string>
-    <string name="maker_fair_co_chair_2">Mr. Mian Junaid Manzoor</string>
-    <string name="junior_einstein_co_chair_1">Mr. Navaneethakrishnan Ramanathan</string>
-    <string name="junior_einstein_co_chair_2">Ms. Pooja Sharma K</string>
-    <string name="we_power_co_chair_1">Ms. Preethy V. Warrier</string>
-    <string name="we_power_co_chair_2">Mr. Ramneek Kalra</string>
     <string name="co_chair_maker_fair">Co-Chair | Maker Fair</string>
     <string name="co_chair_junior_einstein">Co-Chair | Junior Einstein</string>
     <string name="co_chair_we_power">Co-Chair | WePOWER</string>
+    <string name="co_chair_special_track">Co-Chair | Special Track</string>
+    <string name="co_chair_innovation_challenge">Co-Chair | Innovation Challenge</string>
+    <string name="co_chair_pro_pub">Co-Chair | Promotion and Publicity</string>
+    <string name="co_chair_content_dev">Co-Chair | Content Development</string>
+    <string name="co_chair_section_collab">Co-Chair | Section Collaboration</string>
+    <string name="co_chair_website">Co-Chair | Website</string>
+    <string name="co_chair_partnership">Co-Chair | Partnership</string>
+    <string name="chair_career_fair">Chair | Career Fair</string>
+
+    <string name="general_chair">Ramalatha Marimuthu</string>
+    <string name="secretary">Ketha Nikitha</string>
+    <string name="maker_fair_co_chair_1">W.M. Dev Sugandhika Jayalath</string>
+    <string name="maker_fair_co_chair_2">Mian Junaid Manzoor</string>
+    <string name="junior_einstein_co_chair_1">R. Navaneetha Krishnan</string>
+    <string name="junior_einstein_co_chair_2">Pooja Sharma K</string>
+    <string name="we_power_co_chair_1">Preethy V. Warrier</string>
+    <string name="we_power_co_chair_2">Ramneek Kalra</string>
+    <string name="special_track_co_chair_1">Vydeki Vijayakumar </string>
+    <string name="special_track_co_chair_2">Indhumathi Gunasekaran </string>
+    <string name="innovation_challenge_co_chair_1">Tasnim Binte Shawkat</string>
+    <string name="innovation_challenge_co_chair_2">Bindu A. Thomas</string>
+    <string name="promotion_and_publicity_co_chair_1">Aishwarya Bandla</string>
+    <string name="promotion_and_publicity_co_chair_2">Nithyavathy N</string>
+    <string name="partnerships_co_chair">M. Alagu Meenakshi</string>
+    <string name="website_chair_1">Ashvanth Narayanan</string>
+    <string name="website_co_chair_2">Arangan Rishikesh T</string>
+    <string name="content_development_chair_1">Janani Ramachandran</string>
+    <string name="content_development_chair_2">Bharathi Ramesh</string>
+    <string name="section_collaboration_chair_1">A. Darwin Jose Raju</string>
+    <string name="section_collaboration_chair_2">R. Ankayarkanni</string>
+    <string name="career_fair_chair">Nageswara Gupta</string>
+    <string name="desgin_development_chair">Tahmim Hossain</string>
 
     <!-- Track Info Details -->
     <string name="innovation">
-        Innovation Challenge is an international project competition established by IEEE Madras Section and IEEE Education Society to encourage the participants to come up with innovative ideas for the social and humanitarian issues. Here YESIST12 acts as a platform to bridge the gap between the engineers and visonaries to contribute to the society with innovations.\nThis exceptional platform conducts competition in two stages. The preliminary stage is conducted across Asian and African countries and the team that tops the round wins a chance to compete globally to address humanitarian and social issues like poverty, famine, special needs, women safety, healthcare, disaster management, and many more.
+        Innovation Challenge is an international project competition established by IEEE Madras Section and IEEE Education Society to encourage the participants to come up with innovative ideas for the social and humanitarian issues. Here YESIST12 acts as a platform to bridge the gap between the engineers and visonaries to contribute to the society with innovations.\n\nThis exceptional platform conducts competition in two stages. The preliminary stage is conducted across Asian and African countries and the team that tops the round wins a chance to compete globally to address humanitarian and social issues like poverty, famine, special needs, women safety, healthcare, disaster management, and many more.
     </string>
     <string name="innov_abstract">
         1. Novelty\n2. Clarity\n3. Feasibility and Practicability\n4. User Experience\n5. Scale of impact\n6. Sustainability\n7. Potential for future work progression.
     </string>
     <string name="innov_rules">
-        To be updated soon.
+        1. Under the Innovation Challenge theme, the projects can be Mobile Apps or Computer Based or IoT based.
+        \n\n2. In addition to developing the projects, the developers should ensure that their creation follows the international industry level technical standards set by the various agencies and approved universally. The evaluation criteria will be as follows:
+        \na. Creativity
+        \nb. Application
+        \nc. Relevance to the theme
+        \nd. Application of Standards
+        \ne. Deliverability
+        \n\n3. Students with drive and passion towards helping humanity are invited to register for the competition. The first round of the competition is to be held all over Asia in the pilots selected on the basis of registration. The winning teams will be called for the final round to be organised in September 2021.
     </string>
     <string name="maker_fair">
-        MakerFair is a unique platform with opportunities for the innovators, makers, and creators to showcase their marvelous products to the international community. Teams with enthusiasm and determination of inventing and showcasing their innovative ideas which are capable from ideation to commercialization are invited to register for this event.\n
-        In 2021, MakerFair Track have goals to achieve maximum goals which can be helpful to the world regarding the problems World has been facing in recent times under the UN Sustainable Development Goals.
+        MakerFair is a unique platform with opportunities for the innovators, makers, and creators to showcase their marvelous products to the international community. Teams with enthusiasm and determination of inventing and showcasing their innovative ideas which are capable from ideation to commercialization are invited to register for this event.
+        \n\nIn 2021, MakerFair Track have goals to achieve maximum goals which can be helpful to the world regarding the problems World has been facing in recent times under the UN Sustainable Development Goals.
     </string>
     <string name="maker_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
     <string name="maker_rules">
-        -Team size: Maximum of 4 members.
-        \n-Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
-        \n-Teams shall display their working projects in the venue, explain and demonstrate to the audience and evaluators.
-        \n-The evaluation will be based on the following criteria: Challenge, Innovation, Usability, and Extendibility.
-        \n-Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
-        \n-Each team is solely responsible for its own cooperation and teamwork.
+        1. Team size: Maximum of 4 members.
+        \n2. Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
+        \n3. Teams shall display their working projects in the venue, explain and demonstrate to the audience and evaluators.
+        \n4. The evaluation will be based on the following criteria: Challenge, Innovation, Usability, and Extendibility.
+        \n5. Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
+        \n6. Each team is solely responsible for its own cooperation and teamwork.
     </string>
     <string name="einstein">
         Junior Einstein Track acts as a catalyst for innovation and provides a transformative opportunity to broaden the horizon of knowledge among the young curious minds. This event makes effort to harness the creative submissions and innovative spirit towards Scientific and technological ideas/innovations from the school students of age 12 to 17 and to get rooted as one of the foremost project competition in the global arena developing a robust scientific temper among the youth.\n
     </string>
     <string name="einstein_rules">
-        -Team size: Maximum of 4 members.
-        \n-Participant’s Age: 12 to 17 years. Proof for the same shall be submitted. (Bonafide letter from school or birth certificate)
-        \n-Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
-        \n-Teams are locked along with abstract submission and no further changes to team members and mentors can be made thereafter.
-        \n-Teams shall present their working projects in the virtually, explain and demonstrate to the audience and evaluators.
-        \n-The evaluation will be based on the following criteria: Novelty / Innovation, Participant’s knowledge on concept / market demand, Technical implementation, Expandability of the project idea/prototype to an actual product or solution, Clarity of pitch.
-        \n-Plagiarism at any forms or at any stage is strictly prohibited.
-        \n-Each team is solely responsible for its own cooperation and teamwork.
+        1. Team size: Maximum of 4 members.
+        \n2. Participant’s Age: 12 to 17 years. Proof for the same shall be submitted. (Bonafide letter from school or birth certificate)
+        \n3. Team members may come from different academic institutions/industries and from different countries. Only the registered members of the team will be given certificates. Mentor names should also accompany the team registration.
+        \n4. Teams are locked along with abstract submission and no further changes to team members and mentors can be made thereafter.
+        \n5. Teams shall present their working projects in the virtually, explain and demonstrate to the audience and evaluators.
+        \n6. The evaluation will be based on the following criteria: Novelty / Innovation, Participant’s knowledge on concept / market demand, Technical implementation, Expandability of the project idea/prototype to an actual product or solution, Clarity of pitch.
+        \n7. Plagiarism at any forms or at any stage is strictly prohibited.
+        \n8. Each team is solely responsible for its own cooperation and teamwork.
         \n\nThe projects can be a software solution or hardware integrated.
     </string>
     <string name="einstein_abstract">
         1. Novelty\n2. Clarity\n3. Feasibility and Practicability\n4. User Experience\n5. Scale of impact\n6. Sustainability\n7. Potential for future work progression.
     </string>
     <string name="wepower">
-        The World Bank recently started “South Asia Gender and Energy” (SAGE) initiative with a plan to establish a “Women in Power Sector Network in South Asia (WePOWER)” to promote women engineers and practitioners in the energy and power sector, and bring normative change regarding women in Science, Technology, Engineering, and Math (STEM) education. \n
-        The example of the value propositions are:\n
-        -Capacity building\n
-        -Networking and mentorship for women engineers for career advancement\n
-        -Exposure to technology and utility/energy sector in developed countries\n
-        -Access to information and conferences\n
-        -Recruitment opportunities\n
-        -Exposure and encouragement to women students to pursue energy sector engineering jobs as a viable career option
-        \nWePOWER topics:\n
-        -Renewable Energy\n
-        -Energy Conservation and Management\n
-        -Energy Auditing\n
-        -Power Generation, Transmission and Distribution\n
-        -Flexible AC Transmissions System (FACTS)\n
-        -IoT in Energy and Smart Grid\n
-        -Digitalization(AI, ML, Computing) in Renewable Energy\n
-        -Smart Technologies in Electrical Power Sector Network
+        The World Bank recently started “South Asia Gender and Energy” (SAGE) initiative with a plan to establish a “Women in Power Sector Network in South Asia (WePOWER)” to promote women engineers and practitioners in the energy and power sector, and bring normative change regarding women in Science, Technology, Engineering, and Math (STEM) education.
+        \n\nThe example of the value propositions are:
+        \n-Capacity building
+        \n-Networking and mentorship for women engineers for career advancement
+        \n-Exposure to technology and utility/energy sector in developed countries
+        \n-Access to information and conferences
+        \n-Recruitment opportunities
+        \n-Exposure and encouragement to women students to pursue energy sector engineering jobs as a viable career option
+        \n\nWePOWER topics:
+        \n-Renewable Energy
+        \n-Energy Conservation and Management
+        \n-Energy Auditing
+        \n-Power Generation, Transmission and Distribution
+        \n-Flexible AC Transmissions System (FACTS)
+        \n-IoT in Energy and Smart Grid
+        \n-Digitalization(AI, ML, Computing) in Renewable Energy
+        \n-Smart Technologies in Electrical Power Sector Network
     </string>
     <string name="wepower_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
     <string name="wepower_rules">
-        -Team size: Maximum of 4 members (at least one girl).
-        \n-Team members may come from different academic institutions/industries and from different countries.
-        \n-Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
-        \n-Working model (hardware), simulation works, research studies and idea proposition are all accepted during the finals. However the technical content should be strong and sufficient literature review has to be done (and everything should be mentioned in the abstract also). Proposed area should be innovative and should have positive potential impact.
-        \n-Each Team is solely responsible for its own cooperation and teamwork.
+        1. Team size: Maximum of 4 members (at least one girl).
+        \n2. Team members may come from different academic institutions/industries and from different countries.
+        \n3. Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
+        \n4. Working model (hardware), simulation works, research studies and idea proposition are all accepted during the finals. However the technical content should be strong and sufficient literature review has to be done (and everything should be mentioned in the abstract also). Proposed area should be innovative and should have positive potential impact.
+        \n5. Each Team is solely responsible for its own cooperation and teamwork.
     </string>
     <string name="special">
-        Special Track aims at bringing out the innovative solutions to solve issues of mankind, on a global scale. It is the recently added track in YESIST12 during its 2020 edition and focussed on health and disaster management. In 2021, Special Track targets on providing solutions to more challenges faced by every individual on the planet. Novel ideas, creative proposals with interesting presentations are rewarded and appreciated\n
-        The submissions could be related to the following topics:\n
-        -Clean water and Sanitation.\n
-        -Improvised medical and health care\n
-        -Sustainable cities and communities.\n
-        -Preventive measures from hazards and disasters.\n
-        -Environmental Engineering\n
+        Special Track aims at bringing out the innovative solutions to solve issues of mankind, on a global scale. It is the recently added track in YESIST12 during its 2020 edition and focussed on health and disaster management. In 2021, Special Track targets on providing solutions to more challenges faced by every individual on the planet. Novel ideas, creative proposals with interesting presentations are rewarded and appreciated.
+        \n\nThe submissions could be related to the following topics:
+        \n-Clean water and Sanitation.
+        \n-Improvised medical and health care.
+        \n-Sustainable cities and communities.
+        \n-Preventive measures from hazards and disasters.
+        \n-Environmental Engineering.
     </string>
     <string name="special_rules">
-        -The team size is from 2 to 4 members.
-        \n-A team may comprise members from varied academic institutions/ Industries and maybe from different countries.
-        \n-People who enroll themselves along with team member\'s registration along with the mentor details will be provided with certificates.
-        \n-The selected teams will be given a chance to present their projects through an online platform to the judging panel.
-        \n-Once the team finalization is done along with their abstract, there will be no more changes with their membership and the mentor details.
-        \n-Coordination and teamwork must be taken care of by the team leader. Further details regarding the platform and logistics will be updated to you all soon.
+        1. The team size is from 2 to 4 members.
+        \n2. A team may comprise members from varied academic institutions/ Industries and maybe from different countries.
+        \n3. People who enroll themselves along with team member\'s registration along with the mentor details will be provided with certificates.
+        \n4. The selected teams will be given a chance to present their projects through an online platform to the judging panel.
+        \n5. Once the team finalization is done along with their abstract, there will be no more changes with their membership and the mentor details.
+        \n6. Coordination and teamwork must be taken care of by the team leader. Further details regarding the platform and logistics will be updated to you all soon.
     </string>
     <string name="special_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
     </string>
 
+    <!-- Yesist home page -->
+    <string name="knowledge">Gear up to listen to the ocean of knowledge. The speakers will nourish with their experiences.</string>
+    <string name="prof_connect">Get in touch with professionals from all walks of life and build good relationships.</string>
+    <string name="arena">This is the best place to showcase your innovations and get the right results out of it to move ahead.</string>
+    <string name="time">You get to participate in the phenomenal event with experienced people nailing it the best.</string>
+    <string name="recognised">You get a good reach for your innovations and everyone will get valuable certificates.</string>
+    <string name="presence">Being part of a YESIST12 you get to connect with like minded people, geographically to collaborate and grow.</string>
+
     <!-- Android Team -->
     <string name="amit_agarwal">Amit Agarwal</string>
+    <string name="amit_bio">Ambitious sophomore pursuing B.Tech in Computer Science and Engineering at Vellore Institute of Technology, Vellore. Skilled in Java, Kotlin, C++, Python. In the past two years, I have learned new technologies and have built multiple projects. Been into Android App Development for more than 1.5 years. Have a strong eye for detail and skilled with working as a team. Competitive Programmer with high problem solving skills.</string>
     <string name="mokshda_gangrade">Mokshda Gangrade</string>
-    <string name="samriddhi">Samriddhi</string>
+    <string name="mokshda_bio">
+        Experienced Board Member with a demonstrated history of working in the civic and social organization industry. Skilled in Python (Programming Language), C++, Data Science, English, and Java. Team spirited and has worked on several projects under android app development as well as participated in various hackathons thus having an insight of various fields like AI, ML, NLP, Google services, AWS and more. Strong business development professional with a Bachelor of Technology - BTech focused in Computer Science specialization Data Science from Vellore Institute of Technology.
+    </string>
+    <string name="samriddhi">Samriddhi Agarwal</string>
+    <string name="samriddhi_bio">
+        Samriddhi is a sophomore pursuing her B.Tech from VIT, Vellore. She is a self-motivated tech-enthusiast who loves to learn about various technologies and implement them to create solutions to real-world problems. She is a core-committee member of IEEE Computer Society VIT and aims to bring the best out of her by connecting with like-minded people, working on innovative projects, and learning new technologies.\nApart from IEEE, she has been an active tech member for other non-profit organizations like Skillship. Besides work, she loves to write comic sets and stand-ups, singing and have great managerial skills.
+    </string>
     <string name="sunjol_paul">Sunjol Paul</string>
     <string name="rupam_laha">Rupam Laha</string>
+    <string name="rupam_bio">
+        Rupam is a third year student, doing his graduation from VIT, Vellore. A total tech enthusiast, Rupam has designed the entire UI/UX of this app single handedly. He is an established IOS developer and is fond of coding. He is also into graphic designing field. This is his initial stage of volunteering experience which he would love to turn into a long journey.
+    </string>
     <string name="aayushi">Aayushi</string>
+    <string name="aayushi_bio">
+        Aayushi is a 3rd year undergrad pursuing her B. Tech in Computer Science and Engineering from Vellore Institute of Technology, Vellore. She has been an active IEEE-CS member since the past 2 and a half years and is currently serving as the Vice - Chairperson of her student branch. She got connected to with IEEE after she represented her student branch in the Chapter Representation competition at AICSSYC \'19 and bagged the title for the most outstanding Student Chapter’ 19. Since then, there has been no looking back. She has actively contributed in developing the Android Application for IEEE YESIST12 2020 too and served as a student mentor during IEEE WIE Project Based Learning School Camp. She enjoys taking up challenges and believes that only challenges help a person grow.
+    </string>
+
+
+    <!-- Timeline -->
+    <string name="month_year">March 2021</string>
+    <string name="completed">Completed</string>
+    <string name="introductory_meeting">Introductory Meeting</string>
+    <string name="join">Join</string>
+    <string name="about">About</string>
+    <string name="mon">Mon</string>
+    <string name="_07">07</string>
+    <string name="_8_00_am">8:00 AM</string>
+    <string name="timezone_kolkata_india">Timezone : Kolkata, India</string>
+    <string name="_10_30_am">10:30 AM</string>
+
+    <!-- Steering Committee Bio -->
+    <string name="ramlatha">
+        Dr Ramalatha Marimuthu has been in teaching for over 30 years and has a vast experience in motivating and training the students on skill development and peer networking. She organises leadership training workshops. conferences and congresses for training student leaders and for encouraging entrepreneurship which has resulted in many student startups.
+                \n"She also guides the students in developing unique solutions for social problems like inclusiveness and accessibility in day to day life for people with special needs. She has received many awards from IEEE, Lions Club, Government of Tamilnadu India and Anita Borg Institute for Women and Technology, California for effecting positive changes in community through technology.
+                \n"She has delivered lectures on assistive technology in universities and conferences all over the world and in Google.
+                \n"Mountainview and Pacific Northwest National Laboratory, Richland. Her areas of interest are assistive technology women empowerment and effective education With her years of teaching experience she has introduced many novelties in teaching and assessment methods and learnt from the results. Strategic Planning Developing infrastructure, administration and people management are some of her interests. Being a positive person which is one of her greatest strength. She has developed herself in studying the human nature and identifying best people for the activities. This has given her a vast network of people with varying skills who trust in her ability to mentor and guide them. She is particularly interested in encouraging students and youngsters and helping them solve problems of academic and personal nature."
+    </string>
+    <string name="nikitha">
+        Nikitha is an electronics engineer who is currently working as a Business Technology Analyst at Deloitte US-India. A Philomath with a strong inclination to all things \'Tech\', she believes that the ocean of knowledge is never ceasing to be explored, promising those who take up the journey immense treasures and opportunities to grow and upgrade themselves. She is immensely passionate about volunteering and strongly advocates for gender equity among STEM domains.
+        \nShe finds great inspiration in people and credits IEEE for blessing her with opportunities that honed her team management and organizing skills. Under IEEE, she is a Young Professional and an Exe-Com member for TEMS Society Hyderabad section chapter.
+        She was also a former content volunteer at IEEE WIE ILS 2020 and IEEE Data Science Bootcamp 1.0 under IEEE SSIT Madras Section Chapter, a PES Zero Hunger Day ambassador, an IEEE madC and IEEE Day ambassador as well as a student volunteer for AHCSSC 2019 and 2020. Apart from IEEE, she has been an active volunteer for other non-profit organizations like We For You and Youth For Seva.
+        When away from work, she loves to read books, enhance her culinary skills or experiment with various craft and lettering styles.
+    </string>
+    <string name="dev_sugandhika">
+        Dev is an Electrical and Electronic Engineer who works at Brantel Lanka (PVT) Limited, Sri Lanka. He has completed Bachelor’s degree in Electrical and Electronic Engineering at University of Jaffna, Sri Lanka and currently he is following his Master\'s Degree in Electrical Engineering in University of Moratuwa, Sri Lanka.\n
+        Dev is an IEEE VoLT (Volunteer Leadership Training) graduate in 2020 who is holding IEEE technical society memberships in IEEE PES, IEEE IAS and IEEE PELS. His volunteering extremities were lying when leading as the Committee Member of IEEE YESIST 12 Maker Fair consecutively in 2019 and 2020. He is the founder and former chair of IEEE PES Student Branch Chapter, University of Jaffna, Sri Lanka.
+        \nHis vast experiences were remarked with volunteering in “International Conference on Information and Automation for Sustainability 2018, Sri Lanka”, “IEEE R10 Humanitarian Technology Conference 2018, Sri Lanka” and again in 2019, Indonesia.
+        \nMoreover, Dev has volunteered as the Country Representative (Sri Lanka) of IEEE PES Day 2020 as well as in 2021. He showed off his talent and excellency in leading the IEEE Day 2020 as the Regional Lead of Region 10 (SL, BD, IN, PK). This guy is giving his best as the Lead Ambassador in IEEE Collabratec and IEEE Brand Ambassador for past years while grabbing the international recognition.
+        At the moment Dev is the Country Representative of IEEE PES CSAC (Chapters Student Activity Committee) 2021. As well as he works as the Editor in IEEE PELS Sri Lanka Chapter, Committee Member in IEEE PES Sri Lanka Chapter and Vice Chairman of IEEE IAS Sri Lanka chapter. He is truly a remarkable individual of dedication and excellency on the platform of IEEE
+    </string>
+    <string name="ramneek">
+        Ramneek is a Computer Science Engineer and Proactive Volunteer at numerous organizations namely IEEE, Youth for Sustainability, Atal Innovation Mission (NITI Aayog, Govt. of India), Human Circle (Young India Challenge). He is an IEEE Young Professional who is working currently in Amazon Inc.
+        \nHe is holding responsibilities of IEEE Impact Creator, Program Co-Lead of IEEE Computer Society Student Leadership Program under IEEE Computer Society SYP Committee, Co-Chair of WePOWER Track at IEEE YESIST12-2021, Author at IEEE USA E-Books, Member of “Universal Access to Technology” Technical Committee of IEEE SSIT, Member of IEEE SA Industry Connect Program on “Intelligent Transportation System Testbed Development for Dynamic Road Traffic Management and Control at Electronics-City, Bangalore, India” and IEEE Brand Ambassador.
+        \nHe had volunteered and contributed as Mentor to 4 Teams in IEEE Xtreme Programming Contest 14.0, Chair of Technical Committee at IEEE WIE ILS 2020, Co-Chair of IEEE Data Science Bootcamp 1.0 under IEEE SSIT Madras Section Chapter, Project Development Committee Member at IEEE Smart Village US, Advisor of Innovation Challenge Track at IEEE YESIST12-2020, Web Developer at TEDx AIACTR Delhi India and Chairperson and Webmaster of IEEE HMR Institute of Technology and Management New Delhi India.
+        With the curiosity to learn new things, he had deep-dived into research world as well, his research interests include Edge Computing and emerging Technologies. He had published around 15+ Research papers in IEEE Sponsored Conferences, Elsevier/Springer Journals and he holds 1 patent which was the motivation from his 3rd Year Research Project.
+        With holding hands on volunteering and leadership positions, he had been awarded with numerous titles including Best Support Person by his previous employer, Dr. JK Pal Award by IEEE Delhi Section, Technocrat by his Graduation Institute in his 1st Year of Study and numerous technical exhibitions and conferences awards during his course of graduation.
+    </string>
+    <string name="indhumathi">
+        Ms. Indhumathi Gunasekaran is an Associate Software Engineer at Accenture, India. She holds her bachelors in Electronics and Communication Engineering from Panimalar Institute of Technology, Chennai, India. She is currently serving in the roles of Regional Student ambassador of R10, Co-chair of IEEE YESIST12 (Special Track), Member of PELS Students Sub-committee, Member of PELS Women in Engineering, Founding Chair of Nuclear and Plasma Sciences society and IEEE Brand Ambassador. She served as the Section lead of IEEEXtreme 14.0,Publicity and Promotions Lead of IEEE WIE International Leadership Summit 2020, Student Chapter Ambassador of Power and Energy Society, Chairperson of Computer Society chapter of IEEE Panimalar Institute of Technology Student Branch and Vice-Chairperson of IEEE PIT SB. Indhumathi was previously the IEEE Student Branch Secretary and Chairperson of Women in Engineering AG of the Student Branch.
+        \nIndhu has won IEEE Women in Engineering Inspiring Student Member Award (2020) for her distinguished leadership and outstanding contributions as a volunteer, at the Section and Regional levels, serving the IEEE and IEEE Women in Engineering for the benefit of its members and the engineering profession;  IEEE CS Richard E Merwin Scholarship for her outstanding leadership as a Student Volunteer; IEEE CS Upsilon Pi Epsilon Scholarship and Grace Hopper Celebration India Scholarship in recognition of her outstanding academic and  professional accomplishments.
+        \nAcknowledging her achievements she has been awarded as the ""Outstanding Student Award 2020"" , ""EMERGING STUDENT VOLUNTEER” award for the year 2018 and ""The Best Student of the Year 2018"" by ISTE TN Section level in their 18th Annual Convention. Not just in IEEE but she has also proved herself in academics with outstanding performance. She secured the first rank in her department during the university examinations for several academic years. She has been an active participant, volunteer and has coordinated and organized many co-curricular and extracurricular activities. She has been and will always be a source of inspiration for upcoming minds.
+        \nShe has a been a kind person in helping new minds for their development. In her spare time, she founded and served as organizing secretary for She-the coder and initiated several school education program. Her determination and courage has made her to do many achievements making her as remarkable person.
+    </string>
+    <string name="aishwarya">
+        Dr. Aishwarya Bandla heads the Translational Core at The N.1 Institute for Health and is a Senior Research Fellow at the National University of Singapore (NUS). A multidisciplinary team of scientists and clinicians, her research group focuses on wearable bioengineering solutions for disease prevention in the oncology and neurology spectrum. Dr. Bandla holds a Ph.D. in Biomedical Engineering from NUS, has published her research in high impact peer-reviewed journals and has won several international research conference presentation awards. She represented NUS in the Global Young Scientist’s Summit 2018, a multi-disciplinary platform for conversations on science and research, technology innovation and society, and solutions to global challenges.  Aishwarya was also recently featured in the inaugural Singapore’s 100 Women in Tech list 2020, which celebrates women who have made significant contributions to tech in Singapore and for their ability to influence, inspire and impact on community and industry. She was also featured in GovInsider’s Global 50 women in Govtech story.
+        \nAishwarya, an IEEE senior member, chairs the Professional Activities Committee as part of the IEEE Singapore Section and is the immediate past chair of Women in Engineering Singapore. She is also part of the executive committee of the IEEE Region 10 Women in Engineering and the Engineering in Medicine and Biology chapter Singapore. As a circle leader in the Lean In Singapore community, Aishwarya is passionate about motivating professionals to “pay it forward” by mentoring peers and young people.
+    </string>
+    <string name="janani">
+        Janani Ramachandran is a Fellow at Teach For India. She has been an active volunteer for the past 4 years and has volunteered in several events across regions. She has held various leadership roles in IEEE, IEEE CS, IEEE Photonics Society. For her exemplary contributions in academics and volunteering, she was awarded Shri Prahalad P Chabbria "Best Outgoing Student Award" for the year 2020. Due to her extraordinary volunteering contributions, she was awarded the Richard E Merwin Scholarship 2019 by IEEE Computer Society and she is the recipient of the prestigious Grace Hopper Celebration India Scholarship for the year 2019. Her innovative project has bagged the Student Project Funding 2020 by IEEE Madras Section.
+    </string>
+    <string name="bharathi_ramesh">
+        Bharathi Ramesh is a third-year undergraduate student from Jeppiaar Engineering College. She has volunteered as a content writer in  WIE ILS 2020 and many other events. She has taken responsibilities as Vice-chairperson of the PES society and is currently volunteering as the Chairperson of the WIE affinity group in her college . Other than IEEE she has been volunteering in NSS, Rotaract and Tamil Mandram of her college.
+    </string>
+    <string name="darwin_jose">
+        Darwin Jose Raju is an IEEE Senior Member, Associate Professor and the Head of the Department of Electrical and Electronics Engineering in St. Xavier’s Catholic College of Engineering, Tamil Nadu, India. He is an active volunteer of IEEE Madras Section. In addition to being the SIGHT Operations Committee Chair, he is also Chair of IEEE Education Society-Madras Section and Coordinator of IEEE StB 62851- St. Xavier’s Catholic College of Engineering.
+        \nDr. Raju received his Bachelors in Electrical and Electronics Engineering and Masters in Applied Electronics from the Hindustan College of Engineering, Chennai. He completed an MBA from Tamil Nadu Open University and a PhD in Electrical Engineering from Anna University, Chennai. Now, with more than 20 years of teaching experience, he continues teaching undergraduate and post-graduate classes in various subjects. He has knowledge about Electrical design in MEP services. Under his guidance, many of his students became IEEE members and have been awarded numerous scholarships and awards from IEEE Societies and IEEE WIE.
+        \nFor his service as an IEEE volunteer, Dr. Raju was elevated to a Senior Member of IEEE and awarded the “Outstanding Student Branch Counselor” award in 2009. He received the IEEE MGA Leadership Award in 2012, as one of the three global recipients.
+        \nAn enthusiastic volunteer with remarkable contributions and achievements, Dr. Raju works for the goodness of society and the student community and believes that success is the joy of self-satisfaction.
+    </string>
+    <string name="junaid">
+        Mr. Junaid is Director at GlobalCast Technical Solutions Pakistan. He has vast experience of Broadcast TV Integrations over IP and Satellite. He has been working in Pakistan\'s largest TV networks such as Business Recorder (Aaj TV) and GNN-HD TV (formerly CNBC Pakistan).
+        \nWith regards to IEEE, Junaid has been volunteering with IEEE since 2012. Currently he is member IEEE Professional Activities Committee Region 10 as well as Co-Chair MakerFair Track for yesist12 this year.
+    </string>
+    <string name="pooja_sharma">
+        Pooja Sharma K is currently working as a Component Engineer at Flex Pvt Ltd India. She was the Secretary of the IEEE YESIST 12 (YOUTH ENDEAVOURS FOR SOCIAL INNOVATION USING SUSTAINABLE TECHNOLOGY) (formerly SS12) 2020 and Co- Chair for IC track 2020. Presently she is the Co-Chair for the Junior Einstein Track of YESIST12- 2021.  Recently she has been appointed as the Executive Committee Member of IEEE Region 10 Women In Engineering for the year 2021-2022.  She is the present Executive Committee Member of IEEE Madras YP and also the Secretary for IEEE Madras WIE. She is the one of the Initiative Leads of IEEE Computer Society Job Fair – India. She is the most enthusiastic volunteer of IEEE Computer Society and Women In Engineering. She has won “Richard E. Merwin Scholarship” from IEEE Computer Society, “Grace Hopper Celebration India Scholarship” from Women in Computing, produced by AnitaB.org and “Google and Udacity Scholarship”.
+        \nShe has been the Program Committee Member of many events of IEEE CS and WIE. She has started many IEEE Chapters in her Student Branch as well as helped other chapters too. She had been selected as the IEEE WIE Representative from Madras Section for R10- SYWL Congress 2018. She was the Networking session coordinator for R10- SYWL CONGRESS 2020. She has also served as a Social Media Coordinator and Initiative Lead at Public Visibility of IEEE Computer Society India – SAC.
+        \nShe is an inspiration to many young women. She always motivates everyone towards following their passion. She is a good leader as well as team player who always loves to work in a fast-moving environment. Seeing this enthusiasm in her, S.A. Engineering College has awarded her the “Best Outgoing Female Award”. She has also won the first prize in IEEE Madras Section - Students Project Funding which is her Patent. Her area of interest includes Communication Systems.
+    </string>
+    <string name="preethy">
+        Ms. Preethy V. Warrier is currently working as a Siting Engineer at Vestas Wind Technology India Pvt. Ltd., Chennai. She is a post graduate in Power and Energy, with experience in wind farm modelling and design of solar photovoltaic systems (utility scale and domestic). Her key responsibilities include data analysis, energy estimation, wind turbine load and power optimization, power curve verification testing (pre sales assessment) and hybrid system design.
+        \nShe is a Senior Member of IEEE and Impact Creator at IEEE Transmitter. She is currently serving as the IEEE WIE Special Funding Subcommittee Member, Treasurer at IEEE Madras Section WIE Affinity Group and Co-Chair for the WePOWER Track in IEEE YESIST12. She has also taken several other leadership positions at local, national and international levels. She is a member of the IEEE Power and Energy Society and IEEE PES Women In Power.
+        \nShe received IEEE Outstanding Women In Engineering Volunteer Award from IEEE Kerala Section in the Professional Category in 2015 and Student Category in 2012. She was also awarded Certificate of Excellence by the Electrical and Electronics Department of Government Engineering College, Thrissur, Kerala for her overall performance during the period 2009-’13.
+        \nHer areas of interest include Solar and Wind Energy, Grid integration of renewable systems, resource modelling, Smart Grid, and Digitalization in renewable energy.
+    </string>
+    <string name="vydeki">
+        Dr.Vydeki Vijayakumar is an active IEEE/WIE Volunteer for more than 15 years. She was the Chair of Madras IEEE WIE during 2015-2019 and improved the WIE membership in Madras Section. She acted as the Chair of first ever IEEE WIE International Leadership Summit, held at Chennai, in 2015. Dr.Vydeki is presently working as Associate Professor in the School of Electronics Engineering, VIT Chennai and serves as the IEEE Student Branch Counselor there. She is instrumental in initiating the Women in Engineering SB AG at her campus, in addition to few other society student chapters. She is keen in fulfilling the mission of IEEE, by motivating students to develop technical projects to solve every day issues of common man. She was recognized for her volunteering activities with the “Outstanding IEEE SB Counsellor and Branch Chapter Advisor Award” in the year 2020. Dr.Vydeki has also served as a member in the Projects sub-committee of SIGHT in 2019 and 2020. She has been selected as the member of IEEE HAC MGA Partnerships Committee and Projects Committee for the year 2021.
+    </string>
+    <string name="nithyavathi">
+        Dr. N. Nithyavathy
+        \nAssociate Professor, Mechatronics Engineering at Kongu Engineering College.
+        \nEXECOM Member IEEE Madras Section (20-21),
+        \nChairman - IEEE Women in Engineering WIE MAS (2019-21);
+        \nSecretary - IEEE Women in Engineering WIE MAS (2018-19);
+        \nTreasurer - IEEE Nano technology Council (2019-20);
+        \nIEEE Branch Counselor (2016-2020) and
+        \nIEEE-Staff Advisor IEEE Robotics and Automation Society (2017-19)
+        \nIE(I), ISTE Professional member (2009- till date)
+    \nShe has completed Bachelors degree in Electronics and Communication Engineering at Kongu Engineering College, Perundurai under Bharathiyar University and her Master degree ME in Mechatronics Engineering at Kongu Engineering College, Perundurai, Tamilnadu, India under Anna University.
+    She has obtained Ph. D. doctoral degree in Information and Communication Engineering at Anna University, Chennai, Tamilnadu, India with a specialization in Nano Metal Oxide sensors for Gas Sensing applications under the guidance of Prof. Vengatachalam Rajendran. She is presently working as Associate Professor in Mechatronics Engineering at Kongu Engineering College, Perundurai, Tamilnadu, India with 14 years of experience.
+    She has gained rich experience in nano composites and metal oxides. She has done the project “Design and development of roof tile production mechanism using advanced ARM processor. She has delivered around 25 Guest Lectures which are sponsored by SERB, DST, ICMR, DRDO, DBT, IEEE at various institutions.
+    She has 25 International Journal publications and 47 International / National Conferences till date. She has been Session chair for International Conference on Nanomaterial and Nanotechnology NANO during December 2015 and advisory committee member for International Conference on Intelligent Computing and Communication for Smart World (I2C2SW) during 14th and 15th December 2018.
+    She is the Publicity chair in IEEE YESIST12 2021(YOUTH ENDEAVOURS FOR SOCIAL INNOVATION USING SUSTAINABLE TECHNOLOGY) an international talent show for students.She is Chair of Returning Mothers Track for IEEE WIE International Leadership summit ILS 2020.
+    She has received awards previously like Best Student Award,Best Faculty Award, and National CLAD –Certified LabVIEW Associate Developer, National Instruments, Best Branch Counselor award 2018-19 and Best Volunteer Award 2019-2020 from IEEE MAS.
+    </string>
+    <string name="arangan">
+        Arangan Rishikesh T is a pre-final year student from St. Joseph\’s College of Engineering, Chennai. He is currently pursuing his Bachelor\’s in Electrical and Electronics Engineering.
+        \nArangan Rishikesh T is a budding flutter developer and well-versed WordPress developer. He has 3+ years of experience in Graphic Designing and Video Editing. He is currently serving as the Chairperson of St. Joseph’s College of Engineering IEEE Student Branch Chapter and Website Committee Lead in IEEE PELS SYPS 2021.
+        \nHe has also bagged first place in Yaadhum Oorae Global Conclave Hackathon organized by the IEEE YESIST12 Committee under the Southern India Chamber of Commerce and Industry in association with Guidance TN. He served as a video editor for the event, “IEEE smart village Consultation on Serve the Underserved" in Feb 2020. He served as a video editor for the event organized by IEEE VIT TEMS, “IEEE TEMS Industry Forum Madras” in Feb 2020. He along with his SB Webmaster created a website for IEEE Madras Section Young Professionals in May 2020.
+        \nRather than IEEE, he is also strong in soft skills as well as technical skills. He has done multiple internships and a budding contributor towards Open Source.
+    </string>
+    <string name="ankayarkanni">
+        Ankayarkanni is an IEEE Member working as Software Engineer in Formcept Technologies and Solutions Pvt. Ltd, Banglore, India. Her volunteering in IEEE SIGHT, IEEE MAS EduSoc Chapter and IEEE StB 62851- St. Xavier’s Catholic College of Engineering is commendable. She has visited schools to disseminate her knowledge to the students and taught the art of craft-making to uneducated women in villages. For her active involvement, outstanding performance and being a real inspiration to other students, she has been recognized with the Honourable Mention of “2018 WIE Inspiring  Student Member of the Year” and “2020 IEEE SIGHT Volunteer Award”. She is currently volunteering in different positions for different IEEE Societies and Affinity groups.
+    </string>
+    <string name="alagu_meena">
+        Alagumeenaakshi Muthiah received her Ph.D. and M.E. degrees from Anna University, Chennai. She received her B.E. from Madurai Kamaraj University and is currently serving as an Associate Professor in the Department of ECE, Kumaraguru College of Technology, Coimbatore, India. She has a total academic experience of 20 years in the field of Electronics and Communication Engineering. She has published 5 research papers in various International journals and more than thirty five Research and Technical papers in National and International conference proceedings including several articles published in Ieeexplore Digital Library. Her areas of interest include Wireless Sensor Networks, Wireless Communication, Network Security, Image Processing and Signal Processing, Machine Learning, RF and Electromagnetic fields. She has worked in developing standardized Routing algorithms and its security for 6LoWPAN LLN networks, Development of Intrusion Detection System for various attacks in Wireless Sensor Networks. She has guided students in the area of Wireless Sensor Networks, Wireless Communication, Internet of Things (IoT), Environment and Home monitoring and automation. Also she has supported them in developing prototype models for various applications such as agriculture, Industry and home automation, flexible electronics.
+        \nShe has organized two National Level Conferences and five National Level Workshops to enlighten the academic fraternity. She was a Chair in various International and National Conferences. As an active volunteer in IEEE she has involved herself as a chair in Junior Einstein Track in IEEE YESIST12 since 2017. Also as IEEE WIE Execom. member in IEEE Madras Section for the past two years She has organized many events for school students to enhance their STEM concepts through practical learning experience using working models with the support IEEE volunteers and Undergraduate students. Under IEEE grant titled “Smart Agriculture for Sustainable Food Production” as a team she has involved in developing a website and a mobile application to help farmers of Coimbatore District to create awareness on Technology Supported Farming. She has been organizing a series of awareness workshops for the farmers to enable them utilize the modern technology and enhance their livelihood. Also she has worked for the GAJA - Cyclone Post-Relief activity for the farmers in the area of Pattukkotai.
+    </string>
+    <string name="tasnim_shawkat">
+        Tasnim Binte Shawkat is working as an Assistant Professor in the Department of Electrical and Computer Engineering at Rajshahi University of Engineering and Technology, Bangladesh.  Her research areas include metamaterials , optoelectronics and photonics, optical fiber systems, optical fiber communication etc. She has a good number of research publications and the recipient of IEEE Photonics Society Travel Grant Award in 2018 for her emerging research carrier in photonics and supervisor of many project works which have been awarded in home and abroad based on IoT, ML, Android App etc.  She is also involved with various government research projects in Bangladesh. and is the president of Startup Rajshahi Division (northern part of Bangladesh) and helping to develop local innovation-ecosystem. Tasnim has long volunteering experiences with IEEE too since her membership in 2012 till today in different executive positions in her student branch, section, as well as IEEE R10. She was the organizing committee member of many national and international seminars, student competitions as well as reputed international conferences within and outside her country. She has also contributed in IEEE Region 10 as a member in the membership development committee (2019-2020) and Women in Engineering Committee (2020). Now, she is the member of the Professional Activities Committee of R10.
+    </string>
+    <string name="naveneetha">
+        Navaneethakrishnan Ramanathan is an Assistant professor in the ECE department at Kumaraguru College of Technology, India. Mentor for Atal Innovation Mission Niti og Government of India Core team member at Robert Bosch Centre for Excellence. He is the chair of IEEE SSIT Madras Section, Execom Member, IEEE Robotics and Automation Society, Madras Section. He is a member of IEEE SIGHT Communication Committee 2019. He played various important roles in IEEE SS 1220162017 and 2018 steering committee. He is chairing the Maker Faire from 2017. He is also TCP and advisory Committee member to the conferences organized by IEEE and other bodies. He was the winner of Smart India Hackathon 2018. He was also Deputed by IEEE Madras Section as an Expert committee to review and uide various SIGHT funded projects and humanitarian technology activities. He has also Resourced a number of National workshops in the field of Embedded and VLSI technology.\n" +
+        \n"He is TCP and advisory committee member for the conferences organized by IEEE and other bodies. He is also the Editor in Chief - International Journal of Innovative Science and Applied Engineering Research He is the Editor-Springer Special Issue \"Ethical and Secure Systems using Internet of Things: Automation to Wearables
+    </string>
+    <string name="ashvanth_b">
+        Currently, he is working as System Engineer in Tata Consultancy Services and also serves a various leadership role in IEEE as Treasurer of Madras Young Professionals, Web Design Co-Chair of IEEE Yesist’12, Core Volunteer in IEEE SMART Village South Asia Working Group. Ashvanth has been actively volunteering in Toastmaster for the past two years and he was a Vice President – Public Relation in TCS Insurance Toastmaster Club consecutively two times. He is very passionate about education and he strongly believes that a good education system will be the game changer to the young generation.
+    </string>
+    <string name="nageswara">
+        Dr. M Nageswara Guptha has 19 years of experience in teaching and 3 Years of experience in research. He holds a BE, ME Computer Science, and Engineering from Kumaraguru College of Technology and completed his research in PSG college of technology. His area of interest includes Business Intelligence, Service-Oriented Computing User Interface Design, Aquaponics, RPA and Robotics. He has prolically published around 30+ papers in national/international journals and conferences. He has also led and published 5 patents. He is a Life Member of ISTE, ACCS, IAENG, EWB, and member of IEEE. Currently, He is working as Vice Principal, Head R and D and Professor in the Department of Computer Science and Engineering at Sri Venkateshwara College of Engineering.
+    </string>
+    <string name="bindu">
+        Dr Bindu is Professor and Head of the Department Electronics and Communication Engineering at Vidya Vikas Institute of Engineering and Technology, Mysore.
+        \nDr Bindu holds a PhD in Electronics (Mysore University), Masters in Industrial Electronics (with Honors) and Bachelor’s degree in Electronics and Communication Engineering (with Distinction). Dr Bindu has 22 years of teaching experience and is involved in guiding research scholars and teaching UG and PG students, and her major area of research include Pattern Recognition, Computational Intelligence MEMS. Dr. Bindu has been instrumental in setting up PCB Design Skill Center and MEMS Center for Excellence at campus.
+        \nDr Bindu has published over 85 peer reviewed research publications. Dr Bindu is a member of senior IEEE, Life member of ISSS and IETE, Fellow of Institution of Engineers [FIE].  Dr Bindu has been nominated as the academic council member of University of Mysore. She is the Chair of the newly formed IEEE Mysore Sub Section. She has won the Best branch Counselor IEEE small student branch award.
+        \nDr Bindu has received several awards and recognition including best paper awards and First prize at a Project competition at IISc. She has won the award of IEEE women in Engineering Achiever Award in 2020.
+    </string>
+
+
+    <!-- Sub-committee -->
+    <string name="adithya_name">
+        Adithya Marayil
+    </string>
+    <string name="adithya_bio">
+        I am currently pursuing my bachelors in computer science engineering and have been actively volunteering with IEEE for the past 3 years. I have also been an active volunteer in IEEE Computer Society.
+    </string>
+    <string name="adithya_role">
+        Maker Fair | Content Writer
+    </string>
+    <string name="Venkatraman_name">
+        Venkatraman Ravi
+    </string>
+    <string name="Venkatraman_bio">
+        Venkatraman Ravi is a Project Engineer in an IT Service Company. He loves to write content and wants to guide more people to success. He graduated as Electronics and Instrumentation Engineer from SASTRA University. He started his IEEE journey at end of 2018 by attending IEEE WiTS event and started to build a strong network in IEEE. He was the Secretary of his SB where he built a good team of Volunteers and conducted some amazing events. He has been publicity ambassador for few events and societies like IEEE TEMS and Maker Fair 2020. He is an active volunteer of IEEE Smart Village where he is working with a team in empowering and enlightening Sirumalai Village. He is a budding entrepreneur who has built his startup regarding Smart Village. He believes IoT with CyberSecurity and Automation will make the world a better place to live.
+    </string>
+    <string name="Venkatraman_role">
+        WePower | Content Writer
+    </string>
+    <string name="Nandhita_name">
+        Nandhita Kalyanasundaram
+    </string>
+    <string name="Nandhita_bio">
+        Nandhitha Kalyanasundaram is a pre final year student in Electronics and Communication at Kongu Engineering College, Erode, Tamil Nadu. Her IEEE journey began in 2018 and is currently the Women In Engineering coordinator of IEEE Madras Section. Nandhitha has been a part of Content Writing team of IEEE WIE International Leadership Summit 2020 and Campus Ambassador for diverse IEEE events. She has been nominated for the REX Karmaveer Global Youth Fellowship Award instituted by iCONGO and the UN in the year 2020. Her area of interest lies in the Communication domain.
+    </string>
+    <string name="Nandhita_role">
+        WePower | Content Writer
+    </string>
+    <string name="priya_name">
+        Priyadharshini Sashikumar
+    </string>
+    <string name="priya_bio">
+        Priyadharshini Sashikumar is currently pursuing her engineering pre-final year from Jeppiaar Engineering College, Chennai, India. She is one of the proactive student members in her student branch. Owing to her contributions, she has been elected as the Chairperson of IEEE Student Branch Jeppiaar Engineering College. Her efforts in promoting her Student Branch include organizing events and conducting engaging activities within her student branch. Her volunteering activities holds serving as a campus ambassador for events such as IEEE Computer Society India Symposium 2020 by IEEE Pune Section, PROCOMM for the year 2020 by IEEE Kerala Section, TAKSHAK\'2021 by IEEE Bangalore Section. Besides, she has been serving as publicity volunteer for the events HAC SAC 1.0 and HACK-21. Her current involvements as a campus ambassador includes events such as IEEE PES Day 2021 (WIE and WiP category), IEEE Computer Symposium 2021 by IEEE BVM Student Branch and IEEE Inspire India.
+    </string>
+    <string name="priya_role">
+        Junior Einstein | Content Writer
+    </string>
+    <string name="heshan_name">
+        Heshan Mallawarachchi
+    </string>
+    <string name="heshan_bio">
+        Heshan is an energetic volunteer who studying his third year at the Department of computer science, University of Jaffna, Sri Lanka. Currently, he is working as the Vice Chairman of the IEEE Student Branch University of Jaffna. He started his volunteering journey as an editor of IEEE Student Branch of the University of Jaffna. In the year 2020, he worked as a designer of WIESymp which was organized by the Women in Engineering Chapter of IEEE Sri Lanka Section and also worked as a creative content team member in IEEE Student Young Professionals and Women in Engineering congress 2020.
+    </string>
+    <string name="heshan_role">
+        Maker Fair | Designer
+    </string>
+    <string name="parvathi_name">
+        Parvathi J Nair
+    </string>
+    <string name="parvathi_bio">
+        An enthusiastic engineering student with sincere and intense conviction on every task I undertake. Currently pursuing third-year Bachelor of Technology in Computer Science and Engineering. Deeply interested in learning and experimenting in various areas in the field of technology as well as organizing and managing events that are useful for the growing innovator student community. Ambitious and driven, always ready to take up a challenge.
+    </string>
+    <string name="parvathi_role">Outreach and Publicity Committee Volunteer</string>
+    <string name="manoj_name">
+        Manoj Kumar Donthurala
+    </string>
+    <string name="manoj_bio">
+        Manoj Kumar Donthurala is a third-year undergraduate at Vaagdevi College of Engineering, Warangal, India. He joined IEEE and IEEE CS in 2019. He serves as Secretary of CS Chapter and Event Manager of WIE AG at his college student branch and proved his worthiness by his active participation. He also currently working as Student network member for IEEE Hyderabad Section in the domain of Content writing. Recognizing his talent in writing contents he with the help from his senior\'s written many contents and stood as a reliable person. As a responsible IEEE Brand Ambassador, he helped his co volunteers to unveil their talents and explore the platform more. In the IEEE CS Compute Newsletter Edition 8, his article got selected as Best Article.
+    </string>
+    <string name="manoj_role">
+        Junior Einstein | Content Writer
+    </string>
+    <string name="Saniya_name">
+        Saniya
+    </string>
+    <string name="Saniya_bio">
+        Saniya is pursuing a third-year undergraduate student at Vaagdevi Engineering College, Warangal, India. She joined IEEE and IEEE CS in 2019. She was the vice-chair of WIE AG in IEEEVECSB she worked as a content writer, publicity, documentation team, and many more as well. She has worked for SB levels, section levels, national and international levels too, in the events like SPYRO 2.0, Robothon, Aurora, IEEEXTREME14.0, SFCIS, MEDHACK etc.
+    </string>
+    <string name="Saniya_role">
+        Maker Fair | Content Writer
+    </string>
+    <string name="teenu_name">
+        Teenu Prasanth S
+    </string>
+    <string name="teenu_bio">
+        I am final year Electrical and Electronics Engineering student at Kongu Engineering College, Erode, India. Currently I am Chairman of Power and Energy Society in IEEE Kongu Engineering College Student Branch-29741, PES DAY 2021 Ambassador, Campus Ambassador at IEEE CSIS 2020, Campus Ambassador at E-Cell IIT Bombay, PES DAY 2020 Ambassador, IEEE Brand Ambassador. I am basically a enthusiastic and determinent person with a never give up attitude and have keen interest on exploring new things . As I am an enthusiastic person I involved in various activities organized by IEEE and Volunteering in IEEE gives me more Networking and Knowledge on new things. Apart from this I am Vtools Report Preparator for all the PES events of IEEE Kongu Engineering College.
+    </string>
+    <string name="teenu_role">
+        Publicity Lead - Junior Einstein Track
+    </string>
+    <string name="heyram_name">
+        Heyram. R.S
+    </string>
+    <string name="heyram_bio">
+        R.S. Heyram, an Electrical and Electronics Engineering student of Jansons Institute of Technology, Coimbatore.  Currently the Secretary of Jansons Institute of Technology IEEE Student branch and also the webmaster of our SB  And also the Founder and the CEO of He5 Solutions.
+    </string>
+    <string name="heyram_role">
+        Website Committee
+    </string>
+    <string name="akshaya_name">
+        Akshaya S
+    </string>
+    <string name="akshaya_bio">
+        Akshaya S is a third-year student pursuing her undergraduate degree at St. Joseph\'s College of Engineering. She joined IEEE in 2020 and earned knowledge on IEEE from the STEP-2020 Event. She started volunteering in IEEE SJCE SB events and by her exemplary efforts, She got into section-level volunteering by the end of 2020. Apart from volunteering, She has won many hackathons including Yaadhum Oorae Global Conclave - organized by IEEE Yesist12 Community and she is a finalist of IEEE Yesist12 - Maker\'s Fair 2020. Currently, She serves as the WIE Chair, Content Lead and Design Lead of IEEE SJCE SBC.
+    </string>
+    <string name="akshaya_role">
+        Innovation Challenge | Content Team Volunteer
+    </string>
+    <!-- heshan repeater -->
+    <string name="kawshik_name">
+        Kawshik Banerjee
+    </string>
+    <string name="kawshik_bio">
+        Kawshik Banerjee is a 3rd year undergraduate student of Department of Computer Science and Engineering in Rajshahi University of Engineering and Technology (RUET), Rajshahi, Bangladesh. He is volunteering for IEEE YESIST12 Junior Einstein Track as a graphic designer. Currently he is working as Asst. HR Secretary (in-charge) for RUET Career Forum, a career-oriented club of Rajshahi University of Engineering and Technology.
+    </string>
+    <string name="kawshik_role">
+        Junior Einstein | Member - Graphic Design
+    </string>
+    <string name="vamsi_name">
+        P Venkata Vamsi
+    </string>
+    <string name="vamsi_bio">
+        Currently pursuing 3rd year B.E Computer Science and Engineering at S. A ENGINEERING COLLEGE.
+        Active IEEE Volunteer - Madras Section
+        Worked as Ambassador for IEEEXtreme14.0
+        Worked in IEEE TEMS India Student Ambassador.
+        Currently working as Member in promotion and publicity of IEEE YESIST12 Junior Einstein Track 2021.
+    </string>
+    <string name="vamsi_role">
+        Junior Einstein | Member - Promotion and Publicity team
+    </string>
+    <string name="anjali_name">
+        Anjali Masur
+    </string>
+    <string name="anjali_bio">
+        Anjali Masur is a Third Year Computer Engineering Student and have been part of IEEE for a year and half now, constantly learning and gaining experience along the way. She is always looking for opportunities to learn and contribute to the society while enhancing my own knowledge and skills. I have been an active volunteer in IEEE since 2019 and hope to continue this journey.
+    </string>
+    <string name="anjali_role">
+        Junior Einstein | Ambassador Management
+    </string>
+    <string name="said_name">
+        Said Abolhassan Razavi
+    </string>
+    <string name="said_bio">
+        Said Abolhassan Razavi was born in a low-income family. He joined IEEE Since 2018, and started his volunteering experience at IEEEYesist12 since 2-months ago.
+    </string>
+    <string name="said_role">
+        Junior Einstein | Website Coordinator
+    </string>
+    <string name="muza_name">
+        Engr. Muzamil Mahmood
+    </string>
+    <string name="muza_bio">
+        Engr. Muzamil Mahmood is a working as Jr. Lecturer at Riphah International University, Islamabad, Pakistan. He is pursuing Ph.D. degree in Engineering Management from National University of Sciences and Technology. He did MS in Engineering Management from National University of Sciences and Technology and BS Electrical Engineering from HITEC University ,Taxila, Pakistan. He is the member of IEEE since March 2015 and currently serving IEEE Islamabad Section as Chair Student Activities Committee and IEEE R10 Student Activities Committee as Supporting Coordinator.
+    </string>
+    <string name="muza_role">
+        Member - PILOT Coordination
+    </string>
+    <string name="mithresh_name">
+        Mithresh G P
+    </string>
+    <string name="mithresh_bio">
+        Mr. Mithresh GP is a Pre- Final Year Electronics and Communication Engineering Student from Panimalar Institute of Technology, Chennai, India. He is currently serving as the Secretary of IEEE Panimalar Institute of Technology Student Branch, chairperson of TEMS IEEE PIT SBC, Secretary of IEEE Computer society PIT SBC, IEEE Brand Ambassador. Also served as PES DAY Ambassador, Initiative co-ordinator of TEMS Student India, Program Committee volunteer of CSIS’20, publicity volunteer of IEEE WIE ILS 2020, He has contributed his hands and organized many Webinars and events.
+        Acknowledging his achievements, he has volunteered for NSS and also been part in organizing medical camps. He also volunteered for many social organizations like NCC, Scouts and Guides etc. Not only in IEEE, he also proved himself in academics with the aggregate of 3.25 out of 4 Scale. He has been an active participant, volunteer and has co-ordinated and organized many Extracurricular activities.
+        He has been a kind and humble person and always shows enthusiasm in helping others and helping the new and young minds. His determination, courage and Self-belief has made him to do many things.
+    </string>
+    <string name="mithresh_role">
+        Special Track | Publicity Lead
+    </string>
+
+    <!-- events -->
+    <string name="eventtit1">Clean water and Sanitation</string>
+    <string name="eventtit2">Sustainable Cities and Communities</string>
+    <string name="eventtit3">The Challenges of Health and Safety in the Medical and Health Sector</string>
+    <string name="eventtit4">Clean water and Sanitation</string>
+
+    <string name="eventdes_1">IEEE YESIST\'12 Special Track is here up with such a tremendous opportunity to pursue your goals. An informative session is ready for you under the topic "Clean water and Sanitation - Challenges faced &amp; measures to overcome"</string>
+    <string name="eventdes_2">IEEE YESIST\'12 Special Track  is bringing out a knowledgeable session on "Sustainable Cities and Communities"  as a part of its talent exhibition.<i>Beat the odds &amp; brighten up your path of success.</i></string>
+    <string name="eventdes_3">IEEE YESIST\'12 Special Track is hereby with an impressive webinar on "The Challenges of Health and Safety in the Medical and Health Sector - An Innovative Approach in a local community".\n<i>Flex up your fingers and grab this incredible opportunity.</i></string>
+    <string name="eventdes_4">IEEE YESIST\'12 Special Track is hereby with an exclusive webinar on "Clean Water and Sanitation: Challenges faced &amp; measures to overcome.".\n<i>Excuses will always be there for you. Opportunity won’t, so just grab it</i></string>
+
+    <string name="speaker1">Isha Dash</string>
+    <string name="speaker2">Jairo H. Garcia</string>
+    <string name="speaker3">Uti Anselm</string>
+    <string name="speaker4">MD.Koushik Ahamed</string>
+
+    <string name="sq1">Training Coordinator at Water, Sanitation and Hygiene Institute (WASH Institute), Delhi, India</string>
+    <string name="sq2">CEO Urban Climate Nexus | Professor of Climate Policies and Sustainable Cities, Georgia, United States | Co-Chair | The Climate Reality Project, Atlanta, GA Chapter</string>
+    <string name="sq3">Founder &amp; CEO | SafeWorld International Company, Nigeria.\nEntrepreneur &amp; Public Speaker</string>
+    <string name="sq4">Sanitation Engineer - Dhaka, Bangladesh</string>
+
+    <string name="eventurl_1">https://www.youtube.com/channel/UC6kdciumxh-R97OtbwbWJ6Q</string>
+    <string name="eventurl_2">https://www.youtube.com/channel/UC6kdciumxh-R97OtbwbWJ6Q</string>
+    <string name="eventurl_3">https://www.youtube.com/channel/UC6kdciumxh-R97OtbwbWJ6Q</string>
+    <string name="eventurl_4">https://www.youtube.com/channel/UC6kdciumxh-R97OtbwbWJ6Q</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+
 
 </resources>

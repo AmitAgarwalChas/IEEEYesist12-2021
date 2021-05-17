@@ -7,13 +7,14 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.ieeeyesist12_2021"
+        applicationId "com.ieee.ieee_yesist"
         minSdkVersion 23
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 10
+        versionName "1.9"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -30,6 +31,11 @@ android {
     buildFeatures {
         viewBinding true
     }
+    repositories {
+        mavenCentral()
+        jcenter()
+
+    }
 }
 
 dependencies {
@@ -45,4 +51,11 @@ dependencies {
     implementation "androidx.navigation:navigation-fragment:2.3.3"
     implementation "androidx.navigation:navigation-ui:2.3.3"
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.0'
+    implementation 'im.crisp:crisp-sdk:1.0.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    
 }

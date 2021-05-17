@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/features_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/homeFragment"
+            android:title="@string/home"
+            android:enabled="true"
+            android:icon="@drawable/ic_home" />
+        <item
+            android:id="@+id/trendingFragment"
+            android:title="@string/timeline"
+            android:enabled="true"
+            android:icon="@drawable/ic_trending" />
+        <item
+            android:id="@+id/tracksFragment"
+            android:title="@string/tracks"
+            android:enabled="true"
+            android:icon="@drawable/ic_tracks" />
+        <item
+            android:id="@+id/aboutTeamFragment"
+            android:title="@string/about_team"
+            android:enabled="true"
+            android:icon="@drawable/ic_about_team" />
+        <item
+            android:id="@+id/sponsorsFragment"
+            android:title="Sponsors"
+            android:enabled="true"
+            android:icon="@drawable/ic_about_team" />
+        <item
+            android:id="@+id/aboutUsFragment"
+            android:title="About Us"
+            android:enabled="true"
+            android:icon="@drawable/ic_about_team" />
+    </group>
+
+    <group
+        android:id="@+id/extras_group"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/faqFragment"
+            android:title="FAQs"
+            android:enabled="true"
+            android:icon="@drawable/ic_home" />
+        <item
+            android:id="@+id/shareApp"
+            android:title="Share the App"
+            android:enabled="true"
+            android:icon="@drawable/ic_trending" />
+    </group>
+
+</menu>

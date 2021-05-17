@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_bottom_sheet_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="30dp"
+        android:paddingEnd="24dp"
+        android:layout_marginTop="20dp"
+        android:text="Introductory Meeting"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_extrabold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/calendar_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/calendar"
+        app:layout_constraintTop_toBottomOf="@+id/event_name"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="10dp"
+        android:text="8 March 2021"
+        android:textSize="20sp"
+        android:textColor="@color/darkBlue"
+        android:fontFamily="@font/nunito_extrabold"
+        app:layout_constraintTop_toBottomOf="@+id/event_name"
+        app:layout_constraintStart_toEndOf="@+id/calendar_iv"/>
+
+    <ImageView
+        android:id="@+id/clock_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="30dp"
+        android:src="@drawable/clock"
+        app:layout_constraintTop_toBottomOf="@+id/calendar_iv"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/event_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="10dp"
+        android:text="03:30 - 04:30 PM"
+        android:textSize="18sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/nunito_extrabold"
+        app:layout_constraintTop_toBottomOf="@+id/event_date"
+        app:layout_constraintStart_toEndOf="@+id/clock_iv"/>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:text="About"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunitoregular"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/clock_iv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/about_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:justificationMode="inter_word"
+        android:text="@string/short_random_text"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunito_light"
+        app:layout_constraintTop_toBottomOf="@+id/about"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/speakers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="30dp"
+        android:text="Speakers"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nunitoregular"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/about_content"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/image_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="19dp"
+        app:cardCornerRadius="50dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintTop_toBottomOf="@+id/speakers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" >
+
+    <ImageView
+        android:id="@+id/speaker_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_male"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/speaker_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:text="Name"
+        android:fontFamily="@font/nunito_semi_bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/speakers"
+        app:layout_constraintStart_toEndOf="@id/image_card"/>
+
+    <TextView
+        android:id="@+id/speaker_qualification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="12dp"
+        android:paddingEnd="104dp"
+        android:paddingBottom="12dp"
+        android:layout_marginTop="1dp"
+        android:justificationMode="inter_word"
+        android:text="@string/volunteer"
+        android:fontFamily="@font/nunito_light"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@+id/speaker_name"
+        app:layout_constraintStart_toEndOf="@id/image_card"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
