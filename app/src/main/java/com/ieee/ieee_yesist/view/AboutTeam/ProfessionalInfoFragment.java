@@ -14,6 +14,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+
+import com.ieee.ieee_yesist.R;
 import com.ieee.ieee_yesist.databinding.FragmentProfessionalInfoBinding;
 import com.ieee.ieee_yesist.model.Professional;
 
@@ -41,7 +43,7 @@ public class ProfessionalInfoFragment extends Fragment {
         binding.professionalRole.setText(professional.getRole());
         binding.professionalPic.setImageResource(professional.getImageUrl());
         binding.backButton.setOnClickListener( v -> {
-            Navigation.findNavController(view).popBackStack();
+            Navigation.findNavController(requireActivity(), R.id.fragNavHost).popBackStack();
         });
         binding.linkedInButton.setOnClickListener( v-> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(professional.getLinkedinUrl())));
