@@ -38,8 +38,10 @@ public class SponsorAdapter extends RecyclerView.Adapter<SponsorAdapter.ViewHold
         cpd.setStrokeWidth(5f);
         cpd.setCenterRadius(30f);
         cpd.setColorSchemeColors(R.color.colorPrimary);
+        cpd.start();
         Glide.with(context)
              .load(sponsorList.get(position).getImgUrl())
+             .placeholder(cpd)
              .into(holder.sponsorImg);
 
         holder.sponsorImg.setOnClickListener(v -> {
