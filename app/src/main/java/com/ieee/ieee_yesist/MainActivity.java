@@ -1,23 +1,29 @@
 package com.ieee.ieee_yesist;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.ieee.ieee_yesist.databinding.ActivityMainBinding;
+import com.ieee.ieee_yesist.util.ConnectionUtil;
+import com.ieee.ieee_yesist.view.AboutUsFragment;
 import com.ieee.ieee_yesist.view.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +35,24 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     DrawerLayout drawer;
 
+    private void checkConnection(Context context) {
+        ConnectionUtil connectionUtil = new ConnectionUtil(context);
+        connectionUtil.observe(this, isNetworkAvailable -> {
+            Snackbar snackbar;
+            if (isNetworkAvailable) {
+                snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are ONLINE",
+                        Snackbar.LENGTH_LONG);
+                snackbar.setBackgroundTint(getResources().getColor(R.color.green_version));
+            } else {
+                snackbar = Snackbar.make(binding.snackContainer.parentLayout, "OOPS! You are OFFLINE",
+                        Snackbar.LENGTH_INDEFINITE);
+                snackbar.setBackgroundTint(getResources().getColor(R.color.red));
+            }
+            snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
+            snackbar.show();
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,17 +60,18 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        //Checking Network Connectivity during Runtime
+        checkConnection(this);
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
         NavigationView navigationView = findViewById(R.id.nav_view);
-
         View headerView = navigationView.getHeaderView(0);
         ImageButton closeNav = (ImageButton) headerView.findViewById(R.id.nav_closeBtn);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.homeFragment, R.id.tracksFragment, R.id.aboutTeamFragment, R.id.trendingFragment,
                 R.id.trackDetailsFragment, R.id.professionalInfoFragment, R.id.sterringCommitteeFragment, R.id.subCommitteeFragment,
-                R.id.sponsorsFragment, R.id.faqFragment)
+                R.id.sponsorsFragment, R.id.faqFragment, R.id.aboutUsFragment)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -58,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
             if(item.getItemId() == R.id.sponsorsFragment) {
                 bottomNavigationView.setVisibility(View.GONE);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragNavHost, new SponsorsFragment()).commit();
+            }
+            if(item.getItemId() == R.id.aboutUsFragment) {
+                bottomNavigationView.setVisibility(View.GONE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragNavHost, new AboutUsFragment()).commit();
             }
             if(item.getItemId() == R.id.shareApp) {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
@@ -85,12 +114,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
-        closeNav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                binding.drawerLayout.closeDrawer(GravityCompat.START);
-            }
-        });
+        closeNav.setOnClickListener(v -> binding.drawerLayout.closeDrawer(GravityCompat.START));
 
     }
 
