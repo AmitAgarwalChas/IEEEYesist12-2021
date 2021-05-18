@@ -33,7 +33,7 @@ public class TracksFragment extends Fragment implements TrackListAdapter.OnTrack
         trackList.add(new TrackList("Maker Fair",R.drawable.maker_fair));
         trackList.add(new TrackList("Junior Einstein",R.drawable.jr_einstein));
         trackList.add(new TrackList("WePOWER",R.drawable.wepower));
-        trackList.add(new TrackList("Special Track",R.drawable.special_tracks));
+        trackList.add(new TrackList("Special Track",R.drawable.special_track_new_bg));
 
         setTrackRecycler(trackList);
 

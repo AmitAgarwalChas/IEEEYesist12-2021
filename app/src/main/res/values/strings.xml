@@ -80,6 +80,27 @@
         \ne. Deliverability
         \n\n3. Students with drive and passion towards helping humanity are invited to register for the competition. The first round of the competition is to be held all over Asia in the pilots selected on the basis of registration. The winning teams will be called for the final round to be organised in September 2021.
     </string>
+    <string name="innov_dates_pilot">
+        1. Registration of Pilot Institutions closes: April 25, 2021
+        \n2. Registration of Teams with Pilot Institution closes: As indicated by the Pilot
+        \n3. Date for Preliminary to be conducted by Pilot Institution: March 2021 to July 2021
+        \n4. Finals and Conference: September 2021
+    </string>
+    <string name="innov_direct_entry">
+        1. Call for abstracts: To Be Updated
+        \n2. Intimation to selected teams &amp; Registration: To Be Updated
+        \n3. Registration closes: To Be Updated
+        \n4. Finals and Conference: September 2021
+    </string>
+    <string name="innov_reg_fee">
+        Registration Fee for the final round: To be Updated
+    </string>
+    <string name="innov_awards">
+        1. Prize Money will be announce later.
+        \n2. Vibrant Pilot Awards
+        \n3. Training Opportunities
+        \n4. Certificates will be provided for the participants
+    </string>
     <string name="maker_fair">
         MakerFair is a unique platform with opportunities for the innovators, makers, and creators to showcase their marvelous products to the international community. Teams with enthusiasm and determination of inventing and showcasing their innovative ideas which are capable from ideation to commercialization are invited to register for this event.
         \n\nIn 2021, MakerFair Track have goals to achieve maximum goals which can be helpful to the world regarding the problems World has been facing in recent times under the UN Sustainable Development Goals.
@@ -94,6 +115,19 @@
         \n4. The evaluation will be based on the following criteria: Challenge, Innovation, Usability, and Extendibility.
         \n5. Teams are locked along with abstract submission, and no further changes to team membership and mentors can be made after that.
         \n6. Each team is solely responsible for its own cooperation and teamwork.
+    </string>
+    <string name="maker_dates_pilot">
+        1. Call for Abstracts: May 1, 2021
+        \n2. Last Date for Abstract Submission: May 31, 2021
+        \n3. Notification of Acceptance: June 1, 2021
+        \n4. Registration to the finals: August 15, 2021
+    </string>
+    <string name="maker_reg_fee">
+        Registration Fee for the final round: To be Updated
+    </string>
+    <string name="maker_awards">
+        1. Prize Money will be announce later.
+        \n2. Certificates will be provided for the participants
     </string>
     <string name="einstein">
         Junior Einstein Track acts as a catalyst for innovation and provides a transformative opportunity to broaden the horizon of knowledge among the young curious minds. This event makes effort to harness the creative submissions and innovative spirit towards Scientific and technological ideas/innovations from the school students of age 12 to 17 and to get rooted as one of the foremost project competition in the global arena developing a robust scientific temper among the youth.\n
@@ -111,6 +145,28 @@
     </string>
     <string name="einstein_abstract">
         1. Novelty\n2. Clarity\n3. Feasibility and Practicability\n4. User Experience\n5. Scale of impact\n6. Sustainability\n7. Potential for future work progression.
+    </string>
+    <string name="einstein_dates_pilot">
+        1. Registration of Pilot Institutions closes: May 31, 2021
+        \n2. Date for Preliminary to be conducted by Pilot Institution: As indicated by Pilot
+        \n3. Completion of Preliminary round by Pilots (To Be Updated)
+        \n4. Registration of Teams with Pilot Institution closes: As indicated by the Pilot
+        \n5. Finals and Conference: September 2021
+    </string>
+    <string name="einstein_direct_entry">
+        1. Call for abstracts: May 11, 2021
+        \n2. Intimation to selected teams &amp; Registration: To Be Updated
+        \n3. Registration closes: June 15, 2021
+        \n4. Finals and Conference: September 2021
+    </string>
+    <string name="einstein_reg_fee">
+        Registration Fee for the final round: To be Updated
+    </string>
+    <string name="einstein_awards">
+        1. Prize Money will be announce later.
+        \n2. Vibrant Pilot Awards
+        \n3. Training Opportunities
+        \n4. Certificates will be provided for the participants
     </string>
     <string name="wepower">
         The World Bank recently started “South Asia Gender and Energy” (SAGE) initiative with a plan to establish a “Women in Power Sector Network in South Asia (WePOWER)” to promote women engineers and practitioners in the energy and power sector, and bring normative change regarding women in Science, Technology, Engineering, and Math (STEM) education.
@@ -141,6 +197,19 @@
         \n4. Working model (hardware), simulation works, research studies and idea proposition are all accepted during the finals. However the technical content should be strong and sufficient literature review has to be done (and everything should be mentioned in the abstract also). Proposed area should be innovative and should have positive potential impact.
         \n5. Each Team is solely responsible for its own cooperation and teamwork.
     </string>
+    <string name="wepower_dates_pilot">
+        1. Call for Abstracts: May 1, 2021
+        \n2. Last Date for Abstract Submission: May 31, 2021
+        \3. Notification of Acceptance: June 15, 2021
+        \n4. Registration to the finals: August 15, 2021
+    </string>
+    <string name="wepower_reg_fee">
+        Registration Fee for the final round: To be Updated
+    </string>
+    <string name="wepower_awards">
+        1. Prize Money will be announce later.
+        \n2. Certificates will be provided for the participants
+    </string>
     <string name="special">
         Special Track aims at bringing out the innovative solutions to solve issues of mankind, on a global scale. It is the recently added track in YESIST12 during its 2020 edition and focussed on health and disaster management. In 2021, Special Track targets on providing solutions to more challenges faced by every individual on the planet. Novel ideas, creative proposals with interesting presentations are rewarded and appreciated.
         \n\nThe submissions could be related to the following topics:
@@ -160,6 +229,19 @@
     </string>
     <string name="special_abstract">
         1. Problem Definition and User Definition\n2. Solution and Implementation\n3. Innovation\n4. Potential for social impact and commercialization purposes\n5. Presentation and Project to Product level
+    </string>
+    <string name="special_dates_pilot">
+        1. Call for Abstracts: April 15, 2021
+        \n2. Last Date for Abstract Submission: May 15, 2021
+        \n3. Notification of Acceptance: June 1, 2021
+        \n4. Registration to the finals: August 15, 2021
+    </string>
+    <string name="special_reg_fee">
+        Registration Fee for the final round: To be Updated
+    </string>
+    <string name="special_awards">
+        1. Prize Money will be announce later.
+        \n2. Certificates will be provided for the participants
     </string>
 
     <!-- Yesist home page -->

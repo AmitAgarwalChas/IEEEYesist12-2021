@@ -6,11 +6,12 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="view.Tracks.TrackDetailsFragment"
-    tools:showIn="@layout/fragment_track_details">
+    tools:showIn="@layout/fragment_track_details"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_marginBottom="64dp">
 
@@ -39,7 +40,7 @@
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:visibility="gone" />
+                android:visibility="gone"/>
 
             <TextView
                 android:id="@+id/btnPilotRegister"
@@ -59,8 +60,31 @@
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
-                android:visibility="gone" />
+                android:visibility="gone"/>
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Event Updates"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tracks_key_dates_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/track_details_rv_item">
+        </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
 <!--
         <LinearLayout
             android:layout_width="match_parent"
@@ -131,120 +155,13 @@
             android:textColor="#676969"
             android:textSize="16sp"
             android:textStyle="normal" />
-        <androidx.cardview.widget.CardView
+
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginBottom="10dp"
-            android:id="@+id/rules_cardview">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingStart="10dp"
-                    android:paddingTop="5dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="5dp">
-
-                    <TextView
-                        android:id="@+id/rules_track"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nunitoregular"
-                        android:text="Rules for the track"
-                        android:textColor="#676969"
-                        android:textSize="18sp"/>
-
-                    <ImageButton
-                        android:id="@+id/arrow_down"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic__arrow_down"
-                        android:tint="#696969"/>
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/rules_track_det"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunitoregular"
-                    android:lineSpacingExtra="3dp"
-                    android:paddingStart="10dp"
-                    android:paddingTop="4dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="4dp"
-                    android:text="@string/random_text"
-                    android:textColor="#676969"
-                    android:textSize="14sp"
-                    android:justificationMode="inter_word"
-                    android:visibility="gone"/>
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/abstract_cardview"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
-            android:layout_marginRight="36dp"
-            android:layout_marginBottom="2dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingStart="10dp"
-                    android:paddingTop="5dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="5dp">
-
-                    <TextView
-                        android:id="@+id/abstract_sel"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/nunitoregular"
-                        android:text="Abstract Selection Process"
-                        android:textColor="#676969"
-                        android:textSize="18sp" />
-
-                    <ImageButton
-                        android:id="@+id/arrow_d"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentRight="true"
-                        android:background="@android:color/transparent"
-                        android:src="@drawable/ic__arrow_down"
-                        android:tint="#696969" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/abstract_sel_det"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/nunitoregular"
-                    android:lineSpacingExtra="3dp"
-                    android:paddingStart="10dp"
-                    android:paddingTop="4dp"
-                    android:paddingEnd="10dp"
-                    android:paddingBottom="4dp"
-                    android:text="@string/random_text"
-                    android:textColor="#676969"
-                    android:textSize="14sp"
-                    android:justificationMode="inter_word"
-                    android:visibility="gone" />
-            </LinearLayout>
-        </androidx.cardview.widget.CardView>
+            android:layout_height="match_parent"
+            android:id="@+id/tracks_rules_rv"
+            tools:listitem="@layout/track_details_rv_item">
+        </androidx.recyclerview.widget.RecyclerView>
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
