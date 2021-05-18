@@ -1,23 +1,28 @@
 package com.ieee.ieee_yesist;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
 import com.ieee.ieee_yesist.databinding.ActivityMainBinding;
+import com.ieee.ieee_yesist.util.ConnectionUtil;
 import com.ieee.ieee_yesist.view.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,6 +34,24 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     DrawerLayout drawer;
 
+    private void checkConnection(Context context) {
+        ConnectionUtil connectionUtil = new ConnectionUtil(context);
+        connectionUtil.observe(this, isNetworkAvailable -> {
+            Snackbar snackbar;
+            if (isNetworkAvailable) {
+                snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are ONLINE",
+                        Snackbar.LENGTH_LONG);
+                snackbar.setBackgroundTint(getResources().getColor(R.color.green_version));
+            } else {
+                snackbar = Snackbar.make(binding.snackContainer.parentLayout, "OOPS! You are OFFLINE",
+                        Snackbar.LENGTH_INDEFINITE);
+                snackbar.setBackgroundTint(getResources().getColor(R.color.red));
+            }
+            snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
+            snackbar.show();
+        });
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +60,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(view);
 
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
-
         NavigationView navigationView = findViewById(R.id.nav_view);
-
+        checkConnection(this);
         View headerView = navigationView.getHeaderView(0);
         ImageButton closeNav = (ImageButton) headerView.findViewById(R.id.nav_closeBtn);
 
@@ -85,12 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         binding.drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
 
-        closeNav.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                binding.drawerLayout.closeDrawer(GravityCompat.START);
-            }
-        });
+        closeNav.setOnClickListener(v -> binding.drawerLayout.closeDrawer(GravityCompat.START));
 
     }
 
