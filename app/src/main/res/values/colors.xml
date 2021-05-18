@@ -14,5 +14,6 @@
     <color name="green_version">#5AE4A8</color>
     <color name="grey">#2BC4C4C4</color>
     <color name="dimgrey">#676969</color>
+    <color name="track_item_bg">#33C4C4C4</color>
 
 </resources>

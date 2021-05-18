@@ -71,4 +71,9 @@
         android:name="com.ieee.ieee_yesist.view.SponsorsFragment"
         android:label="fragment_sponsors"
         tools:layout="@layout/fragment_sponsors" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.ieee.ieee_yesist.view.Faqs.FaqFragment"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" />
 </navigation>
