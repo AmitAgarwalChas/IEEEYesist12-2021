@@ -7,6 +7,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
+import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
@@ -57,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
             if(item.getItemId() == R.id.sponsorsFragment) {
                 bottomNavigationView.setVisibility(View.GONE);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragNavHost, new SponsorsFragment()).commit();
+            }
+            if(item.getItemId() == R.id.shareApp) {
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "IEEE Yesist12");
+                String shareMessage= "Hey checkout this amazing app over here : https://play.google.com/store/apps/details?id=com.ieee.ieee_yesist&hl=en";
+                shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
+                startActivity(Intent.createChooser(shareIntent, "Share Via"));
             }
             if(binding.drawerLayout.isDrawerOpen(GravityCompat.START)) {
                 binding.drawerLayout.closeDrawer(GravityCompat.START);
