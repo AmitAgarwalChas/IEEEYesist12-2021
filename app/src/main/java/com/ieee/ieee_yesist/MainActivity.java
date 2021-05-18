@@ -23,6 +23,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.ieee.ieee_yesist.databinding.ActivityMainBinding;
 import com.ieee.ieee_yesist.util.ConnectionUtil;
+import com.ieee.ieee_yesist.view.AboutUsFragment;
 import com.ieee.ieee_yesist.view.SponsorsFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -59,16 +60,18 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        //Checking Network Connectivity during Runtime
+        checkConnection(this);
+
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        checkConnection(this);
         View headerView = navigationView.getHeaderView(0);
         ImageButton closeNav = (ImageButton) headerView.findViewById(R.id.nav_closeBtn);
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.homeFragment, R.id.tracksFragment, R.id.aboutTeamFragment, R.id.trendingFragment,
                 R.id.trackDetailsFragment, R.id.professionalInfoFragment, R.id.sterringCommitteeFragment, R.id.subCommitteeFragment,
-                R.id.sponsorsFragment, R.id.faqFragment)
+                R.id.sponsorsFragment, R.id.faqFragment, R.id.aboutUsFragment)
                 .setDrawerLayout(drawer)
                 .build();
 
@@ -80,6 +83,10 @@ public class MainActivity extends AppCompatActivity {
             if(item.getItemId() == R.id.sponsorsFragment) {
                 bottomNavigationView.setVisibility(View.GONE);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragNavHost, new SponsorsFragment()).commit();
+            }
+            if(item.getItemId() == R.id.aboutUsFragment) {
+                bottomNavigationView.setVisibility(View.GONE);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragNavHost, new AboutUsFragment()).commit();
             }
             if(item.getItemId() == R.id.shareApp) {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
