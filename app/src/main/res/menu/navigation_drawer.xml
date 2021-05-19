@@ -15,7 +15,7 @@
             android:id="@+id/trendingFragment"
             android:title="@string/timeline"
             android:enabled="true"
-            android:icon="@drawable/ic_trending" />
+            android:icon="@drawable/ic_timeline" />
         <item
             android:id="@+id/tracksFragment"
             android:title="@string/tracks"
@@ -25,17 +25,17 @@
             android:id="@+id/aboutTeamFragment"
             android:title="@string/about_team"
             android:enabled="true"
-            android:icon="@drawable/ic_about_team" />
+            android:icon="@drawable/ic_aboutteam" />
         <item
             android:id="@+id/sponsorsFragment"
             android:title="Sponsors"
             android:enabled="true"
-            android:icon="@drawable/ic_about_team" />
+            android:icon="@drawable/ic_sponsors" />
         <item
             android:id="@+id/aboutUsFragment"
             android:title="About Us"
             android:enabled="true"
-            android:icon="@drawable/ic_about_team" />
+            android:icon="@drawable/ic_aboutus" />
     </group>
 
     <group
@@ -45,12 +45,12 @@
             android:id="@+id/faqFragment"
             android:title="FAQs"
             android:enabled="true"
-            android:icon="@drawable/ic_home" />
+            android:icon="@drawable/ic_faqs" />
         <item
             android:id="@+id/shareApp"
             android:title="Share the App"
             android:enabled="true"
-            android:icon="@drawable/ic_trending" />
+            android:icon="@drawable/ic_share" />
     </group>
 
 </menu>

@@ -46,12 +46,12 @@ public class HomeFragment extends Fragment {
 
 
         yesistHomeList = new ArrayList<>();
-        yesistHomeList.add(new YesistHome("Knowledgeable Resources",R.string.knowledge));
-        yesistHomeList.add(new YesistHome("Professional Connect",R.string.prof_connect));
-        yesistHomeList.add(new YesistHome("Great Arena",R.string.arena));
-        yesistHomeList.add(new YesistHome("Quality time",R.string.time));
-        yesistHomeList.add(new YesistHome("Get Recognized",R.string.recognised));
-        yesistHomeList.add(new YesistHome("Global Presence",R.string.presence));
+        yesistHomeList.add(new YesistHome(R.string.knowledge_title,R.string.knowledge));
+        yesistHomeList.add(new YesistHome(R.string.prof_connect_title,R.string.prof_connect));
+        yesistHomeList.add(new YesistHome(R.string.arena_title,R.string.arena));
+        yesistHomeList.add(new YesistHome(R.string.time_title,R.string.time));
+        yesistHomeList.add(new YesistHome(R.string.recognised_title,R.string.recognised));
+        yesistHomeList.add(new YesistHome(R.string.presence_title,R.string.presence));
         setYesistRecycler(yesistHomeList);
         return view;
     }

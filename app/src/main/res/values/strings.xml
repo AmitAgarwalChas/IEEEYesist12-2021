@@ -64,6 +64,17 @@
     <string name="desgin_development_chair">Tahmim Hossain</string>
 
     <!-- Track Info Details -->
+
+    <string name="dates_pilot">Dates for Pilot</string>
+    <string name="direct_entry">Direct Entry</string>
+    <string name="reg_fee">Reg. Fee</string>
+    <string name="awards">Awards</string>
+    <string name="imp_dates">Important Dates</string>
+
+    <string name="rules_tracks">Rules for the track</string>
+    <string name="abs_sel_proc">Abstract Selection Process</string>
+
+
     <string name="innovation">
         Innovation Challenge is an international project competition established by IEEE Madras Section and IEEE Education Society to encourage the participants to come up with innovative ideas for the social and humanitarian issues. Here YESIST12 acts as a platform to bridge the gap between the engineers and visonaries to contribute to the society with innovations.\n\nThis exceptional platform conducts competition in two stages. The preliminary stage is conducted across Asian and African countries and the team that tops the round wins a chance to compete globally to address humanitarian and social issues like poverty, famine, special needs, women safety, healthcare, disaster management, and many more.
     </string>
@@ -245,6 +256,14 @@
     </string>
 
     <!-- Yesist home page -->
+    <string name="knowledge_title">Knowledgeable Resources</string>
+    <string name="prof_connect_title">Professional Connect</string>
+    <string name="arena_title">Great Arena</string>
+    <string name="time_title">Quality time</string>
+    <string name="recognised_title">Get Recognized</string>
+    <string name="presence_title">Global Presence</string>
+
+
     <string name="knowledge">Gear up to listen to the ocean of knowledge. The speakers will nourish with their experiences.</string>
     <string name="prof_connect">Get in touch with professionals from all walks of life and build good relationships.</string>
     <string name="arena">This is the best place to showcase your innovations and get the right results out of it to move ahead.</string>
@@ -772,5 +791,97 @@ Stephen Okwiri</string>
     </string>
     <string name="action_settings">Settings</string>
 
+    <!-- FAQs -->
+    <!-- Innov Challenge -->
+    <string name="innov_ques1">Rather than a computer-based or IoT based theme can participants choose other project ideas?</string>
+    <string name="innov_ans1">
+        Yes We welcome and appreciate students from other technology to contribute their ideas as it is not limited to the specific topic.
+    </string>
+    <string name="innov_ques2">Can participants do a direct registration?</string>
+    <string name="innov_ans2">We request the participating team to register through the Pilots.</string>
+    <string name="innov_ques3">How can the participant know about the pilot in their region?</string>
+    <string name="innov_ans3">The team without pilots can find the Pilot details which will be posted in the YESIST`12 webpage.</string>
+    <string name="innov_ques4">Is there any team member constraints and do we need to demonstrate the project?</string>
+    <string name="innov_ans4">
+        A team can comprise a maximum of 4 members and the project are asked to be demonstrated or a video of the working model should be presented.
+    </string>
+
+    <!-- Maker Fair -->
+    <string name="maker_ques1">
+        Are there any restrictions in the topics to be chosen in the Maker Fair Track for the abstract?
+    </string>
+    <string name="maker_ans1">No, the teams are free to choose any topic they wish to work on.</string>
+    <string name="maker_ques2">Are there any specifications for the team to be formed for the Maker Fair Track?</string>
+    <string name="maker_ans2">No, there are no specifications for forming a team.</string>
+
+    <!-- Jr Einstein -->
+    <string name="je_ques1">What is the age limit for the JE track?</string>
+    <string name="je_ans1">12-17 Years of age(school students)</string>
+    <string name="je_ques2">How can one participate in JE Track?</string>
+    <string name="je_ans2">
+        There are two ways. You can either participate by Pilots Entry Mode or by Direct Entry Mode.
+    </string>
+    <string name="je_ques3">Who is the pilot?</string>
+    <string name="je_ans3">
+        Any school, institute, organization or IEEE OU can act as a pilot and conduct the preliminary round for the JE track.
+    </string>
+    <string name="je_ques4">What is Pilots Entry Mode?</string>
+    <string name="je_ans4">Participants can register with any of the pilot institutions and attend the preliminary round.</string>
+    <string name="je_ques5">What is a Direct Entry Mode?</string>
+    <string name="je_ans5">
+        Any student who faces difficulties participating in the pilots round can directly participate in this entry. But there will be internal selections among the no. of abstracts received.
+        \nDirect Entry link: http://bit.ly/CFAJE2021
+    </string>
+    <string name="je_ques6">
+        How to submit an abstract in Direct entry?
+    </string>
+    <string name="je_ans6">https://drive.google.com/file/d/1qi4QQLmv0tlPJEz9vPPdNBwwW__1i8om/view?usp=drivesdk</string>
+
+    <!-- WePOWER -->
+    <string name="wepower_ques1">
+        Is it necessary to have atleast one female participant in WePOWER Team?
+    </string>
+    <string name="wepower_ans1">
+        Yes, there should be at least 1 girl in the team. For more details, Refer the Rules and Regulations section in website to understand the complete rules of the WePOWER track.
+    </string>
+    <string name="wepower_ques2">
+        What are the different topics on which I can share the abstract in WePOWER?
+    </string>
+    <string name="wepower_ans2">
+        Renewable Energy, Energy Conservation &amp; Management, Energy Auditing, Power Generation, Transmission and Distribution, Flexible AC Transmission Systems (FACTS), IoT in Energy &amp; Smart Grid, Digitalization (AI, ML, Computing) in Renewable Energy and Smart Technologies in Electrical power sector network.
+    </string>
+    <string name="wepower_ques3">Is working model necessary for the final presentation?</string>
+    <string name="wepower_ans3">
+        It\'s not necessary to have the working model. Idea proposition is also considered. However thorough literature study, technical depth and practical implications are a must to support your arguments.
+    </string>
+
+    <!-- Special Track -->
+    <string name="st_ques1">
+        Does my project have to be completely finished, or could this include portions of the project being completed?
+    </string>
+    <string name="st_ans1">
+        During submission, the project could be in an ideation level or partially implemented. It is preferred to have a completed project during the finals. </string>
+    <string name="st_ques2">
+        Can previous winners submit again if they fit into the time frame?
+    </string>
+    <string name="st_ans2">
+        Yes, previous winners can also submit again if the abstract is new and will follow the rules as mentioned in the rule book provided in the YESIST\'12 Special Track website. </string>
+    <string name="st_ques3">
+        Can I Submit multiple abstracts for the same topic / under different topics?
+    </string>
+    <string name="st_ans3">
+        Yes, One team is allowed to submit multiple abstracts under the same or different topics only when the abstracts provided by you looks unique.</string>
+    <string name="st_ques4">
+        Is this competition open for international applicants?
+    </string>
+    <string name="st_ans4">
+        Yes, every people around the world can participate in the competition. Do check the rules from our official website to get to know about the competition.
+    </string>
+    <string name="st_ques5">I want to win this competition, what can I do?</string>
+    <string name="st_ans5">
+        Decide your problem statement in accordance with the theme of the competition. Analyze similar products and come up with a MVP(Most Valuable Point). Also, think of ideas that will be really useful to the stakeholders in context. Choose the features you are planning to implement wisely. Think of ways you can shape your raw ideas for the benefit of yourself/society. Last but not least presentation skills also matter. Have confidence in your idea and let that exude in your final presentations as well.
+    </string>
+    <string name="st_ques6">My question isn’t answered above. Who can I contact for more info?</string>
+    <string name="st_ans6">For inquiries about contest rules or the entry form, please email ieeeyesist12@gmail.com</string>
 
 </resources>

@@ -1,9 +1,12 @@
 package com.ieee.ieee_yesist.view;
 
+import android.graphics.text.LineBreaker;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +19,8 @@ import com.ieee.ieee_yesist.databinding.FragmentAboutUsBinding;
 
 public class AboutUsFragment extends Fragment {
 
+    TextView aboutUs, ourMission, ourVision;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -27,6 +32,18 @@ public class AboutUsFragment extends Fragment {
             if(bottomNavigationView.getVisibility() == View.GONE)
                 bottomNavigationView.setVisibility(View.VISIBLE);
         });
+
+        aboutUs = binding.aboutUs;
+        ourMission = binding.ourMission;
+        ourVision = binding.ourVision;
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            aboutUs.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+            ourMission.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+            ourVision.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
+        }
+
+
         return binding.getRoot();
     }
 }

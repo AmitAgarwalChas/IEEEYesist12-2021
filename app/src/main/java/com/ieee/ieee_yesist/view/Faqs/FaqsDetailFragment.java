@@ -3,64 +3,113 @@ package com.ieee.ieee_yesist.view.Faqs;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import com.ieee.ieee_yesist.R;
+import com.ieee.ieee_yesist.adapters.FaqDetailsAdapter;
+import com.ieee.ieee_yesist.adapters.TrackDetailsAdapter;
+import com.ieee.ieee_yesist.model.YesistHome;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FaqsDetailFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import java.util.ArrayList;
+import java.util.List;
+
 public class FaqsDetailFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+    RecyclerView faq_det_rv;
+    FaqDetailsAdapter faqDetailsAdapter;
+    List<YesistHome> faqList;
+    ImageButton back;
 
     public FaqsDetailFragment() {
         // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment FaqsDetailFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static FaqsDetailFragment newInstance(String param1, String param2) {
-        FaqsDetailFragment fragment = new FaqsDetailFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_faqs_detail, container, false);
+        View view = inflater.inflate(R.layout.fragment_faqs_detail, container, false);
+
+        faq_det_rv = view.findViewById(R.id.track_details_faq_rv);
+        back=view.findViewById(R.id.back_button);
+
+        Bundle bundle = this.getArguments();
+        assert bundle != null;
+        String trackName = bundle.getString("trackName");
+
+        if(trackName.equals("Innovation Challenge")){
+            faqList = new ArrayList<>();
+            faqList.add(new YesistHome(R.string.innov_ques1,R.string.innov_ans1));
+            faqList.add(new YesistHome(R.string.innov_ques2,R.string.innov_ans2));
+            faqList.add(new YesistHome(R.string.innov_ques3,R.string.innov_ans3));
+            faqList.add(new YesistHome(R.string.innov_ques4,R.string.innov_ans4));
+
+            setFaqRecycler(faqList);
+        }
+        else if(trackName.equals("Maker Fair")){
+            faqList = new ArrayList<>();
+            faqList.add(new YesistHome(R.string.maker_ques1,R.string.maker_ans1));
+            faqList.add(new YesistHome(R.string.maker_ques2,R.string.maker_ans2));
+
+            setFaqRecycler(faqList);
+
+        }
+        else if(trackName.equals("Junior Einstein")){
+            faqList = new ArrayList<>();
+            faqList.add(new YesistHome(R.string.je_ques1,R.string.je_ans1));
+            faqList.add(new YesistHome(R.string.je_ques2,R.string.je_ans2));
+            faqList.add(new YesistHome(R.string.je_ques3,R.string.je_ans3));
+            faqList.add(new YesistHome(R.string.je_ques4,R.string.je_ans4));
+            faqList.add(new YesistHome(R.string.je_ques5,R.string.je_ans5));
+            faqList.add(new YesistHome(R.string.je_ques6,R.string.je_ans6));
+
+            setFaqRecycler(faqList);
+
+        }
+        else if(trackName.equals("WePOWER")){
+            faqList = new ArrayList<>();
+            faqList.add(new YesistHome(R.string.wepower_ques1,R.string.wepower_ans1));
+            faqList.add(new YesistHome(R.string.wepower_ques2,R.string.wepower_ans2));
+            faqList.add(new YesistHome(R.string.wepower_ques3,R.string.wepower_ans3));
+
+            setFaqRecycler(faqList);
+
+        }
+        else if(trackName.equals("Special Track")){
+            faqList = new ArrayList<>();
+            faqList.add(new YesistHome(R.string.st_ques1,R.string.st_ans1));
+            faqList.add(new YesistHome(R.string.st_ques2,R.string.st_ans2));
+            faqList.add(new YesistHome(R.string.st_ques3,R.string.st_ans3));
+            faqList.add(new YesistHome(R.string.st_ques4,R.string.st_ans4));
+            faqList.add(new YesistHome(R.string.st_ques5,R.string.st_ans5));
+            faqList.add(new YesistHome(R.string.st_ques6,R.string.st_ans6));
+
+            setFaqRecycler(faqList);
+
+        }
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(requireView()).navigate(R.id.action_faqDetailsFragment_to_faqFragment);
+            }
+        });
+
+        return view;
+    }
+
+    private void setFaqRecycler(List<YesistHome> faqList) {
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getContext(), RecyclerView.VERTICAL,false);
+        faq_det_rv.setLayoutManager(layoutManager);
+        faq_det_rv.setHasFixedSize(true);
+        faqDetailsAdapter = new FaqDetailsAdapter(faqList, requireContext());
+        faq_det_rv.setAdapter(faqDetailsAdapter);
     }
 }
