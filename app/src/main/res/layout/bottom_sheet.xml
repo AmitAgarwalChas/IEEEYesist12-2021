@@ -111,56 +111,17 @@
         app:layout_constraintTop_toBottomOf="@+id/about_content"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/image_card"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/speaker_rv"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginBottom="19dp"
-        app:cardCornerRadius="50dp"
-        app:cardPreventCornerOverlap="false"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="20dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
         app:layout_constraintTop_toBottomOf="@+id/speakers"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" >
-
-    <ImageView
-        android:id="@+id/speaker_image"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/ic_male"/>
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <TextView
-        android:id="@+id/speaker_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:paddingStart="12dp"
-        android:paddingEnd="8dp"
-        android:text="Name"
-        android:fontFamily="@font/nunito_semi_bold"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintTop_toBottomOf="@+id/speakers"
-        app:layout_constraintStart_toEndOf="@id/image_card"/>
-
-    <TextView
-        android:id="@+id/speaker_qualification"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingStart="12dp"
-        android:paddingEnd="104dp"
-        android:paddingBottom="12dp"
-        android:layout_marginTop="1dp"
-        android:justificationMode="inter_word"
-        android:text="@string/volunteer"
-        android:fontFamily="@font/nunito_light"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@+id/speaker_name"
-        app:layout_constraintStart_toEndOf="@id/image_card"/>
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

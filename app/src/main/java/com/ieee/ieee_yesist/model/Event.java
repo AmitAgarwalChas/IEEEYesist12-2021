@@ -1,21 +1,20 @@
 package com.ieee.ieee_yesist.model;
 
 import java.util.Date;
+import java.util.List;
 
 public class Event {
-    private String eventName, aboutEvent, speakerName, speakerQualification, eventUrl;
-    private Integer imageurl;
+    private String eventName, aboutEvent, eventUrl;
     private Date date, endDate;
+    private List<Speaker> speakers;
 
-    public Event(String eventName, String aboutEvent, String speakerName, String speakerQualification, String eventUrl, Integer imageurl, Date date, Date endDate) {
+    public Event(String eventName, String aboutEvent, String eventUrl, Date date, Date endDate, List<Speaker> speakers) {
         this.eventName = eventName;
         this.aboutEvent = aboutEvent;
-        this.speakerName = speakerName;
-        this.speakerQualification = speakerQualification;
         this.eventUrl = eventUrl;
-        this.imageurl = imageurl;
         this.date = date;
         this.endDate = endDate;
+        this.speakers = speakers;
     }
 
     public String getEventName() {
@@ -34,36 +33,12 @@ public class Event {
         this.aboutEvent = aboutEvent;
     }
 
-    public String getSpeakerName() {
-        return speakerName;
-    }
-
-    public void setSpeakerName(String speakerName) {
-        this.speakerName = speakerName;
-    }
-
-    public String getSpeakerQualification() {
-        return speakerQualification;
-    }
-
-    public void setSpeakerQualification(String speakerQualification) {
-        this.speakerQualification = speakerQualification;
-    }
-
     public String getEventUrl() {
         return eventUrl;
     }
 
     public void setEventUrl(String eventUrl) {
         this.eventUrl = eventUrl;
-    }
-
-    public Integer getImageurl() {
-        return imageurl;
-    }
-
-    public void setImageurl(Integer imageurl) {
-        this.imageurl = imageurl;
     }
 
     public Date getDate() {
@@ -80,5 +55,13 @@ public class Event {
 
     public void setEndDate(Date endDate) {
         this.endDate = endDate;
+    }
+
+    public List<Speaker> getSpeakers() {
+        return speakers;
+    }
+
+    public void setSpeakers(List<Speaker> speakers) {
+        this.speakers = speakers;
     }
 }
