@@ -106,16 +106,16 @@ public class TrackDetailsFragment extends Fragment {
 
             //datesList.clear();
             datesList = new ArrayList<>();
-            datesList.add(new YesistHome("Dates for Pilot",R.string.innov_dates_pilot));
-            datesList.add(new YesistHome("Direct Entry",R.string.innov_direct_entry));
-            datesList.add(new YesistHome("Reg. Fee",R.string.innov_reg_fee));
-            datesList.add(new YesistHome("Awards",R.string.innov_awards));
+            datesList.add(new YesistHome(R.string.dates_pilot,R.string.innov_dates_pilot));
+            datesList.add(new YesistHome(R.string.direct_entry,R.string.innov_direct_entry));
+            datesList.add(new YesistHome(R.string.reg_fee,R.string.innov_reg_fee));
+            datesList.add(new YesistHome(R.string.awards,R.string.innov_awards));
             setTracksKeyRecycler(datesList);
 
             //rulesList.clear();
             rulesList = new ArrayList<>();
-            rulesList.add(new YesistHome("Rules for the track",R.string.innov_rules));
-            rulesList.add(new YesistHome("Abstract Selection Process",R.string.innov_abstract));
+            rulesList.add(new YesistHome(R.string.rules_tracks,R.string.innov_rules));
+            rulesList.add(new YesistHome(R.string.abs_sel_proc,R.string.innov_abstract));
             setTracksRulesRecycler(rulesList);
         }
         else if(track.equals("Maker Fair")){
@@ -123,15 +123,15 @@ public class TrackDetailsFragment extends Fragment {
             trackInfo.setText(R.string.maker_fair);
             //datesList.clear();
             datesList = new ArrayList<>();
-            datesList.add(new YesistHome("Important Dates",R.string.maker_dates_pilot));
-            datesList.add(new YesistHome("Reg. Fee",R.string.maker_reg_fee));
-            datesList.add(new YesistHome("Awards",R.string.maker_awards));
+            datesList.add(new YesistHome(R.string.imp_dates,R.string.maker_dates_pilot));
+            datesList.add(new YesistHome(R.string.reg_fee,R.string.maker_reg_fee));
+            datesList.add(new YesistHome(R.string.awards,R.string.maker_awards));
             setTracksKeyRecycler(datesList);
 
             //rulesList.clear();
             rulesList = new ArrayList<>();
-            rulesList.add(new YesistHome("Rules for the track",R.string.maker_rules));
-            rulesList.add(new YesistHome("Abstract Selection Process",R.string.maker_abstract));
+            rulesList.add(new YesistHome(R.string.rules_tracks,R.string.maker_rules));
+            rulesList.add(new YesistHome(R.string.abs_sel_proc,R.string.maker_abstract));
             setTracksRulesRecycler(rulesList);
             }
         else if(track.equals("Junior Einstein")){
@@ -140,16 +140,16 @@ public class TrackDetailsFragment extends Fragment {
             callPilot("https://ieeeyesist12.org/je-pilot-registration/");
 
             datesList = new ArrayList<>();
-            datesList.add(new YesistHome("Dates for Pilot",R.string.einstein_dates_pilot));
-            datesList.add(new YesistHome("Direct Entry",R.string.einstein_direct_entry));
-            datesList.add(new YesistHome("Reg. Fee",R.string.einstein_reg_fee));
-            datesList.add(new YesistHome("Awards",R.string.einstein_awards));
+            datesList.add(new YesistHome(R.string.dates_pilot,R.string.einstein_dates_pilot));
+            datesList.add(new YesistHome(R.string.direct_entry,R.string.einstein_direct_entry));
+            datesList.add(new YesistHome(R.string.reg_fee,R.string.einstein_reg_fee));
+            datesList.add(new YesistHome(R.string.awards,R.string.einstein_awards));
             setTracksKeyRecycler(datesList);
 
             //rulesList.clear();
             rulesList = new ArrayList<>();
-            rulesList.add(new YesistHome("Rules for the track",R.string.einstein_rules));
-            rulesList.add(new YesistHome("Abstract Selection Process",R.string.einstein_abstract));
+            rulesList.add(new YesistHome(R.string.rules_tracks,R.string.einstein_rules));
+            rulesList.add(new YesistHome(R.string.abs_sel_proc,R.string.einstein_abstract));
             setTracksRulesRecycler(rulesList);
         }
         else if(track.equals("WePOWER")){
@@ -158,15 +158,15 @@ public class TrackDetailsFragment extends Fragment {
             //cardviewExpand(R.string.wepower_abstract,R.string.wepower_rules);
             //datesList.clear();
             datesList = new ArrayList<>();
-            datesList.add(new YesistHome("Important Dates",R.string.wepower_dates_pilot));
-            datesList.add(new YesistHome("Reg. Fee",R.string.wepower_reg_fee));
-            datesList.add(new YesistHome("Awards",R.string.wepower_awards));
+            datesList.add(new YesistHome(R.string.imp_dates,R.string.wepower_dates_pilot));
+            datesList.add(new YesistHome(R.string.reg_fee,R.string.wepower_reg_fee));
+            datesList.add(new YesistHome(R.string.awards,R.string.wepower_awards));
             setTracksKeyRecycler(datesList);
 
             //rulesList.clear();
             rulesList = new ArrayList<>();
-            rulesList.add(new YesistHome("Rules for the track",R.string.wepower_rules));
-            rulesList.add(new YesistHome("Abstract Selection Process",R.string.wepower_abstract));
+            rulesList.add(new YesistHome(R.string.rules_tracks,R.string.wepower_rules));
+            rulesList.add(new YesistHome(R.string.abs_sel_proc,R.string.wepower_abstract));
             setTracksRulesRecycler(rulesList);
         }
         else if(track.equals("Special Track")){
@@ -176,15 +176,15 @@ public class TrackDetailsFragment extends Fragment {
             //cardviewExpand(R.string.special_abstract,R.string.special_rules);
             //datesList.clear();
             datesList = new ArrayList<>();
-            datesList.add(new YesistHome("Important Dates",R.string.special_dates_pilot));
-            datesList.add(new YesistHome("Reg. Fee",R.string.special_reg_fee));
-            datesList.add(new YesistHome("Awards",R.string.special_awards));
+            datesList.add(new YesistHome(R.string.imp_dates,R.string.special_dates_pilot));
+            datesList.add(new YesistHome(R.string.reg_fee,R.string.special_reg_fee));
+            datesList.add(new YesistHome(R.string.awards,R.string.special_awards));
             setTracksKeyRecycler(datesList);
 
             //rulesList.clear();
             rulesList = new ArrayList<>();
-            rulesList.add(new YesistHome("Rules for the track",R.string.special_rules));
-            rulesList.add(new YesistHome("Abstract Selection Process",R.string.special_abstract));
+            rulesList.add(new YesistHome(R.string.rules_tracks,R.string.special_rules));
+            rulesList.add(new YesistHome(R.string.abs_sel_proc,R.string.special_abstract));
             setTracksRulesRecycler(rulesList);
             }
 

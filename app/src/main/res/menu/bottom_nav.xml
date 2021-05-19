@@ -10,7 +10,7 @@
         android:id="@+id/trendingFragment"
         android:title="@string/timeline"
         android:enabled="true"
-        android:icon="@drawable/ic_trending" />
+        android:icon="@drawable/ic_timeline" />
     <item
         android:id="@+id/tracksFragment"
         android:title="@string/tracks"
@@ -20,7 +20,7 @@
         android:id="@+id/aboutTeamFragment"
         android:title="@string/about_team"
         android:enabled="true"
-        android:icon="@drawable/ic_about_team" />
+        android:icon="@drawable/ic_aboutteam" />
     <item
         android:id="@+id/more_options"
         android:title="More"

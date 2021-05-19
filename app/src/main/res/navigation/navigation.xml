@@ -75,7 +75,23 @@
         android:id="@+id/faqFragment"
         android:name="com.ieee.ieee_yesist.view.Faqs.FaqFragment"
         android:label="fragment_faq"
-        tools:layout="@layout/fragment_faq" />
+        tools:layout="@layout/fragment_faq" >
+        <action
+            android:id="@+id/action_faqFragment_to_faqDetailsFragment"
+            app:destination="@+id/faqDetailFragment" />
+        <action
+            android:id="@+id/action_faqFragment_to_HomeFragment"
+            app:destination="@+id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/faqDetailFragment"
+        android:name="com.ieee.ieee_yesist.view.Faqs.FaqsDetailFragment"
+        android:label="fragment_faqs_detail"
+        tools:layout="@layout/fragment_faqs_detail">
+        <action
+            android:id="@+id/action_faqDetailsFragment_to_faqFragment"
+            app:destination="@+id/faqFragment" />
+    </fragment>
     <fragment
         android:id="@+id/aboutUsFragment"
         android:name="com.ieee.ieee_yesist.view.AboutUsFragment"

@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         connectionUtil.observe(this, isNetworkAvailable -> {
             if (isNetworkAvailable) {
                 if(!firstTimeOpen) {
-                    Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are ONLINE",
+                    Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are Online",
                             Snackbar.LENGTH_LONG);
                     snackbar.setBackgroundTint(getResources().getColor(R.color.green_version));
                     snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 firstTimeOpen = false;
             }else {
-                Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "OOPS! You are OFFLINE",
+                Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "Please connect to the Internet!",
                         Snackbar.LENGTH_INDEFINITE);
                 snackbar.setBackgroundTint(getResources().getColor(R.color.red));
                 snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.homeFragment, R.id.tracksFragment, R.id.aboutTeamFragment, R.id.trendingFragment,
                 R.id.trackDetailsFragment, R.id.professionalInfoFragment, R.id.sterringCommitteeFragment, R.id.subCommitteeFragment,
-                R.id.sponsorsFragment, R.id.faqFragment, R.id.aboutUsFragment)
+                R.id.sponsorsFragment, R.id.faqFragment, R.id.faqDetailFragment, R.id.aboutUsFragment)
                 .setDrawerLayout(drawer)
                 .build();
 
