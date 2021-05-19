@@ -15,23 +15,21 @@ import java.util.Set;
 
 public class ConnectionUtil extends LiveData<Boolean> {
 
-    private Context context;
     private ConnectivityManager cm;
     public ConnectionUtil(@NonNull Context context) {
-        this.context = context;
         cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
     }
 
     private static final String TAG = "ConnectionUtil";
     private Set<Network> validNetworks = new HashSet<>();
     private ConnectivityManager.NetworkCallback networkCallback;
-
     private void checkValidNetwork() {
         postValue(validNetworks.size() > 0);
     }
 
     @Override
     protected void onActive() {
+        postValue(false);
         NetworkRequest networkRequest = new NetworkRequest.Builder()
                 .addCapability(NetworkCapabilities.NET_CAPABILITY_INTERNET)
                 .build();
@@ -54,6 +52,7 @@ public class ConnectionUtil extends LiveData<Boolean> {
                 validNetworks.remove(network);
                 checkValidNetwork();
             }
+
         });
     }
 

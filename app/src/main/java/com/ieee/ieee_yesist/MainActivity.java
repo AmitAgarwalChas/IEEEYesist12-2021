@@ -34,22 +34,28 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     private AppBarConfiguration mAppBarConfiguration;
     DrawerLayout drawer;
+    private boolean firstTimeOpen;
 
     private void checkConnection(Context context) {
         ConnectionUtil connectionUtil = new ConnectionUtil(context);
         connectionUtil.observe(this, isNetworkAvailable -> {
-            Snackbar snackbar;
             if (isNetworkAvailable) {
-                snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are ONLINE",
-                        Snackbar.LENGTH_LONG);
-                snackbar.setBackgroundTint(getResources().getColor(R.color.green_version));
-            } else {
-                snackbar = Snackbar.make(binding.snackContainer.parentLayout, "OOPS! You are OFFLINE",
+                if(!firstTimeOpen) {
+                    Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are ONLINE",
+                            Snackbar.LENGTH_LONG);
+                    snackbar.setBackgroundTint(getResources().getColor(R.color.green_version));
+                    snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
+                    snackbar.show();
+                }
+                firstTimeOpen = false;
+            }else {
+                Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "OOPS! You are OFFLINE",
                         Snackbar.LENGTH_INDEFINITE);
                 snackbar.setBackgroundTint(getResources().getColor(R.color.red));
+                snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
+                snackbar.show();
+                firstTimeOpen = false;
             }
-            snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
-            snackbar.show();
         });
     }
 
@@ -60,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
+        firstTimeOpen = true;
         //Checking Network Connectivity during Runtime
         checkConnection(this);
 
