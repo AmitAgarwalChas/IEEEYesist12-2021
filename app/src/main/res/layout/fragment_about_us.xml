@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.AboutUsFragment"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="@+id/mainhead_header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/mainhead_header" />
+
+        <TextView
+            android:id="@+id/mainhead_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginBottom="26dp"
+            android:fontFamily="@font/nunitoregular"
+            android:includeFontPadding="false"
+            android:paddingBottom="10dp"
+            android:text="About Us"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/arrow_back"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_extrabold"
+                android:text="About YESIST12"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:paddingTop="10dp"
+                android:text="To unify social responsibility and ethics in young minds through activities and to encourage service-oriented engineering practice, YESIST 12 has started. An international talent show, IEEE YESIST 12 (YOUTH ENDEAVOURS FOR SOCIAL INNOVATION USING SUSTAINABLE TECHNOLOGY)(SS12) is a platform for the students and young professionals to showcase their fresh pristine ideas to find the key to humanitarian and social issues affecting directly the community around them.\n\nLooking back at the memorable starting point, YESIST 12 was SS12(meaning Saturday Sunday 12 hours) a humanitarian themed hackathon for students of the USA. Then it unfolded to Erode and Asia, now it has outspread to more than 9 countries, far-reaching 2000 above and beyond. Entailing many budding Innovators and entrepreneurs from around the world on building engineering solutions for the societal issues in various domains."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_extrabold"
+                android:paddingTop="24dp"
+                android:text="Our Mission"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/our_mission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:paddingTop="10dp"
+                android:text="• Empower and encourage the engineering minds to work for the social cause through.
+                \n\n• Conducting competitions associated with vision, which involves young engineering graduates, engineering students and school students.
+                \n\n• Acknowledging the service and contribution of engineering instructors to society.
+                \n\n• Bridging the gap between mentors and mentees from industry and academics, thereby providing a strong network.
+                \n\n• Encouraging integrating work in creating solutions for social issues."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_extrabold"
+                android:paddingTop="24dp"
+                android:text="Our Vision"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/our_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_font"
+                android:paddingTop="10dp"
+                android:text="To impart social responsibility and ethics as a part of continuing education in young minds through activities and encourage service-oriented engineering practices."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

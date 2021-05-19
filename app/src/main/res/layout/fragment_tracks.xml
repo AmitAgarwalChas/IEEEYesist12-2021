@@ -8,26 +8,10 @@
     android:id="@+id/trackFragment"
     android:background="@color/white">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="900dp"
-        android:layout_height="150dp"
-        android:layout_marginEnd="4dp"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/rectbackground" />
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:layout_gravity="center|top"
-        android:layout_marginLeft="26dp"
-        android:layout_marginRight="26dp"
+        android:background="@color/colorPrimary"
         android:orientation="vertical">
 
         <TextView
@@ -36,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_gravity="top"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="26dp"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/nunitoblack"
             android:text="Tracks"
@@ -44,15 +28,16 @@
             android:textSize="38sp"
             android:textStyle="bold" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
+        <ImageView
             android:id="@+id/imageProfile"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_gravity="center|top"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="54dp"
             android:layout_marginEnd="6dp"
-            android:src="@drawable/profile" />
+            android:src="@drawable/ic_bell"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/textView2"
@@ -60,14 +45,15 @@
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="0dp"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="10dp"
             android:layout_marginBottom="14dp"
             android:fontFamily="@font/nunitoregular"
             android:gravity="bottom"
             android:text="Choose a track to participate"
             android:textColor="#FFFFFF"
             android:textSize="17sp" />
-    </RelativeLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -77,9 +63,14 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/tracks_recycler"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="56dp" />
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="60dp"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            tools:listitem="@layout/track_item" />
 
     </LinearLayout>
 

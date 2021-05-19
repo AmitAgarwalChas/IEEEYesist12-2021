@@ -1,4 +1,4 @@
-package com.ieeeyesist12_2021;
+package com.ieee.ieee_yesist;
 
 import org.junit.Test;
 

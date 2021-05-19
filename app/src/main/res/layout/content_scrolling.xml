@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="view.Tracks.TrackDetailsFragment"
+    tools:showIn="@layout/fragment_track_details"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="64dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/registerbutton"
+                android:fontFamily="@font/nunitoregular"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:includeFontPadding="false"
+                android:paddingStart="50dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="50dp"
+                android:paddingBottom="15dp"
+                android:text="Abstract Submission"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/btnPilotRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/pilotregisterbutton"
+                android:fontFamily="@font/nunitoregular"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingLeft="46dp"
+                android:paddingTop="8dp"
+                android:paddingRight="46dp"
+                android:paddingBottom="15dp"
+                android:text="Pilot Registration"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinssemi"
+            android:text="Event Updates"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tracks_key_dates_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            tools:listitem="@layout/track_details_rv_item">
+        </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+<!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtPrize1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="7dp"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#0091EA"
+                android:fontFamily="@font/poppinssemi"
+                android:includeFontPadding="false"
+                android:paddingLeft="10dp"
+                android:paddingTop="6dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:text="@string/first_prize"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrize2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedbutton"
+                android:backgroundTint="#0091EA"
+                android:fontFamily="@font/poppinssemi"
+                android:includeFontPadding="false"
+                android:paddingLeft="9dp"
+                android:paddingTop="6dp"
+                android:paddingRight="9dp"
+                android:paddingBottom="6dp"
+                android:text="@string/second_prize"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppinssemi"
+            android:text="About Event"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/trackInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunitoregular"
+            android:includeFontPadding="true"
+            android:lineSpacingExtra="5dp"
+            android:paddingBottom="6dp"
+            android:text="@string/wepower"
+            android:textColor="#676969"
+            android:textSize="16sp"
+            android:textStyle="normal" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tracks_rules_rv"
+            tools:listitem="@layout/track_details_rv_item">
+        </androidx.recyclerview.widget.RecyclerView>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -7,54 +7,35 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.ieeeyesist12_2021.view.HomeFragment"
+        android:name="com.ieee.ieee_yesist.view.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/tracksFragment"
-        android:name="com.ieeeyesist12_2021.view.Tracks.TracksFragment"
+        android:name="com.ieee.ieee_yesist.view.Tracks.TracksFragment"
         android:label="fragment_tracks"
         tools:layout="@layout/fragment_tracks" >
         <action
             android:id="@+id/action_tracksFragment_to_trackDetailsFragment"
             app:destination="@id/trackDetailsFragment" />
-        <action
-            android:id="@+id/action_tracksFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutTeamFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.AboutTeamFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.AboutTeamFragment"
         android:label="fragment_about_team"
         tools:layout="@layout/fragment_about_team" >
-        <action
-            android:id="@+id/action_aboutTeamFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
         <action
             android:id="@+id/action_aboutTeamFragment_to_professionalInfoFragment"
             app:destination="@id/professionalInfoFragment" />
     </fragment>
     <fragment
-        android:id="@+id/moreFragment"
-        android:name="com.ieeeyesist12_2021.view.MoreFragment"
-        android:label="fragment_more"
-        tools:layout="@layout/fragment_more" >
-        <action
-            android:id="@+id/action_moreFragment_to_profileFragment"
-            app:destination="@id/profileFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/trendingFragment"
-        android:name="com.ieeeyesist12_2021.view.TrendingFragment"
+        android:name="com.ieee.ieee_yesist.view.Timeline.TimelineFragment"
         android:label="fragment_trending"
-        tools:layout="@layout/fragment_trending" />
+        tools:layout="@layout/fragment_timeline" />
     <fragment
         android:id="@+id/trackDetailsFragment"
-        android:name="com.ieeeyesist12_2021.view.Tracks.TrackDetailsFragment"
+        android:name="com.ieee.ieee_yesist.view.Tracks.TrackDetailsFragment"
         android:label="fragment_track_details"
         tools:layout="@layout/fragment_track_details" >
         <action
@@ -63,7 +44,7 @@
     </fragment>
     <fragment
         android:id="@+id/professionalInfoFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.ProfessionalInfoFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.ProfessionalInfoFragment"
         android:label="fragment_professional_info"
         tools:layout="@layout/fragment_professional_info" >
         <action
@@ -73,31 +54,47 @@
             app:popUpToInclusive="true" />
         <argument
             android:name="proArgs"
-            app:argType="com.ieeeyesist12_2021.model.Professional" />
+            app:argType="com.ieee.ieee_yesist.model.Professional" />
     </fragment>
     <fragment
         android:id="@+id/sterringCommitteeFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.SterringCommitteeFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.SterringCommitteeFragment"
         android:label="fragment_sterring_committee"
         tools:layout="@layout/fragment_sterring_committee" />
     <fragment
         android:id="@+id/subCommitteeFragment"
-        android:name="com.ieeeyesist12_2021.view.AboutTeam.SubCommitteeFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutTeam.SubCommitteeFragment"
         android:label="fragment_sub_committee"
         tools:layout="@layout/fragment_sub_committee" />
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.ieeeyesist12_2021.view.ProfileFragment"
-        android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" >
+        android:id="@+id/sponsorsFragment"
+        android:name="com.ieee.ieee_yesist.view.SponsorsFragment"
+        android:label="fragment_sponsors"
+        tools:layout="@layout/fragment_sponsors" />
+    <fragment
+        android:id="@+id/faqFragment"
+        android:name="com.ieee.ieee_yesist.view.Faqs.FaqFragment"
+        android:label="fragment_faq"
+        tools:layout="@layout/fragment_faq" >
         <action
-            android:id="@+id/action_profileFragment_to_tracksFragment"
-            app:destination="@id/tracksFragment" />
+            android:id="@+id/action_faqFragment_to_faqDetailsFragment"
+            app:destination="@+id/faqDetailFragment" />
         <action
-            android:id="@+id/action_profileFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_profileFragment_to_moreFragment"
-            app:destination="@id/moreFragment" />
+            android:id="@+id/action_faqFragment_to_HomeFragment"
+            app:destination="@+id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/faqDetailFragment"
+        android:name="com.ieee.ieee_yesist.view.Faqs.FaqsDetailFragment"
+        android:label="fragment_faqs_detail"
+        tools:layout="@layout/fragment_faqs_detail">
+        <action
+            android:id="@+id/action_faqDetailsFragment_to_faqFragment"
+            app:destination="@+id/faqFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.ieee.ieee_yesist.view.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
 </navigation>
