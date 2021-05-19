@@ -46,15 +46,6 @@ public class AboutUsFragment extends Fragment {
             ourMission.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
             ourVision.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
         }
-
-        StringBuilder mission = new StringBuilder();
-        String items[] = new String[5];
-        items[0] = "Empower and encourage the engineering minds to work for the social cause through.";
-        items[1] = "Conducting competitions associated with vision, which involves young engineering graduates, engineering students and school students.";
-        items[2] = "Acknowledging the service and contribution of engineering instructors to society.";
-        items[3] = "Bridging the gap between mentors and mentees from industry and academics, thereby providing a strong network.";
-        items[4] = "Encouraging integrating work in creating solutions for social issues.";
-
         return binding.getRoot();
     }
 }

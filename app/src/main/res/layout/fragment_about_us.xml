@@ -97,7 +97,11 @@
                 android:fontFamily="@font/nunitoregular"
                 android:paddingTop="10dp"
                 android:gravity="start"
-                android:text="@string/mission"
+                android:text="• Empower and encourage the engineering minds to work for the social cause through.
+                \n\n• Conducting competitions associated with vision, which involves young engineering graduates, engineering students and school students.
+                \n\n• Acknowledging the service and contribution of engineering instructors to society.
+                \n\n• Bridging the gap between mentors and mentees from industry and academics, thereby providing a strong network.
+                \n\n• Encouraging integrating work in creating solutions for social issues."
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
