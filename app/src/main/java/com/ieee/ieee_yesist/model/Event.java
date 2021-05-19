@@ -4,14 +4,15 @@ import java.util.Date;
 import java.util.List;
 
 public class Event {
-    private String eventName, aboutEvent, eventUrl;
+    private String eventName, aboutEvent, eventUrl, registerUrl;
     private Date date, endDate;
     private List<Speaker> speakers;
 
-    public Event(String eventName, String aboutEvent, String eventUrl, Date date, Date endDate, List<Speaker> speakers) {
+    public Event(String eventName, String aboutEvent, String eventUrl, String registerUrl, Date date, Date endDate, List<Speaker> speakers) {
         this.eventName = eventName;
         this.aboutEvent = aboutEvent;
         this.eventUrl = eventUrl;
+        this.registerUrl = registerUrl;
         this.date = date;
         this.endDate = endDate;
         this.speakers = speakers;
@@ -39,6 +40,14 @@ public class Event {
 
     public void setEventUrl(String eventUrl) {
         this.eventUrl = eventUrl;
+    }
+
+    public String getRegisterUrl() {
+        return registerUrl;
+    }
+
+    public void setRegisterUrl(String registerUrl) {
+        this.registerUrl = registerUrl;
     }
 
     public Date getDate() {

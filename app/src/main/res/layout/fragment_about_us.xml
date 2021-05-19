@@ -34,18 +34,18 @@
             android:layout_marginStart="12dp"
             android:layout_marginTop="21dp"
             android:layout_marginBottom="26dp"
-            android:fontFamily="@font/nunitoregular"
+            android:fontFamily="@font/nunito_extrabold"
             android:includeFontPadding="false"
-            android:paddingBottom="10dp"
             android:text="About Us"
             android:textColor="@color/white"
-            android:textSize="38sp"
+            android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/arrow_back"
             app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -64,7 +64,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_extrabold"
+                android:fontFamily="@font/nunitoblack"
                 android:text="About YESIST12"
                 android:textColor="@color/black"
                 android:textSize="26sp"
@@ -74,16 +74,16 @@
                 android:id="@+id/about_us"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_font"
+                android:fontFamily="@font/nunitoregular"
                 android:paddingTop="10dp"
-                android:text="To unify social responsibility and ethics in young minds through activities and to encourage service-oriented engineering practice, YESIST 12 has started. An international talent show, IEEE YESIST 12 (YOUTH ENDEAVOURS FOR SOCIAL INNOVATION USING SUSTAINABLE TECHNOLOGY)(SS12) is a platform for the students and young professionals to showcase their fresh pristine ideas to find the key to humanitarian and social issues affecting directly the community around them.\n\nLooking back at the memorable starting point, YESIST 12 was SS12(meaning Saturday Sunday 12 hours) a humanitarian themed hackathon for students of the USA. Then it unfolded to Erode and Asia, now it has outspread to more than 9 countries, far-reaching 2000 above and beyond. Entailing many budding Innovators and entrepreneurs from around the world on building engineering solutions for the societal issues in various domains."
+                android:text="@string/about_yesist12"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_extrabold"
+                android:fontFamily="@font/nunitoblack"
                 android:paddingTop="24dp"
                 android:text="Our Mission"
                 android:textColor="@color/black"
@@ -94,20 +94,17 @@
                 android:id="@+id/our_mission"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_font"
+                android:fontFamily="@font/nunitoregular"
                 android:paddingTop="10dp"
-                android:text="• Empower and encourage the engineering minds to work for the social cause through.
-                \n\n• Conducting competitions associated with vision, which involves young engineering graduates, engineering students and school students.
-                \n\n• Acknowledging the service and contribution of engineering instructors to society.
-                \n\n• Bridging the gap between mentors and mentees from industry and academics, thereby providing a strong network.
-                \n\n• Encouraging integrating work in creating solutions for social issues."
+                android:gravity="start"
+                android:text="@string/mission"
                 android:textColor="@color/black"
                 android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_extrabold"
+                android:fontFamily="@font/nunitoblack"
                 android:paddingTop="24dp"
                 android:text="Our Vision"
                 android:textColor="@color/black"
@@ -118,7 +115,7 @@
                 android:id="@+id/our_vision"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_font"
+                android:fontFamily="@font/nunitoregular"
                 android:paddingTop="10dp"
                 android:text="To impart social responsibility and ethics as a part of continuing education in young minds through activities and encourage service-oriented engineering practices."
                 android:textColor="@color/black"

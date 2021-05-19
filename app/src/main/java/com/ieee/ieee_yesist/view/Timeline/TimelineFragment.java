@@ -1,12 +1,14 @@
 package com.ieee.ieee_yesist.view.Timeline;
 
 import android.graphics.Color;
+import android.graphics.Rect;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.os.SystemClock;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -147,13 +149,10 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
             populateDisplayList(date, false);
         });
 
-        binding.calendar.setOnDateChangedListener(new OnDateSelectedListener() {
-            @Override
-            public void onDateSelected(@NonNull MaterialCalendarView widget, @NonNull CalendarDay date, boolean selected) {
-                binding.calendar.setVisibility(View.GONE);
-                binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
-                populateDisplayList(date, true);
-            }
+        binding.calendar.setOnDateChangedListener((widget, date, selected) -> {
+            binding.calendar.setVisibility(View.GONE);
+            binding.calendarArrow.setImageResource(R.drawable.ic__arrow_down);
+            populateDisplayList(date, true);
         });
 
         Date date = new Date();
@@ -210,7 +209,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         List<Speaker> speakers = new ArrayList<>();
         speakers.add(new Speaker(getString(R.string.speaker1),getString(R.string.sq1), R.drawable.isha_dash));
         eventList.add(new Event(getString(R.string.eventtit1), getString(R.string.eventdes_1),
-                getString(R.string.eventurl_1), date, endDate, speakers));
+                getString(R.string.eventurl_1),null, date, endDate, speakers));
 
         inputStringStart = "02-04-2021 05:30 PM";
         inputStringEnd = "02-04-2021 06:30 PM";
@@ -223,7 +222,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         List<Speaker> speakers2 = new ArrayList<>();
         speakers2.add(new Speaker(getString(R.string.speaker2), getString(R.string.sq2), R.drawable.jairo_h_garcia));
         eventList.add(new Event(getString(R.string.eventtit2), getString(R.string.eventdes_2),
-                getString(R.string.eventurl_2), date, endDate, speakers2));
+                getString(R.string.eventurl_2), null, date, endDate, speakers2));
 
         inputStringStart = "14-04-2021 06:30 PM";
         inputStringEnd = "14-04-2021 07:30 PM";
@@ -237,7 +236,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         speakers3.add(new Speaker(getString(R.string.speaker3), getString(R.string.sq3), R.drawable.uti_anselm));
 
         eventList.add(new Event(getString(R.string.eventtit3), getString(R.string.eventdes_3),
-                 getString(R.string.eventurl_3), date, endDate, speakers3));
+                 getString(R.string.eventurl_3), null, date, endDate, speakers3));
 
         inputStringStart = "23-04-2021 06:30 PM";
         inputStringEnd = "23-04-2021 07:30 PM";
@@ -251,7 +250,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         speakers4.add(new Speaker(getString(R.string.speaker4), getString(R.string.sq4),  R.drawable.md_koushik_ahamed));
 
         eventList.add(new Event(getString(R.string.eventtit4), getString(R.string.eventdes_4),
-                getString(R.string.eventurl_4), date, endDate, speakers4));
+                getString(R.string.eventurl_4),null, date, endDate, speakers4));
 
 
         inputStringStart = "21-05-2021 06:30 PM";
@@ -267,7 +266,7 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         speakers5.add(new Speaker(getString(R.string.speaker5_2), getString(R.string.sq5_2),  R.drawable.ic_female));
 
         eventList.add(new Event(getString(R.string.eventtit5), getString(R.string.eventdes_5),
-                getString(R.string.eventurl_4), date, endDate, speakers5));
+                getString(R.string.eventurl_4),"https://docs.google.com/forms/d/e/1FAIpQLSclXKyGGev0-3xEZ3uP-N2-yaBuVzbtHnGiJVpLdX6qWd9AJg/viewform?usp=send_form", date, endDate, speakers5));
 
     }
 

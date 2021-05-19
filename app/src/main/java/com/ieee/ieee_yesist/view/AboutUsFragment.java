@@ -3,6 +3,10 @@ package com.ieee.ieee_yesist.view;
 import android.graphics.text.LineBreaker;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.style.BulletSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +47,13 @@ public class AboutUsFragment extends Fragment {
             ourVision.setJustificationMode(LineBreaker.JUSTIFICATION_MODE_INTER_WORD);
         }
 
+        StringBuilder mission = new StringBuilder();
+        String items[] = new String[5];
+        items[0] = "Empower and encourage the engineering minds to work for the social cause through.";
+        items[1] = "Conducting competitions associated with vision, which involves young engineering graduates, engineering students and school students.";
+        items[2] = "Acknowledging the service and contribution of engineering instructors to society.";
+        items[3] = "Bridging the gap between mentors and mentees from industry and academics, thereby providing a strong network.";
+        items[4] = "Encouraging integrating work in creating solutions for social issues.";
 
         return binding.getRoot();
     }

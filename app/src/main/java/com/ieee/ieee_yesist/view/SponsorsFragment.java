@@ -65,7 +65,7 @@ public class SponsorsFragment extends Fragment {
         sponsorList.add(new Sponsor("https://ieeeyesist12.org/wp-content/uploads/2021/03/rotary_logo-721344-735972.jpg",
                 "http://www.rotarycbe.org/"));
         sponsorList.add(new Sponsor("https://ieeeyesist12.org/wp-content/uploads/2021/04/HGKTGHww.jpg",
-                "https://ieeeyesist12.org/tracks/wepower/"));
+                "https://collaboration.worldbank.org/content/sites/collaboration-for-development/en/groups/the-wepowernetwork.html"));
         sponsorList.add(new Sponsor("https://ieeeyesist12.org/wp-content/uploads/2021/03/unnamed__1_-removebg-preview.png",
                 "https://code.tinker.ly/"));
         sponsorList.add(new Sponsor("https://ieeeyesist12.org/wp-content/uploads/2021/04/0.png",

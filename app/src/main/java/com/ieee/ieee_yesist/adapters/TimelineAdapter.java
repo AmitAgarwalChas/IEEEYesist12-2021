@@ -96,7 +96,12 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
             );
         }else if(d.before(eventList.get(position).getDate())) {
             holder.startTime.setTextColor(Color.parseColor("#0091EA"));
-            holder.join.setVisibility(View.GONE);
+            holder.join.setVisibility(View.VISIBLE);
+            holder.join.setText("Register");
+            holder.join.setBackgroundColor(Color.parseColor("#01579B"));
+            holder.join.setOnClickListener( v ->
+                    context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(eventList.get(position).getRegisterUrl())))
+            );
             holder.status.setBackgroundResource(R.drawable.ic_upcoming_tv);
             holder.status.setText("Upcoming");
             if(diffDays == 0) {
@@ -105,6 +110,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.ViewHo
         }else {
             holder.startTime.setTextColor(Color.parseColor("#EA0000"));
             holder.join.setVisibility(View.VISIBLE);
+            holder.join.setText("Join");
+            holder.join.setBackgroundColor(Color.parseColor("#EA0000"));
+            holder.join.setOnClickListener( v ->
+                    context.startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(eventList.get(position).getEventUrl())))
+            );
             holder.status.setBackgroundResource(R.drawable.ic_live_tv);
             holder.status.setText("Live");
             holder.status.setTextColor(Color.parseColor("#EA0000"));

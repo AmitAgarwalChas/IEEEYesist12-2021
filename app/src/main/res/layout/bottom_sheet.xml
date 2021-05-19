@@ -88,6 +88,7 @@
         android:layout_marginTop="4dp"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
+        android:gravity="start"
         android:justificationMode="inter_word"
         android:text="@string/short_random_text"
         android:textSize="18sp"
