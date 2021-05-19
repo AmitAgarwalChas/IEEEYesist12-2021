@@ -296,7 +296,6 @@ public class TimelineFragment extends Fragment implements TimelineAdapter.EventC
         SpeakerAdapter speakerAdapter = new SpeakerAdapter(event.getSpeakers());
         speakerRv.setAdapter(speakerAdapter);
 
-
         SimpleDateFormat sdf = new SimpleDateFormat("dd MMMM yyyy");
         String date = sdf.format(event.getDate());
         eventDate.setText(date);

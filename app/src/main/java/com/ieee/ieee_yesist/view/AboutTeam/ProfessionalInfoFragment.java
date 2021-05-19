@@ -48,22 +48,23 @@ public class ProfessionalInfoFragment extends Fragment {
         binding.linkedInButton.setOnClickListener( v-> {
             startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(professional.getLinkedinUrl())));
         });
-        ViewTreeObserver observer = binding.professionalDesc.getViewTreeObserver();
-        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                int lineHeight = binding.professionalDesc.getLineHeight();
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                    Rect bounds = new Rect();
-                    binding.professionalDesc.getLineBounds(0, bounds);
-                    lineHeight = bounds.bottom - bounds.top;
-                }
-                int maxLines = (int) binding.professionalDesc.getHeight() / lineHeight;
-                binding.professionalDesc.setMaxLines(maxLines);
-                binding.professionalDesc.getViewTreeObserver().removeGlobalOnLayoutListener(
-                        this);
-            }
-        });
+//        binding.professionalDesc.setMovementMethod(new ScrollingMovementMethod());
+//        ViewTreeObserver observer = binding.professionalDesc.getViewTreeObserver();
+//        observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+//            @Override
+//            public void onGlobalLayout() {
+//                int lineHeight = binding.professionalDesc.getLineHeight();
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+//                    Rect bounds = new Rect();
+//                    binding.professionalDesc.getLineBounds(0, bounds);
+//                    lineHeight = bounds.bottom - bounds.top;
+//                }
+//                int maxLines = (int) binding.professionalDesc.getHeight() / lineHeight;
+//                binding.professionalDesc.setMaxLines(maxLines);
+//                binding.professionalDesc.getViewTreeObserver().removeGlobalOnLayoutListener(
+//                        this);
+//            }
+//        });
     }
 
     @Override

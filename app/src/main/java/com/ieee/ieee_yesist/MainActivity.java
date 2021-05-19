@@ -36,12 +36,18 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawer;
     private boolean firstTimeOpen;
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        firstTimeOpen = true;
+    }
+
     private void checkConnection(Context context) {
         ConnectionUtil connectionUtil = new ConnectionUtil(context);
         connectionUtil.observe(this, isNetworkAvailable -> {
             if (isNetworkAvailable) {
                 if(!firstTimeOpen) {
-                    Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are Online",
+                    Snackbar snackbar = Snackbar.make(binding.snackContainer.parentLayout, "You are ONLINE",
                             Snackbar.LENGTH_LONG);
                     snackbar.setBackgroundTint(getResources().getColor(R.color.green_version));
                     snackbar.setAnchorView(binding.snackContainer.bottomNavigationView);
@@ -66,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         setContentView(view);
 
-        firstTimeOpen = true;
         //Checking Network Connectivity during Runtime
         checkConnection(this);
 
@@ -99,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent shareIntent = new Intent(Intent.ACTION_SEND);
                 shareIntent.setType("text/plain");
                 shareIntent.putExtra(Intent.EXTRA_SUBJECT, "IEEE Yesist12");
-                String shareMessage= "Hey checkout this amazing app over here : https://play.google.com/store/apps/details?id=com.ieee.ieee_yesist&hl=en";
+                String shareMessage= "Checkout IEEE YESIST12 2021 app over here: https://play.google.com/store/apps/details?id=com.ieee.ieee_yesist&hl=en";
                 shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
                 startActivity(Intent.createChooser(shareIntent, "Share Via"));
             }

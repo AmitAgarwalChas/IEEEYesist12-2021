@@ -44,6 +44,7 @@ public class SponsorAdapter extends RecyclerView.Adapter<SponsorAdapter.ViewHold
              .placeholder(cpd)
              .into(holder.sponsorImg);
 
+        holder.sponsorImg.setImageBitmap(null);
         holder.sponsorImg.setOnClickListener(v -> {
             context.startActivity(new Intent(Intent.ACTION_VIEW,
                     Uri.parse(sponsorList.get(position).getWebUrl())));

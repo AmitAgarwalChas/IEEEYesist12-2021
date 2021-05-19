@@ -34,6 +34,7 @@
                     android:includeFontPadding="false"
                     android:maxWidth="300dp"
                     android:paddingTop="15dp"
+                    android:paddingEnd="30dp"
                     android:paddingBottom="15dp"
                     android:text="What is your name? "
                     android:textColor="#0091EA"

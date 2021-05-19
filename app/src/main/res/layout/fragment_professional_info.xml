@@ -94,25 +94,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/professional_name" />
 
-    <TextView
-        android:id="@+id/professional_desc"
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:ellipsize="end"
-        android:fontFamily="@font/nunitoregular"
-        android:justificationMode="inter_word"
-        android:lineSpacingExtra="4dp"
-        android:paddingStart="24dp"
-        android:paddingTop="13dp"
-        android:paddingEnd="24dp"
-        android:paddingBottom="8dp"
-        android:scrollbars="vertical"
-        android:text="@string/random_text"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/professional_role" />
+        app:layout_constraintTop_toBottomOf="@id/professional_role"  >
 
+    <TextView
+        android:id="@+id/professional_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunitoregular"
+        android:justificationMode="inter_word"
+        android:scrollbars="none"
+        android:lineSpacingExtra="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="13dp"
+        android:paddingBottom="400dp"
+        android:text="@string/random_text"
+        android:textColor="@color/black"
+        android:textSize="16sp"/>
+
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
